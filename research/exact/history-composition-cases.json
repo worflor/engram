@@ -1,0 +1,938 @@
+{
+  "scope": "Algebraic components and one specific repeated-root dwell bound. Human mathematical composition is stated in the reference; these are not a whole-runtime or arbitrary-switching certificate.",
+  "studies": [
+    {
+      "case": "schur_inverse_real",
+      "request": {
+        "subject": "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "normal form",
+              "by": "each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+              "says": "0 nonzero terms = 0",
+              "value": {
+                "atoms": [
+                  {
+                    "relation": "=",
+                    "source": "(((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x))-((1-u^2-v^2)*x)",
+                    "terms": [],
+                    "variables": [
+                      "u",
+                      "v",
+                      "x",
+                      "y"
+                    ]
+                  }
+                ],
+                "kind": "polynomial-normalization",
+                "matrix": {
+                  "idx": 0,
+                  "k": "atom"
+                },
+                "prefix": [
+                  {
+                    "quant": "forall",
+                    "variable": "x"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "y"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "u"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "v"
+                  }
+                ],
+                "source": "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x"
+              }
+            },
+            {
+              "asks": "quantifier prefix",
+              "by": "the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+              "says": "forall x. forall y. forall u. forall v",
+              "value": [
+                {
+                  "quant": "forall",
+                  "variable": "x"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "y"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "u"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "v"
+                }
+              ]
+            },
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "x",
+              "value": "x"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x"
+        },
+        "subject": "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x",
+        "text": [
+          "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x",
+          "",
+          "  normal form: 0 nonzero terms = 0",
+          "      each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+          "  quantifier prefix: forall x. forall y. forall u. forall v",
+          "      the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+          "  variable: x",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "93e98099-35ba-4d01-b58a-575917d69cae",
+        "outputBytes": 2645,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 40676,
+          "queued_us": 107,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "schur_inverse_imaginary",
+      "request": {
+        "subject": "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "normal form",
+              "by": "each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+              "says": "0 nonzero terms = 0",
+              "value": {
+                "atoms": [
+                  {
+                    "relation": "=",
+                    "source": "(((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y))-((1-u^2-v^2)*y)",
+                    "terms": [],
+                    "variables": [
+                      "u",
+                      "v",
+                      "x",
+                      "y"
+                    ]
+                  }
+                ],
+                "kind": "polynomial-normalization",
+                "matrix": {
+                  "idx": 0,
+                  "k": "atom"
+                },
+                "prefix": [
+                  {
+                    "quant": "forall",
+                    "variable": "x"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "y"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "u"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "v"
+                  }
+                ],
+                "source": "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y"
+              }
+            },
+            {
+              "asks": "quantifier prefix",
+              "by": "the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+              "says": "forall x. forall y. forall u. forall v",
+              "value": [
+                {
+                  "quant": "forall",
+                  "variable": "x"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "y"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "u"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "v"
+                }
+              ]
+            },
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "x",
+              "value": "x"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y"
+        },
+        "subject": "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y",
+        "text": [
+          "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y",
+          "",
+          "  normal form: 0 nonzero terms = 0",
+          "      each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+          "  quantifier prefix: forall x. forall y. forall u. forall v",
+          "      the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+          "  variable: x",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "9e5f6701-72c9-49b3-b7dc-7a5236d8eb8a",
+        "outputBytes": 2645,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 40030,
+          "queued_us": 112,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "schur_necessity_factor",
+      "request": {
+        "subject": "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v)",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "normal form",
+              "by": "each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+              "says": "0 nonzero terms = 0",
+              "value": {
+                "atoms": [
+                  {
+                    "relation": "=",
+                    "source": "(1-u^2*v^2-u*(1-v^2)-v*(1-u^2))-((1-u)*(1-v)*(1-u*v))",
+                    "terms": [],
+                    "variables": [
+                      "u",
+                      "v"
+                    ]
+                  }
+                ],
+                "kind": "polynomial-normalization",
+                "matrix": {
+                  "idx": 0,
+                  "k": "atom"
+                },
+                "prefix": [
+                  {
+                    "quant": "forall",
+                    "variable": "u"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "v"
+                  }
+                ],
+                "source": "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v)"
+              }
+            },
+            {
+              "asks": "quantifier prefix",
+              "by": "the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+              "says": "forall u. forall v",
+              "value": [
+                {
+                  "quant": "forall",
+                  "variable": "u"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "v"
+                }
+              ]
+            },
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "u",
+              "value": "u"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v)"
+        },
+        "subject": "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v)",
+        "text": [
+          "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v)",
+          "",
+          "  normal form: 0 nonzero terms = 0",
+          "      each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+          "  quantifier prefix: forall u. forall v",
+          "      the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+          "  variable: u",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "1ff8a246-079f-420f-ac12-05773f4cb48b",
+        "outputBytes": 2445,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 40289,
+          "queued_us": 111,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "schur_sufficiency_factor",
+      "request": {
+        "subject": "forall u v. u+v-1-u*v = (u-1)*(1-v)",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "normal form",
+              "by": "each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+              "says": "0 nonzero terms = 0",
+              "value": {
+                "atoms": [
+                  {
+                    "relation": "=",
+                    "source": "(u+v-1-u*v)-((u-1)*(1-v))",
+                    "terms": [],
+                    "variables": [
+                      "u",
+                      "v"
+                    ]
+                  }
+                ],
+                "kind": "polynomial-normalization",
+                "matrix": {
+                  "idx": 0,
+                  "k": "atom"
+                },
+                "prefix": [
+                  {
+                    "quant": "forall",
+                    "variable": "u"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "v"
+                  }
+                ],
+                "source": "forall u v. u+v-1-u*v = (u-1)*(1-v)"
+              }
+            },
+            {
+              "asks": "quantifier prefix",
+              "by": "the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+              "says": "forall u. forall v",
+              "value": [
+                {
+                  "quant": "forall",
+                  "variable": "u"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "v"
+                }
+              ]
+            },
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "u",
+              "value": "u"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall u v. u+v-1-u*v = (u-1)*(1-v)"
+        },
+        "subject": "forall u v. u+v-1-u*v = (u-1)*(1-v)",
+        "text": [
+          "forall u v. u+v-1-u*v = (u-1)*(1-v)",
+          "",
+          "  normal form: 0 nonzero terms = 0",
+          "      each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+          "  quantifier prefix: forall u. forall v",
+          "      the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+          "  variable: u",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "6c1c5cf2-19f8-4b3f-8c55-0be8e0ebe78b",
+        "outputBytes": 2305,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 37729,
+          "queued_us": 104,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "dwell_monotone",
+      "request": {
+        "subject": "forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9)",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "n",
+              "value": "n"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "critical points",
+              "by": "the real roots of the atom polynomials, in order: they cut the line into cells on each of which every atom keeps one sign, so the whole statement is decided by testing one point per cell",
+              "says": "180/19, 43",
+              "value": [
+                "9.473684210526\u2026",
+                "43"
+              ]
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9)"
+        },
+        "subject": "forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9)",
+        "text": [
+          "forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9)",
+          "",
+          "  variable: n",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  critical points: 180/19, 43",
+          "      the real roots of the atom polynomials, in order: they cut the line into cells on each of which every atom keeps one sign, so the whole statement is decided by testing one point per cell",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "add7da36-7b05-4bc6-a19a-ee2753ab3075",
+        "outputBytes": 1667,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 39161,
+          "queued_us": 153,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "dwell_43",
+      "request": {
+        "subject": "forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "x",
+              "value": "x"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1"
+        },
+        "subject": "forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1",
+        "text": [
+          "forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1",
+          "",
+          "  variable: x",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "b73132c0-ade5-438b-ad97-01658e459320",
+        "outputBytes": 1326,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 36771,
+          "queued_us": 141,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "dwell_42",
+      "request": {
+        "subject": "forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "x",
+              "value": "x"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1"
+        },
+        "subject": "forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1",
+        "text": [
+          "forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1",
+          "",
+          "  variable: x",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "d9b12325-3497-410a-bc88-d00ea13fdfdb",
+        "outputBytes": 1326,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 37001,
+          "queued_us": 109,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "quintic_recurrence",
+      "request": {
+        "subject": "forall n. (10*(n)^3-15*(n)^4+6*(n)^5)-6*(10*(n-1)^3-15*(n-1)^4+6*(n-1)^5)+15*(10*(n-2)^3-15*(n-2)^4+6*(n-2)^5)-20*(10*(n-3)^3-15*(n-3)^4+6*(n-3)^5)+15*(10*(n-4)^3-15*(n-4)^4+6*(n-4)^5)-6*(10*(n-5)^3-15*(n-5)^4+6*(n-5)^5)+(10*(n-6)^3-15*(n-6)^4+6*(n-6)^5)=0",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "n",
+              "value": "n"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall n. (10*(n)^3-15*(n)^4+6*(n)^5)-6*(10*(n-1)^3-15*(n-1)^4+6*(n-1)^5)+15*(10*(n-2)^3-15*(n-2)^4+6*(n-2)^5)-20*(10*(n-3)^3-15*(n-3)^4+6*(n-3)^5)+15*(10*(n-4)^3-15*(n-4)^4+6*(n-4)^5)-6*(10*(n-5)^3-15*(n-5)^4+6*(n-5)^5)+(10*(n-6)^3-15*(n-6)^4+6*(n-6)^5)=0"
+        },
+        "subject": "forall n. (10*(n)^3-15*(n)^4+6*(n)^5)-6*(10*(n-1)^3-15*(n-1)^4+6*(n-1)^5)+15*(10*(n-2)^3-15*(n-2)^4+6*(n-2)^5)-20*(10*(n-3)^3-15*(n-3)^4+6*(n-3)^5)+15*(10*(n-4)^3-15*(n-4)^4+6*(n-4)^5)-6*(10*(n-5)^3-15*(n-5)^4+6*(n-5)^5)+(10*(n-6)^3-15*(n-6)^4+6*(n-6)^5)=0",
+        "text": [
+          "forall n. (10*(n)^3-15*(n)^4+6*(n)^5)-6*(10*(n-1)^3-15*(n-1)^4+6*(n-1)^5)+15*(10*(n-2)^3-15*(n-2)^4+6*(n-2)^5)-20*(10*(n-3)^3-15*(n-3)^4+6*(n-3)^5)+15*(10*(n-4)^3-15*(n-4)^4+6*(n-4)^5)-6*(10*(n-5)^3-15*(n-5)^4+6*(n-5)^5)+(10*(n-6)^3-15*(n-6)^4+6*(n-6)^5)=0",
+          "",
+          "  variable: n",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "5b31d1fa-ba49-4094-a5dc-c6c1cb15eb98",
+        "outputBytes": 1791,
+        "peakMemoryBytes": 13959168,
+        "timing": {
+          "execution_us": 59258,
+          "queued_us": 108,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    }
+  ],
+  "checks": {
+    "request": {
+      "claims": [
+        "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x :: true or false = true",
+        "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y :: true or false = true",
+        "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v) :: true or false = true",
+        "forall u v. u+v-1-u*v = (u-1)*(1-v) :: true or false = true",
+        "forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9) :: true or false = true",
+        "forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1 :: true or false = true",
+        "forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1 :: true or false = true",
+        "forall n. (10*(n)^3-15*(n)^4+6*(n)^5)-6*(10*(n-1)^3-15*(n-1)^4+6*(n-1)^5)+15*(10*(n-2)^3-15*(n-2)^4+6*(n-2)^5)-20*(10*(n-3)^3-15*(n-3)^4+6*(n-3)^5)+15*(10*(n-4)^3-15*(n-4)^4+6*(n-4)^5)-6*(10*(n-5)^3-15*(n-5)^4+6*(n-5)^5)+(10*(n-6)^3-15*(n-6)^4+6*(n-6)^5)=0 :: true or false = true"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "forall x y u v. ((1+u)*x+v*y)*(1-u)-v*((1-u)*y+v*x) = (1-u^2-v^2)*x :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "forall x y u v. ((1-u)*y+v*x)*(1+u)-v*((1+u)*x+v*y) = (1-u^2-v^2)*y :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "forall u v. 1-u^2*v^2-u*(1-v^2)-v*(1-u^2) = (1-u)*(1-v)*(1-u*v) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "forall u v. u+v-1-u*v = (u-1)*(1-v) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9) :: true or false = true",
+          "said": "this subject can be asked: the canonical DFA certificate, variables, states of the automaton, universal, satisfiable, how many solutions, the counting law, derived, generating function, what it grows like",
+          "verdict": "UNKNOWN"
+        },
+        {
+          "claim": "forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1 :: true or false = true",
+          "said": "the engine declines: unsupported character \"/\" at position 53",
+          "verdict": "REFUSED"
+        },
+        {
+          "claim": "forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1 :: true or false = true",
+          "said": "the engine declines: unsupported character \"/\" at position 53",
+          "verdict": "REFUSED"
+        },
+        {
+          "claim": "forall n. (10*(n)^3-15*(n)^4+6*(n)^5)-6*(10*(n-1)^3-15*(n-1)^4+6*(n-1)^5)+15*(10*(n-2)^3-15*(n-2)^4+6*(n-2)^5)-20*(10*(n-3)^3-15*(n-3)^4+6*(n-3)^5)+15*(10*(n-4)^3-15*(n-4)^4+6*(n-4)^5)-6*(10*(n-5)^3-15*(n-5)^4+6*(n-5)^5)+(10*(n-6)^3-15*(n-6)^4+6*(n-6)^5)=0 :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "a237f517-32cf-4917-8f7a-b4d1fe75d511",
+      "outputBytes": 1762,
+      "peakMemoryBytes": 14876672,
+      "timing": {
+        "execution_us": 117116,
+        "queued_us": 51,
+        "startup_us": 2
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  },
+  "route_pinned_checks": {
+    "request": {
+      "claims": [
+        "--reals forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9) :: true or false = true",
+        "--reals forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1 :: true or false = true",
+        "--reals forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1 :: true or false = true"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "--reals forall n. n>=43 implies 9*(19*n+10)<10*(19*n-9) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "--reals forall x. 1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000 < 1 :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "--reals forall x. 1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000 > 1 :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "1f9e9089-a50c-4223-9a15-3d4a153edc57",
+      "outputBytes": 587,
+      "peakMemoryBytes": 13893632,
+      "timing": {
+        "execution_us": 43387,
+        "queued_us": 54,
+        "startup_us": 1
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  }
+}

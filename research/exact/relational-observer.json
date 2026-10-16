@@ -1,0 +1,1535 @@
+{
+  "scope": "Exact eight-state sign-binding observer under three coordinate-flip actions. Not a learned semantics or Minecraft runtime certificate.",
+  "studies": [
+    {
+      "case": "pair_products",
+      "request": {
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"(1, 1, 1)\",\"(1, -1, -1)\",\"(-1, 1, -1)\",\"(-1, -1, 1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(1, -1, -1)\",\"(1, 1, 1)\"],\"horizon\":\"all\"}}"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "atlas",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "source-bound atlas construction",
+              "independent certificate replay"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "operator",
+              "by": "the atlas constructor dispatch",
+              "says": "observer",
+              "value": "observer"
+            },
+            {
+              "asks": "scope",
+              "by": "independent replay with source, domain, horizon and hypothesis bindings",
+              "says": "proved",
+              "value": {
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "status": "proved",
+                "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                "witnessKind": "atlas-finite-observer-v1"
+              }
+            },
+            {
+              "asks": "result",
+              "by": "the independently replayed witness",
+              "says": "source-bound mathematical object",
+              "value": {
+                "candidate": [
+                  "(1, 1, 1)",
+                  "(1, -1, -1)",
+                  "(-1, 1, -1)",
+                  "(-1, -1, 1)",
+                  "(-1, -1, 1)",
+                  "(-1, 1, -1)",
+                  "(1, -1, -1)",
+                  "(1, 1, 1)"
+                ],
+                "contract": {
+                  "horizon": "all",
+                  "permittedActions": [
+                    "flip-0",
+                    "flip-1",
+                    "flip-2"
+                  ]
+                },
+                "kind": "atlas-finite-observer-v1",
+                "result": {
+                  "partition": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  "separator": {
+                    "actionWord": [],
+                    "left": 0,
+                    "leftGoal": [
+                      "-1"
+                    ],
+                    "right": 7,
+                    "rightGoal": [
+                      "1"
+                    ]
+                  },
+                  "sufficient": false
+                },
+                "source": {
+                  "actions": [
+                    {
+                      "name": "flip-0",
+                      "next": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        0,
+                        1,
+                        2,
+                        3
+                      ]
+                    },
+                    {
+                      "name": "flip-1",
+                      "next": [
+                        2,
+                        3,
+                        0,
+                        1,
+                        6,
+                        7,
+                        4,
+                        5
+                      ]
+                    },
+                    {
+                      "name": "flip-2",
+                      "next": [
+                        1,
+                        0,
+                        3,
+                        2,
+                        5,
+                        4,
+                        7,
+                        6
+                      ]
+                    }
+                  ],
+                  "goals": [
+                    [
+                      "-1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "-1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "-1"
+                    ],
+                    [
+                      "-1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "kind": "finite-table",
+                  "states": [
+                    "(-1, -1, -1)",
+                    "(-1, -1, 1)",
+                    "(-1, 1, -1)",
+                    "(-1, 1, 1)",
+                    "(1, -1, -1)",
+                    "(1, -1, 1)",
+                    "(1, 1, -1)",
+                    "(1, 1, 1)"
+                  ]
+                }
+              }
+            },
+            {
+              "asks": "atlas certificate",
+              "by": "independent replay; open/partial receipts retain their stated obligations",
+              "says": "proved",
+              "value": {
+                "kind": "state-atlas-v1",
+                "operator": "observer",
+                "result": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "source": {
+                  "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "witness": {
+                  "candidate": [
+                    "(1, 1, 1)",
+                    "(1, -1, -1)",
+                    "(-1, 1, -1)",
+                    "(-1, -1, 1)",
+                    "(-1, -1, 1)",
+                    "(-1, 1, -1)",
+                    "(1, -1, -1)",
+                    "(1, 1, 1)"
+                  ],
+                  "contract": {
+                    "horizon": "all",
+                    "permittedActions": [
+                      "flip-0",
+                      "flip-1",
+                      "flip-2"
+                    ]
+                  },
+                  "kind": "atlas-finite-observer-v1",
+                  "result": {
+                    "partition": [
+                      0,
+                      1,
+                      1,
+                      0,
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    "separator": {
+                      "actionWord": [],
+                      "left": 0,
+                      "leftGoal": [
+                        "-1"
+                      ],
+                      "right": 7,
+                      "rightGoal": [
+                        "1"
+                      ]
+                    },
+                    "sufficient": false
+                  },
+                  "source": {
+                    "actions": [
+                      {
+                        "name": "flip-0",
+                        "next": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          0,
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "name": "flip-1",
+                        "next": [
+                          2,
+                          3,
+                          0,
+                          1,
+                          6,
+                          7,
+                          4,
+                          5
+                        ]
+                      },
+                      {
+                        "name": "flip-2",
+                        "next": [
+                          1,
+                          0,
+                          3,
+                          2,
+                          5,
+                          4,
+                          7,
+                          6
+                        ]
+                      }
+                    ],
+                    "goals": [
+                      [
+                        "-1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "-1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "-1"
+                      ],
+                      [
+                        "-1"
+                      ],
+                      [
+                        "1"
+                      ]
+                    ],
+                    "kind": "finite-table",
+                    "states": [
+                      "(-1, -1, -1)",
+                      "(-1, -1, 1)",
+                      "(-1, 1, -1)",
+                      "(-1, 1, 1)",
+                      "(1, -1, -1)",
+                      "(1, -1, 1)",
+                      "(1, 1, -1)",
+                      "(1, 1, 1)"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "asks": "proof DAG",
+              "by": "registered state-atlas-v1 verifier",
+              "says": "replayable",
+              "value": {
+                "abi": "scryer-proof-dag/v1",
+                "nodes": [
+                  {
+                    "claim": {
+                      "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                      "status": "proved",
+                      "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                      "witnessKind": "atlas-finite-observer-v1"
+                    },
+                    "deps": [],
+                    "id": "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40",
+                    "kind": "state-atlas-v1",
+                    "payload": {
+                      "kind": "state-atlas-v1",
+                      "operator": "observer",
+                      "result": {
+                        "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                        "status": "proved",
+                        "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "source": {
+                        "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "witness": {
+                        "candidate": [
+                          "(1, 1, 1)",
+                          "(1, -1, -1)",
+                          "(-1, 1, -1)",
+                          "(-1, -1, 1)",
+                          "(-1, -1, 1)",
+                          "(-1, 1, -1)",
+                          "(1, -1, -1)",
+                          "(1, 1, 1)"
+                        ],
+                        "contract": {
+                          "horizon": "all",
+                          "permittedActions": [
+                            "flip-0",
+                            "flip-1",
+                            "flip-2"
+                          ]
+                        },
+                        "kind": "atlas-finite-observer-v1",
+                        "result": {
+                          "partition": [
+                            0,
+                            1,
+                            1,
+                            0,
+                            1,
+                            0,
+                            0,
+                            1
+                          ],
+                          "separator": {
+                            "actionWord": [],
+                            "left": 0,
+                            "leftGoal": [
+                              "-1"
+                            ],
+                            "right": 7,
+                            "rightGoal": [
+                              "1"
+                            ]
+                          },
+                          "sufficient": false
+                        },
+                        "source": {
+                          "actions": [
+                            {
+                              "name": "flip-0",
+                              "next": [
+                                4,
+                                5,
+                                6,
+                                7,
+                                0,
+                                1,
+                                2,
+                                3
+                              ]
+                            },
+                            {
+                              "name": "flip-1",
+                              "next": [
+                                2,
+                                3,
+                                0,
+                                1,
+                                6,
+                                7,
+                                4,
+                                5
+                              ]
+                            },
+                            {
+                              "name": "flip-2",
+                              "next": [
+                                1,
+                                0,
+                                3,
+                                2,
+                                5,
+                                4,
+                                7,
+                                6
+                              ]
+                            }
+                          ],
+                          "goals": [
+                            [
+                              "-1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "-1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "-1"
+                            ],
+                            [
+                              "-1"
+                            ],
+                            [
+                              "1"
+                            ]
+                          ],
+                          "kind": "finite-table",
+                          "states": [
+                            "(-1, -1, -1)",
+                            "(-1, -1, 1)",
+                            "(-1, 1, -1)",
+                            "(-1, 1, 1)",
+                            "(1, -1, -1)",
+                            "(1, -1, 1)",
+                            "(1, 1, -1)",
+                            "(1, 1, 1)"
+                          ]
+                        }
+                      }
+                    },
+                    "result": {
+                      "status": "proved"
+                    },
+                    "route": "atlas",
+                    "source": {
+                      "canonical": {
+                        "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "digest": "86b82cc26d26563aaa6136cb7f44c4f812f31c1b9e57d5f1bd307fc69ad5425e"
+                    }
+                  }
+                ],
+                "roots": [
+                  "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40"
+                ]
+              }
+            },
+            {
+              "asks": "work",
+              "by": "caller operation/cell/coefficient-bit budgets",
+              "says": "bounded exact replay",
+              "value": {
+                "verificationCells": 130,
+                "verificationOperations": 662
+              }
+            }
+          ],
+          "subject": "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"(1, 1, 1)\",\"(1, -1, -1)\",\"(-1, 1, -1)\",\"(-1, -1, 1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(1, -1, -1)\",\"(1, 1, 1)\"],\"horizon\":\"all\"}}"
+        },
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"(1, 1, 1)\",\"(1, -1, -1)\",\"(-1, 1, -1)\",\"(-1, -1, 1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(1, -1, -1)\",\"(1, 1, 1)\"],\"horizon\":\"all\"}}",
+        "text": [
+          "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"(1, 1, 1)\",\"(1, -1, -1)\",\"(-1, 1, -1)\",\"(-1, -1, 1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(1, -1, -1)\",\"(1, 1, 1)\"],\"horizon\":\"all\"}}",
+          "",
+          "  operator: observer",
+          "      the atlas constructor dispatch",
+          "  scope: proved",
+          "      independent replay with source, domain, horizon and hypothesis bindings",
+          "  result: source-bound mathematical object",
+          "      the independently replayed witness",
+          "  atlas certificate: proved",
+          "      independent replay; open/partial receipts retain their stated obligations",
+          "  proof DAG: replayable",
+          "      registered state-atlas-v1 verifier",
+          "  work: bounded exact replay",
+          "      caller operation/cell/coefficient-bit budgets"
+        ]
+      },
+      "invocation": {
+        "invocationId": "472b70d2-8fdc-41f3-beb5-01f7b654faa4",
+        "outputBytes": 7359,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 70546,
+          "queued_us": 108,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      },
+      "verify": {
+        "request": {
+          "proofDag": {
+            "abi": "scryer-proof-dag/v1",
+            "nodes": [
+              {
+                "claim": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "deps": [],
+                "id": "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40",
+                "kind": "state-atlas-v1",
+                "payload": {
+                  "kind": "state-atlas-v1",
+                  "operator": "observer",
+                  "result": {
+                    "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                    "status": "proved",
+                    "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                    "witnessKind": "atlas-finite-observer-v1"
+                  },
+                  "source": {
+                    "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                    "witnessKind": "atlas-finite-observer-v1"
+                  },
+                  "witness": {
+                    "candidate": [
+                      "(1, 1, 1)",
+                      "(1, -1, -1)",
+                      "(-1, 1, -1)",
+                      "(-1, -1, 1)",
+                      "(-1, -1, 1)",
+                      "(-1, 1, -1)",
+                      "(1, -1, -1)",
+                      "(1, 1, 1)"
+                    ],
+                    "contract": {
+                      "horizon": "all",
+                      "permittedActions": [
+                        "flip-0",
+                        "flip-1",
+                        "flip-2"
+                      ]
+                    },
+                    "kind": "atlas-finite-observer-v1",
+                    "result": {
+                      "partition": [
+                        0,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1
+                      ],
+                      "separator": {
+                        "actionWord": [],
+                        "left": 0,
+                        "leftGoal": [
+                          "-1"
+                        ],
+                        "right": 7,
+                        "rightGoal": [
+                          "1"
+                        ]
+                      },
+                      "sufficient": false
+                    },
+                    "source": {
+                      "actions": [
+                        {
+                          "name": "flip-0",
+                          "next": [
+                            4,
+                            5,
+                            6,
+                            7,
+                            0,
+                            1,
+                            2,
+                            3
+                          ]
+                        },
+                        {
+                          "name": "flip-1",
+                          "next": [
+                            2,
+                            3,
+                            0,
+                            1,
+                            6,
+                            7,
+                            4,
+                            5
+                          ]
+                        },
+                        {
+                          "name": "flip-2",
+                          "next": [
+                            1,
+                            0,
+                            3,
+                            2,
+                            5,
+                            4,
+                            7,
+                            6
+                          ]
+                        }
+                      ],
+                      "goals": [
+                        [
+                          "-1"
+                        ],
+                        [
+                          "1"
+                        ],
+                        [
+                          "1"
+                        ],
+                        [
+                          "-1"
+                        ],
+                        [
+                          "1"
+                        ],
+                        [
+                          "-1"
+                        ],
+                        [
+                          "-1"
+                        ],
+                        [
+                          "1"
+                        ]
+                      ],
+                      "kind": "finite-table",
+                      "states": [
+                        "(-1, -1, -1)",
+                        "(-1, -1, 1)",
+                        "(-1, 1, -1)",
+                        "(-1, 1, 1)",
+                        "(1, -1, -1)",
+                        "(1, -1, 1)",
+                        "(1, 1, -1)",
+                        "(1, 1, 1)"
+                      ]
+                    }
+                  }
+                },
+                "result": {
+                  "status": "proved"
+                },
+                "route": "atlas",
+                "source": {
+                  "canonical": {
+                    "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                    "witnessKind": "atlas-finite-observer-v1"
+                  },
+                  "digest": "86b82cc26d26563aaa6136cb7f44c4f812f31c1b9e57d5f1bd307fc69ad5425e"
+                }
+              }
+            ],
+            "roots": [
+              "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40"
+            ]
+          }
+        },
+        "answer": {
+          "kind": "valid",
+          "perNode": [
+            {
+              "id": "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40",
+              "kind": "state-atlas-v1",
+              "receipt": {
+                "cells": 130,
+                "claim": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "k": "verified",
+                "operations": 662,
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "source": {
+                  "witnessDigest": "2c70ef7a2907469ce0d174a36e3a5f58aafa6dab0af3abcf69ffc87a3f923b43",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "status": "proved"
+              }
+            }
+          ],
+          "roots": [
+            "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40"
+          ],
+          "topologicalOrder": [
+            "ebeab94765e7c139891b7ea63a5c6c4ff83bae88348f47fc1a2f5fe07eebbd40"
+          ]
+        },
+        "invocation": {
+          "invocationId": "e67f610e-e889-4002-890a-a3a9378a6a0c",
+          "outputBytes": 836,
+          "peakMemoryBytes": 7012352,
+          "timing": {
+            "execution_us": 37764,
+            "queued_us": 167,
+            "startup_us": 1
+          },
+          "tool": "wolf.scryer.verify",
+          "version": "1.0.28"
+        }
+      }
+    },
+    {
+      "case": "role_conditioned_parity",
+      "request": {
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"-1\",\"1\",\"1\",\"-1\",\"1\",\"-1\",\"-1\",\"1\"],\"horizon\":\"all\"}}"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "atlas",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "source-bound atlas construction",
+              "independent certificate replay"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "operator",
+              "by": "the atlas constructor dispatch",
+              "says": "observer",
+              "value": "observer"
+            },
+            {
+              "asks": "scope",
+              "by": "independent replay with source, domain, horizon and hypothesis bindings",
+              "says": "proved",
+              "value": {
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "status": "proved",
+                "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                "witnessKind": "atlas-finite-observer-v1"
+              }
+            },
+            {
+              "asks": "result",
+              "by": "the independently replayed witness",
+              "says": "source-bound mathematical object",
+              "value": {
+                "candidate": [
+                  "-1",
+                  "1",
+                  "1",
+                  "-1",
+                  "1",
+                  "-1",
+                  "-1",
+                  "1"
+                ],
+                "contract": {
+                  "horizon": "all",
+                  "permittedActions": [
+                    "flip-0",
+                    "flip-1",
+                    "flip-2"
+                  ]
+                },
+                "kind": "atlas-finite-observer-v1",
+                "result": {
+                  "partition": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  "separator": null,
+                  "sufficient": true
+                },
+                "source": {
+                  "actions": [
+                    {
+                      "name": "flip-0",
+                      "next": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        0,
+                        1,
+                        2,
+                        3
+                      ]
+                    },
+                    {
+                      "name": "flip-1",
+                      "next": [
+                        2,
+                        3,
+                        0,
+                        1,
+                        6,
+                        7,
+                        4,
+                        5
+                      ]
+                    },
+                    {
+                      "name": "flip-2",
+                      "next": [
+                        1,
+                        0,
+                        3,
+                        2,
+                        5,
+                        4,
+                        7,
+                        6
+                      ]
+                    }
+                  ],
+                  "goals": [
+                    [
+                      "-1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "-1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "-1"
+                    ],
+                    [
+                      "-1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "kind": "finite-table",
+                  "states": [
+                    "(-1, -1, -1)",
+                    "(-1, -1, 1)",
+                    "(-1, 1, -1)",
+                    "(-1, 1, 1)",
+                    "(1, -1, -1)",
+                    "(1, -1, 1)",
+                    "(1, 1, -1)",
+                    "(1, 1, 1)"
+                  ]
+                }
+              }
+            },
+            {
+              "asks": "atlas certificate",
+              "by": "independent replay; open/partial receipts retain their stated obligations",
+              "says": "proved",
+              "value": {
+                "kind": "state-atlas-v1",
+                "operator": "observer",
+                "result": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "source": {
+                  "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "witness": {
+                  "candidate": [
+                    "-1",
+                    "1",
+                    "1",
+                    "-1",
+                    "1",
+                    "-1",
+                    "-1",
+                    "1"
+                  ],
+                  "contract": {
+                    "horizon": "all",
+                    "permittedActions": [
+                      "flip-0",
+                      "flip-1",
+                      "flip-2"
+                    ]
+                  },
+                  "kind": "atlas-finite-observer-v1",
+                  "result": {
+                    "partition": [
+                      0,
+                      1,
+                      1,
+                      0,
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    "separator": null,
+                    "sufficient": true
+                  },
+                  "source": {
+                    "actions": [
+                      {
+                        "name": "flip-0",
+                        "next": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          0,
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "name": "flip-1",
+                        "next": [
+                          2,
+                          3,
+                          0,
+                          1,
+                          6,
+                          7,
+                          4,
+                          5
+                        ]
+                      },
+                      {
+                        "name": "flip-2",
+                        "next": [
+                          1,
+                          0,
+                          3,
+                          2,
+                          5,
+                          4,
+                          7,
+                          6
+                        ]
+                      }
+                    ],
+                    "goals": [
+                      [
+                        "-1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "-1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "-1"
+                      ],
+                      [
+                        "-1"
+                      ],
+                      [
+                        "1"
+                      ]
+                    ],
+                    "kind": "finite-table",
+                    "states": [
+                      "(-1, -1, -1)",
+                      "(-1, -1, 1)",
+                      "(-1, 1, -1)",
+                      "(-1, 1, 1)",
+                      "(1, -1, -1)",
+                      "(1, -1, 1)",
+                      "(1, 1, -1)",
+                      "(1, 1, 1)"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "asks": "proof DAG",
+              "by": "registered state-atlas-v1 verifier",
+              "says": "replayable",
+              "value": {
+                "abi": "scryer-proof-dag/v1",
+                "nodes": [
+                  {
+                    "claim": {
+                      "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                      "status": "proved",
+                      "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                      "witnessKind": "atlas-finite-observer-v1"
+                    },
+                    "deps": [],
+                    "id": "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228",
+                    "kind": "state-atlas-v1",
+                    "payload": {
+                      "kind": "state-atlas-v1",
+                      "operator": "observer",
+                      "result": {
+                        "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                        "status": "proved",
+                        "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "source": {
+                        "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "witness": {
+                        "candidate": [
+                          "-1",
+                          "1",
+                          "1",
+                          "-1",
+                          "1",
+                          "-1",
+                          "-1",
+                          "1"
+                        ],
+                        "contract": {
+                          "horizon": "all",
+                          "permittedActions": [
+                            "flip-0",
+                            "flip-1",
+                            "flip-2"
+                          ]
+                        },
+                        "kind": "atlas-finite-observer-v1",
+                        "result": {
+                          "partition": [
+                            0,
+                            1,
+                            1,
+                            0,
+                            1,
+                            0,
+                            0,
+                            1
+                          ],
+                          "separator": null,
+                          "sufficient": true
+                        },
+                        "source": {
+                          "actions": [
+                            {
+                              "name": "flip-0",
+                              "next": [
+                                4,
+                                5,
+                                6,
+                                7,
+                                0,
+                                1,
+                                2,
+                                3
+                              ]
+                            },
+                            {
+                              "name": "flip-1",
+                              "next": [
+                                2,
+                                3,
+                                0,
+                                1,
+                                6,
+                                7,
+                                4,
+                                5
+                              ]
+                            },
+                            {
+                              "name": "flip-2",
+                              "next": [
+                                1,
+                                0,
+                                3,
+                                2,
+                                5,
+                                4,
+                                7,
+                                6
+                              ]
+                            }
+                          ],
+                          "goals": [
+                            [
+                              "-1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "-1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "-1"
+                            ],
+                            [
+                              "-1"
+                            ],
+                            [
+                              "1"
+                            ]
+                          ],
+                          "kind": "finite-table",
+                          "states": [
+                            "(-1, -1, -1)",
+                            "(-1, -1, 1)",
+                            "(-1, 1, -1)",
+                            "(-1, 1, 1)",
+                            "(1, -1, -1)",
+                            "(1, -1, 1)",
+                            "(1, 1, -1)",
+                            "(1, 1, 1)"
+                          ]
+                        }
+                      }
+                    },
+                    "result": {
+                      "status": "proved"
+                    },
+                    "route": "atlas",
+                    "source": {
+                      "canonical": {
+                        "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "digest": "7a9ffbdf75c43739bb3773270153bf745208c92e34f5e757eb5cb1256c959689"
+                    }
+                  }
+                ],
+                "roots": [
+                  "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228"
+                ]
+              }
+            },
+            {
+              "asks": "work",
+              "by": "caller operation/cell/coefficient-bit budgets",
+              "says": "bounded exact replay",
+              "value": {
+                "verificationCells": 123,
+                "verificationOperations": 645
+              }
+            }
+          ],
+          "subject": "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"-1\",\"1\",\"1\",\"-1\",\"1\",\"-1\",\"-1\",\"1\"],\"horizon\":\"all\"}}"
+        },
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"-1\",\"1\",\"1\",\"-1\",\"1\",\"-1\",\"-1\",\"1\"],\"horizon\":\"all\"}}",
+        "text": [
+          "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"(-1, -1, -1)\",\"(-1, -1, 1)\",\"(-1, 1, -1)\",\"(-1, 1, 1)\",\"(1, -1, -1)\",\"(1, -1, 1)\",\"(1, 1, -1)\",\"(1, 1, 1)\"],\"actions\":[{\"name\":\"flip-0\",\"next\":[4,5,6,7,0,1,2,3]},{\"name\":\"flip-1\",\"next\":[2,3,0,1,6,7,4,5]},{\"name\":\"flip-2\",\"next\":[1,0,3,2,5,4,7,6]}],\"goals\":[[\"-1\"],[\"1\"],[\"1\"],[\"-1\"],[\"1\"],[\"-1\"],[\"-1\"],[\"1\"]]},\"candidate\":[\"-1\",\"1\",\"1\",\"-1\",\"1\",\"-1\",\"-1\",\"1\"],\"horizon\":\"all\"}}",
+          "",
+          "  operator: observer",
+          "      the atlas constructor dispatch",
+          "  scope: proved",
+          "      independent replay with source, domain, horizon and hypothesis bindings",
+          "  result: source-bound mathematical object",
+          "      the independently replayed witness",
+          "  atlas certificate: proved",
+          "      independent replay; open/partial receipts retain their stated obligations",
+          "  proof DAG: replayable",
+          "      registered state-atlas-v1 verifier",
+          "  work: bounded exact replay",
+          "      caller operation/cell/coefficient-bit budgets"
+        ]
+      },
+      "invocation": {
+        "invocationId": "e35d7f80-706a-4532-a164-73873a646d32",
+        "outputBytes": 6720,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 66132,
+          "queued_us": 119,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      },
+      "verify": {
+        "request": {
+          "proofDag": {
+            "abi": "scryer-proof-dag/v1",
+            "nodes": [
+              {
+                "claim": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "deps": [],
+                "id": "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228",
+                "kind": "state-atlas-v1",
+                "payload": {
+                  "kind": "state-atlas-v1",
+                  "operator": "observer",
+                  "result": {
+                    "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                    "status": "proved",
+                    "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                    "witnessKind": "atlas-finite-observer-v1"
+                  },
+                  "source": {
+                    "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                    "witnessKind": "atlas-finite-observer-v1"
+                  },
+                  "witness": {
+                    "candidate": [
+                      "-1",
+                      "1",
+                      "1",
+                      "-1",
+                      "1",
+                      "-1",
+                      "-1",
+                      "1"
+                    ],
+                    "contract": {
+                      "horizon": "all",
+                      "permittedActions": [
+                        "flip-0",
+                        "flip-1",
+                        "flip-2"
+                      ]
+                    },
+                    "kind": "atlas-finite-observer-v1",
+                    "result": {
+                      "partition": [
+                        0,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1
+                      ],
+                      "separator": null,
+                      "sufficient": true
+                    },
+                    "source": {
+                      "actions": [
+                        {
+                          "name": "flip-0",
+                          "next": [
+                            4,
+                            5,
+                            6,
+                            7,
+                            0,
+                            1,
+                            2,
+                            3
+                          ]
+                        },
+                        {
+                          "name": "flip-1",
+                          "next": [
+                            2,
+                            3,
+                            0,
+                            1,
+                            6,
+                            7,
+                            4,
+                            5
+                          ]
+                        },
+                        {
+                          "name": "flip-2",
+                          "next": [
+                            1,
+                            0,
+                            3,
+                            2,
+                            5,
+                            4,
+                            7,
+                            6
+                          ]
+                        }
+                      ],
+                      "goals": [
+                        [
+                          "-1"
+                        ],
+                        [
+                          "1"
+                        ],
+                        [
+                          "1"
+                        ],
+                        [
+                          "-1"
+                        ],
+                        [
+                          "1"
+                        ],
+                        [
+                          "-1"
+                        ],
+                        [
+                          "-1"
+                        ],
+                        [
+                          "1"
+                        ]
+                      ],
+                      "kind": "finite-table",
+                      "states": [
+                        "(-1, -1, -1)",
+                        "(-1, -1, 1)",
+                        "(-1, 1, -1)",
+                        "(-1, 1, 1)",
+                        "(1, -1, -1)",
+                        "(1, -1, 1)",
+                        "(1, 1, -1)",
+                        "(1, 1, 1)"
+                      ]
+                    }
+                  }
+                },
+                "result": {
+                  "status": "proved"
+                },
+                "route": "atlas",
+                "source": {
+                  "canonical": {
+                    "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                    "witnessKind": "atlas-finite-observer-v1"
+                  },
+                  "digest": "7a9ffbdf75c43739bb3773270153bf745208c92e34f5e757eb5cb1256c959689"
+                }
+              }
+            ],
+            "roots": [
+              "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228"
+            ]
+          }
+        },
+        "answer": {
+          "kind": "valid",
+          "perNode": [
+            {
+              "id": "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228",
+              "kind": "state-atlas-v1",
+              "receipt": {
+                "cells": 123,
+                "claim": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "k": "verified",
+                "operations": 645,
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "source": {
+                  "witnessDigest": "60838628df084856f5fdcd686e3b9e7b3d079e0f5f1c7753db826ae4af8b5908",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "status": "proved"
+              }
+            }
+          ],
+          "roots": [
+            "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228"
+          ],
+          "topologicalOrder": [
+            "bc0c399f98c9417df9e5f693b6d0ab5fbdf57e5a03676ed491e25ecbcdfe0228"
+          ]
+        },
+        "invocation": {
+          "invocationId": "a8c06d3c-f89e-4318-b467-db7384311d03",
+          "outputBytes": 836,
+          "peakMemoryBytes": 7012352,
+          "timing": {
+            "execution_us": 35863,
+            "queued_us": 145,
+            "startup_us": 1
+          },
+          "tool": "wolf.scryer.verify",
+          "version": "1.0.28"
+        }
+      }
+    }
+  ],
+  "component_checks": {
+    "request": {
+      "claims": [
+        "--reals forall a b c d u v. (u^2+v^2)=1 implies ((u*a-v*b)*(u*c-v*d)+(u*b+v*a)*(u*d+v*c)=a*c+b*d) :: true or false = true",
+        "--reals forall a b c d. a*c+b*d = (-a)*(-c)+(-b)*(-d) :: true or false = true",
+        "--reals forall x y z. (-x)*(-y)*(-z) = -x*y*z :: true or false = true",
+        "--reals forall a b c d. a*d-b*c = -(c*b-d*a) :: true or false = true"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "--reals forall a b c d u v. (u^2+v^2)=1 implies ((u*a-v*b)*(u*c-v*d)+(u*b+v*a)*(u*d+v*c)=a*c+b*d) :: true or false = true",
+          "said": "the engine declines: the statement is in 6 variables (a, b, c, d, u, v) after ring normalization; no decisive rational witness or counterexample was certified. This route decides one real variable exactly, by isolating the real roots of each polynomial and reading the sign chart. Several variables need a full cylindrical algebraic decomposition, which is not built here. For a system of polynomial equations over the complex numbers, the `system` route answers by Groebner basis",
+          "verdict": "REFUSED"
+        },
+        {
+          "claim": "--reals forall a b c d. a*c+b*d = (-a)*(-c)+(-b)*(-d) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "--reals forall x y z. (-x)*(-y)*(-z) = -x*y*z :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "--reals forall a b c d. a*d-b*c = -(c*b-d*a) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "394e4618-9418-4aee-9353-ae53539b8ce0",
+      "outputBytes": 1100,
+      "peakMemoryBytes": 13959168,
+      "timing": {
+        "execution_us": 78096,
+        "queued_us": 59,
+        "startup_us": 2
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  },
+  "rotation_identity_retry": {
+    "request": {
+      "claims": [
+        "--reals forall a b c d u v. (u*a-v*b)*(u*c-v*d)+(u*b+v*a)*(u*d+v*c) = (u^2+v^2)*(a*c+b*d) :: true or false = true"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "--reals forall a b c d u v. (u*a-v*b)*(u*c-v*d)+(u*b+v*a)*(u*d+v*c) = (u^2+v^2)*(a*c+b*d) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "6a05aba3-3cba-4897-989a-2657cb7698f7",
+      "outputBytes": 223,
+      "peakMemoryBytes": 13893632,
+      "timing": {
+        "execution_us": 41587,
+        "queued_us": 58,
+        "startup_us": 1
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  }
+}

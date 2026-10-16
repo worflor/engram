@@ -1,0 +1,9 @@
+{
+  "name": "@worflor/engram-instrument",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Offline browser acceptance for the Engram instrument",
+  "type": "module",
+  "scripts": {"test": "node tests/browser.mjs && node tests/wells-browser.mjs"},
+  "devDependencies": {"playwright-core": "^1.64.0"}
+}

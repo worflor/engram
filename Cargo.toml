@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2026 Woflo Labs
+# SPDX-License-Identifier: LicenseRef-WLCSL-1.0
+[package]
+name = "engram"
+version = "0.4.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Complex oscillator trajectory codec and statistical memory wells"
+license-file = "LICENSE.md"
+authors = ["Woflo Labs"]
+repository = "https://github.com/worflor/engram"
+readme = "README.md"
+publish = false
+include = ["/src/**", "/tests/*.rs", "/tests/fixtures/**", "/examples/*.rs", "/Cargo.toml", "/Cargo.lock", "/README.md", "/LICENSE.md", "/docs/reference/**"]
+
+[lib]
+name = "engram"
+crate-type = ["lib"]
+
+[dependencies]
+num-complex = "0.4"
+rayon = "1.10"
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

@@ -1,0 +1,215 @@
+{
+  "schema": "engram.history-frontiers/v1",
+  "provenance": "Independent reconstruction from a user-supplied research excerpt; its linked packet was not supplied and its reported counts are not reused",
+  "exact_composition": {
+    "1": 2815,
+    "9/10": 2815,
+    "1/2": 2815
+  },
+  "float_composition": {
+    "cases": 96,
+    "maximum_signature_error": 3.403712628045029e-12
+  },
+  "pulse_counterexample": {
+    "histories": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "goal_recent_pulse": [
+      true,
+      false
+    ],
+    "exact_signature": [
+      "-20000/50007",
+      "20000/50007",
+      "13503780343/90025201764"
+    ]
+  },
+  "temporal_policy": [
+    {
+      "decays": [
+        1.0
+      ],
+      "seed": 7,
+      "training_encounters": 240,
+      "evaluation_encounters": 100,
+      "success_rate": 0.5,
+      "wells": 2,
+      "feedback_updates": 240
+    },
+    {
+      "decays": [
+        1.0,
+        0.9
+      ],
+      "seed": 7,
+      "training_encounters": 240,
+      "evaluation_encounters": 100,
+      "success_rate": 1.0,
+      "wells": 4,
+      "feedback_updates": 240
+    },
+    {
+      "decays": [
+        1.0
+      ],
+      "seed": 19,
+      "training_encounters": 240,
+      "evaluation_encounters": 100,
+      "success_rate": 0.5,
+      "wells": 2,
+      "feedback_updates": 240
+    },
+    {
+      "decays": [
+        1.0,
+        0.9
+      ],
+      "seed": 19,
+      "training_encounters": 240,
+      "evaluation_encounters": 100,
+      "success_rate": 1.0,
+      "wells": 4,
+      "feedback_updates": 240
+    },
+    {
+      "decays": [
+        1.0
+      ],
+      "seed": 81,
+      "training_encounters": 240,
+      "evaluation_encounters": 100,
+      "success_rate": 0.5,
+      "wells": 2,
+      "feedback_updates": 240
+    },
+    {
+      "decays": [
+        1.0,
+        0.9
+      ],
+      "seed": 81,
+      "training_encounters": 240,
+      "evaluation_encounters": 100,
+      "success_rate": 1.0,
+      "wells": 4,
+      "feedback_updates": 240
+    }
+  ],
+  "schur": {
+    "cases": 10000,
+    "seed": 928,
+    "ordinary_unstable": 522,
+    "accepted64": 10000,
+    "rejected32": 0,
+    "maximum_accepted_radius64": 0.9935695376633117,
+    "maximum_accepted_radius32": 0.993569480607643,
+    "distribution": "Independent uniform radii .05..999 and phases; half of the polynomials have repeated roots; independent convex weights",
+    "radius_sweep": {
+      "0.05": {
+        "cases": 64,
+        "maximum_root_over_bound": {
+          "complex128": 0.8345090395187793,
+          "complex64": 0.8345090355505442
+        }
+      },
+      "0.5": {
+        "cases": 64,
+        "maximum_root_over_bound": {
+          "complex128": 0.8208174992228912,
+          "complex64": 0.8208175272598848
+        }
+      },
+      "0.9": {
+        "cases": 64,
+        "maximum_root_over_bound": {
+          "complex128": 0.8245439213084549,
+          "complex64": 0.8245439285736955
+        }
+      },
+      "1.0": {
+        "cases": 64,
+        "maximum_root_over_bound": {
+          "complex128": 0.8318434380447639,
+          "complex64": 0.8318434451196076
+        }
+      },
+      "1.5": {
+        "cases": 64,
+        "maximum_root_over_bound": {
+          "complex128": 0.7741386423245825,
+          "complex64": 0.774138642228546
+        }
+      }
+    }
+  },
+  "quintic": {
+    "law": "10t^3-15t^4+6t^5 at t=n/16, n=0..15; one fixed polynomial piece, not an execution of Vixen",
+    "values": [
+      "0",
+      "1163/524288",
+      "263/16384",
+      "25569/524288",
+      "53/512",
+      "94375/524288",
+      "4509/16384",
+      "201341/524288",
+      "1/2",
+      "322947/524288",
+      "11875/16384",
+      "429913/524288",
+      "459/512",
+      "498719/524288",
+      "16121/16384",
+      "523125/524288"
+    ],
+    "hankel_rank": 6,
+    "ar2_design_rank": 2,
+    "ar2_augmented_rank": 3,
+    "sixth_differences": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "dwell_example": {
+    "K": [
+      "9/5",
+      "-9/5"
+    ],
+    "G": "81/100",
+    "minimum_block": 43,
+    "infinity_bound_at_43": "1209224033438763998648876742698421757673781/1250000000000000000000000000000000000000000",
+    "infinity_bound_at_42": "1049590497671270401467506875675527796264701/1000000000000000000000000000000000000000000",
+    "scope": "Exact repeated-root pair only; deterministic homogeneous blocks, no noise or reset. Not a runtime graph certificate."
+  },
+  "sources": {
+    "engram_history.py": "8bd5a2361a1eaff6a9b5c90d8b32e0669c5770ff192c3c1812ec043b910b13ca",
+    "engram_npc.py": "99f64b68c82931249d1e07139d498c016fb4c84bde0b2a85d8530bf9916c390b",
+    "engram_stability.py": "ef3e1669cfc676fd7c0e66f6e8bd23348bc8f214f865118bf323e0f8362b08e4",
+    "engram_network.py": "7539ebbe424644d72696a80b53a862fd2dd9fce83e680e20ac84521782d15bdd",
+    "examples/temporal_witness.py": "26ed8b4461b022f81161da96613042011be5c233a825058d650c584634cccdce",
+    "research/experiments/history_frontiers.py": "0626436eede105d5bb7c810125c007eb34cc553336e66b4865b1bb26643ca6d5"
+  }
+}

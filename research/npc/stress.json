@@ -1,0 +1,81 @@
+{
+  "schema": "engram.npc-stress/v1",
+  "scope": "Finite deterministic numerical and state-growth campaign; timings are observations, not performance guarantees",
+  "deterministic_replay": [
+    {
+      "python_hash_seed": "1",
+      "steps": 1000,
+      "checkpoint_split": 333,
+      "wells": 39,
+      "state_sha256": "43e531060c792cc335ab311524133ffd788d6b3ea00ab2bdc11bf771f7aaea32",
+      "decisions_sha256": "cfb102e948d672fb1d9df0aadec3c6e6dae1f3f8d6b89bbb0c43cc38436a6445",
+      "real_updates": 1000,
+      "planning_updates": 3000
+    },
+    {
+      "python_hash_seed": "987654",
+      "steps": 1000,
+      "checkpoint_split": 333,
+      "wells": 39,
+      "state_sha256": "43e531060c792cc335ab311524133ffd788d6b3ea00ab2bdc11bf771f7aaea32",
+      "decisions_sha256": "cfb102e948d672fb1d9df0aadec3c6e6dae1f3f8d6b89bbb0c43cc38436a6445",
+      "real_updates": 1000,
+      "planning_updates": 3000
+    }
+  ],
+  "streaming_history": [
+    {
+      "samples": 100000,
+      "dimension": 8,
+      "decay": 1.0,
+      "maximum_reference_error": 1.2538344836914874e-11,
+      "resident_array_bytes": 1088,
+      "previous_rows": 2,
+      "seconds": 14.66104220005218
+    },
+    {
+      "samples": 100000,
+      "dimension": 8,
+      "decay": 0.995,
+      "maximum_reference_error": 9.776655604993684e-12,
+      "resident_array_bytes": 1088,
+      "previous_rows": 2,
+      "seconds": 14.107571800006554
+    },
+    {
+      "samples": 100000,
+      "dimension": 8,
+      "decay": 0.5,
+      "maximum_reference_error": 2.5438253059619005e-11,
+      "resident_array_bytes": 1088,
+      "previous_rows": 2,
+      "seconds": 13.766245700069703
+    }
+  ],
+  "growth": {
+    "requested_wells": 2048,
+    "stored_wells": 2049,
+    "available_actions": 4096,
+    "real_updates": 1,
+    "planning_updates": 1000,
+    "checkpoint_bytes": 5030149,
+    "seconds": 20.365765399998054
+  },
+  "observed_model_planning": {
+    "analytical_value": 20,
+    "learned_value": 19.999999999999815,
+    "observed_updates": 20,
+    "planning_updates": 4000
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "system": "Windows"
+  },
+  "sources": {
+    "engram_npc.py": "99f64b68c82931249d1e07139d498c016fb4c84bde0b2a85d8530bf9916c390b",
+    "engram_history.py": "8bd5a2361a1eaff6a9b5c90d8b32e0669c5770ff192c3c1812ec043b910b13ca",
+    "engram_codec.py": "80ab009f4ab6628ac2b19bb54854b0d1b91e2a46bcf45a5dbd59da7e38adaa87",
+    "research/experiments/npc_stress.py": "ce62752d0f8e2fdd6548e265778f6f1a3fedea6dcd6aa1aa6e0bfda747ffaa52"
+  }
+}

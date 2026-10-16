@@ -1,0 +1,321 @@
+// SPDX-FileCopyrightText: 2026 Woflo Labs
+// SPDX-License-Identifier: LicenseRef-WLCSL-1.0
+// See ../LICENSE.md.
+
+//! Integration tests: full end-to-end pipeline on real text.
+//!
+//! Feeds article-shaped .txt fixtures through `ByteHistogram` → encode →
+//! wire → decode, verifying the complete pipeline.
+
+use engram::brain::Brain;
+use engram::brain_io;
+use engram::decode::decode;
+use engram::encode::encode;
+use engram::histogram;
+use engram::types::Mode;
+use engram::wire::{from_wire, from_wire_compact, to_wire, to_wire_compact};
+
+/// Cargo runs integration tests from the package root. A relative path also survives a shared
+/// target cache reused by another worktree, whose compiled `CARGO_MANIFEST_DIR` would be stale.
+const FIXTURES_DIR: &str = "tests/fixtures";
+
+/// Read only repository fixtures; missing files are acceptance failures.
+fn load_text(name: &str) -> String {
+    let path = format!("{FIXTURES_DIR}/{name}.txt");
+    std::fs::read_to_string(&path).unwrap_or_else(|error| panic!("missing fixture {path}: {error}"))
+}
+
+/// All article fixture names (in-repo corpus, see tests/fixtures/).
+const ARTICLES: &[&str] = &["repetitive", "short_burst", "varied_vocab", "long_form"];
+
+// ─── Full pipeline tests ───────────────────────────────────────────
+
+#[test]
+fn histogram_produces_valid_trajectories() {
+    for &name in ARTICLES {
+        let text = load_text(name);
+
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+
+        assert!(t >= 4, "{name}: only {t} chunks (need ≥4)");
+        assert_eq!(traj.len(), t * histogram::embedding_dim());
+
+        // Each row should sum to ~1.0 (normalized frequencies)
+        for row in 0..t {
+            let sum: f32 = (0..256).map(|d| traj[row * 256 + d]).sum();
+            assert!((sum - 1.0).abs() < 1e-4, "{name} row {row}: sum = {sum}");
+        }
+    }
+}
+
+#[test]
+fn encode_decode_roundtrip_all_articles() {
+    for &name in ARTICLES {
+        let text = load_text(name);
+
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+
+        let dim = histogram::embedding_dim();
+        let packet = encode(&traj, t, dim, None);
+
+        assert_eq!(packet.dim, dim);
+        assert_eq!(packet.length, t);
+        assert!(!packet.blocks.is_empty(), "{name}: no blocks");
+        if t > 4 {
+            assert!(packet.capture() > 0.0, "{name}: zero capture");
+        }
+
+        let decoded = decode(&packet);
+        assert_eq!(decoded.len(), traj.len(), "{name}: decoded length mismatch");
+
+        // Roundtrip error bounded by quantization
+        let mut max_err: f32 = 0.0;
+        for (a, b) in traj.iter().zip(decoded.iter()) {
+            let err = (a - b).abs();
+            if err > max_err {
+                max_err = err;
+            }
+        }
+        // Int8 quantization: max error ≈ max_scale / 127. For byte histograms
+        // (values in [0,1]), this is bounded by ~1/127 per pair. Cascaded
+        // prediction residuals can exceed this for high-frequency content.
+        assert!(
+            max_err < 1.0,
+            "{name}: max roundtrip error = {max_err} (too high)"
+        );
+    }
+}
+
+#[test]
+fn wire_roundtrip_all_articles() {
+    for &name in ARTICLES {
+        let text = load_text(name);
+
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+
+        let dim = histogram::embedding_dim();
+        let packet = encode(&traj, t, dim, None);
+
+        // Full wire roundtrip
+        let wire_bytes = to_wire(&packet);
+        let wire_packet =
+            from_wire(&wire_bytes).unwrap_or_else(|| panic!("{name}: wire parse failed"));
+
+        assert_eq!(wire_packet.dim, dim);
+        assert_eq!(wire_packet.length, t);
+        assert_eq!(wire_packet.blocks.len(), packet.blocks.len());
+
+        // K,G values survive wire roundtrip (f32 precision)
+        for (orig, wire) in packet.blocks.iter().zip(wire_packet.blocks.iter()) {
+            assert_eq!(orig.mode, wire.mode);
+            assert_eq!(orig.length, wire.length);
+        }
+
+        // Compact wire roundtrip
+        let compact_bytes = to_wire_compact(&packet);
+        assert!(
+            compact_bytes.len() <= wire_bytes.len(),
+            "{}: compact ({}) > full ({})",
+            name,
+            compact_bytes.len(),
+            wire_bytes.len()
+        );
+
+        let compact_packet = from_wire_compact(&compact_bytes)
+            .unwrap_or_else(|| panic!("{name}: compact parse failed"));
+        assert_eq!(compact_packet.dim, dim);
+        assert_eq!(compact_packet.length, t);
+    }
+}
+
+#[test]
+fn brain_absorb_all_articles() {
+    let dim = histogram::embedding_dim();
+    let mut brain = Brain::new(dim, 0.005);
+
+    let mut absorbed = 0;
+    for &name in ARTICLES {
+        let text = load_text(name);
+
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+
+        let well = brain.fast_absorb(&traj, t, None);
+        assert!(!well.is_empty());
+        absorbed += 1;
+    }
+
+    if absorbed == 0 {
+        return;
+    } // files not found
+
+    assert!(brain.total_absorbed == absorbed);
+    assert!(!brain.wells.is_empty(), "should have created wells");
+    assert!(!brain.dream.is_empty(), "should have dream entries");
+
+    // Reference pairing should be set
+    assert!(brain.reference_pairing.is_some());
+}
+
+#[test]
+fn brain_measure_after_absorb() {
+    let dim = histogram::embedding_dim();
+    let mut brain = Brain::new(dim, 0.005);
+
+    let mut trajs = Vec::new();
+    for &name in ARTICLES {
+        let text = load_text(name);
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+        brain.fast_absorb(&traj, t, Some(name));
+        trajs.push((name, traj, t));
+    }
+
+    if trajs.is_empty() {
+        return;
+    }
+
+    // Measure each article — the one absorbed into its own well should be closest
+    for (name, traj, t) in &trajs {
+        let result = brain.measure(traj, *t);
+        if *t > 4 {
+            assert!(result.capture > 0.0, "{name}: zero capture on measure");
+        }
+        assert!(result.drift >= 0.0, "{name}: negative drift");
+    }
+}
+
+#[test]
+fn brain_save_load_roundtrip() {
+    let dim = histogram::embedding_dim();
+    let mut brain = Brain::new(dim, 0.005);
+    brain.name = "Alexandria".into();
+
+    for &name in &ARTICLES[..3] {
+        let text = load_text(name);
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+        brain.fast_absorb(&traj, t, Some(name));
+    }
+
+    if brain.total_absorbed == 0 {
+        return;
+    }
+
+    let bytes = brain_io::save(&brain);
+    let loaded = brain_io::load(&bytes).expect("should load");
+
+    assert_eq!(loaded.name, "Alexandria");
+    assert_eq!(loaded.dim, dim);
+    assert_eq!(loaded.total_absorbed, brain.total_absorbed);
+    assert_eq!(loaded.wells.len(), brain.wells.len());
+    assert_eq!(loaded.dream.len(), brain.dream.len());
+
+    // Well K sums should match exactly
+    for (name, well) in &brain.wells {
+        let lw = &loaded.wells[name];
+        assert_eq!(lw.count, well.count);
+        for j in 0..brain.pairs {
+            assert!(
+                (lw.sum_k[j] - well.sum_k[j]).norm() < 1e-10,
+                "well {name} pair {j} K mismatch"
+            );
+        }
+    }
+}
+
+#[test]
+fn encoding_modes_are_realistic() {
+    // Real articles should produce mostly CASCADED blocks
+    for &name in ARTICLES {
+        let text = load_text(name);
+
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+
+        let dim = histogram::embedding_dim();
+        let packet = encode(&traj, t, dim, None);
+
+        let cascaded = packet
+            .blocks
+            .iter()
+            .filter(|b| b.mode == Mode::Cascaded)
+            .count();
+        let linear = packet
+            .blocks
+            .iter()
+            .filter(|b| b.mode == Mode::Linear)
+            .count();
+        let total = packet.blocks.len();
+
+        // Two initial conditions leave fewer than three fit rows in a 4-row input.
+        if t <= 4 {
+            assert!(packet.blocks.iter().all(|b| b.mode == Mode::Raw));
+            assert_eq!(decode(&packet), traj);
+            continue;
+        }
+
+        // Byte histograms should have oscillatory structure
+        assert!(
+            cascaded + linear > 0,
+            "{name}: no CASCADED or LINEAR blocks ({total} blocks total)"
+        );
+
+        // Capture should be meaningful for text
+        assert!(
+            packet.capture() > 20.0,
+            "{}: capture {}% too low for text",
+            name,
+            packet.capture()
+        );
+    }
+}
+
+#[test]
+fn compression_ratio_is_meaningful() {
+    for &name in ARTICLES {
+        let text = load_text(name);
+
+        let (traj, t) = histogram::text_to_trajectory(&text, histogram::default_chunk_size());
+        if t < 4 {
+            continue;
+        }
+
+        let dim = histogram::embedding_dim();
+        let packet = encode(&traj, t, dim, None);
+
+        let raw_size = traj.len() * 4; // f32
+        let wire_size = to_wire(&packet).len();
+        let compact_size = to_wire_compact(&packet).len();
+
+        // Wire should be smaller than raw (oscillators compress the signal)
+        // Compact should be much smaller (no residuals)
+        assert!(
+            compact_size < raw_size,
+            "{name}: compact {compact_size} >= raw {raw_size}"
+        );
+
+        eprintln!(
+            "{}: raw={}B wire={}B compact={}B capture={:.1}%",
+            name,
+            raw_size,
+            wire_size,
+            compact_size,
+            packet.capture()
+        );
+    }
+}

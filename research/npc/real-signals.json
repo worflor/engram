@@ -1,0 +1,817 @@
+{
+  "schema": "engram.real-signal-study/v1",
+  "scope": "Supervised geometric readout, not NPC reward learning or general intelligence",
+  "dataset": {
+    "url": "https://archive.ics.uci.edu/static/public/240/human+activity+recognition+using+smartphones.zip",
+    "sha256": "c00b803081a5c797cd5e4b83700a9810b38d53d9d84e01917e090e1fdbc81031",
+    "doi": "10.24432/C54S4K",
+    "license": "CC BY 4.0",
+    "train_windows": 7352,
+    "test_windows": 2947,
+    "frames_per_window": 128,
+    "sampling_hz": 50,
+    "train_subjects": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      11,
+      14,
+      15,
+      16,
+      17,
+      19,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "test_subjects": [
+      2,
+      4,
+      9,
+      10,
+      12,
+      13,
+      18,
+      20,
+      24
+    ],
+    "validation_subjects": [
+      1,
+      8,
+      17,
+      25,
+      30
+    ],
+    "labels": [
+      "walking",
+      "upstairs",
+      "downstairs",
+      "sitting",
+      "standing",
+      "laying"
+    ]
+  },
+  "method": {
+    "radius_candidates": [
+      0.35,
+      0.6,
+      0.9,
+      1.2
+    ],
+    "selection": "validation balanced accuracy; smaller radius breaks ties",
+    "training_order_seed": 7,
+    "shuffle_seed": 813,
+    "coordinates": "training-only means and population deviations; fixed identity pairing and zero pad",
+    "feature_metric": "training-only feature deviations, frozen before evaluation",
+    "schema_identity": "e88a877e0d4c853ae02218b51670c01195f0e7d76b43394a97e113e90e760d6e",
+    "test_use": "evaluation only; no radius/feature selection on test"
+  },
+  "results": {
+    "current": {
+      "features": 10,
+      "radius": 0.35,
+      "wells": 2338,
+      "validation": [
+        {
+          "radius": 0.35,
+          "balanced_accuracy": 0.6992800708446708,
+          "wells": 1807
+        },
+        {
+          "radius": 0.6,
+          "balanced_accuracy": 0.6763260392955566,
+          "wells": 688
+        },
+        {
+          "radius": 0.9,
+          "balanced_accuracy": 0.5807396116044904,
+          "wells": 254
+        },
+        {
+          "radius": 1.2,
+          "balanced_accuracy": 0.5470806290547641,
+          "wells": 116
+        }
+      ],
+      "test": {
+        "accuracy": 0.7237869019341704,
+        "balanced_accuracy": 0.7102512851576693,
+        "macro_f1": 0.7109689532827392,
+        "confusion": [
+          [
+            307,
+            99,
+            82,
+            1,
+            7,
+            0
+          ],
+          [
+            155,
+            229,
+            82,
+            2,
+            3,
+            0
+          ],
+          [
+            139,
+            68,
+            207,
+            2,
+            4,
+            0
+          ],
+          [
+            2,
+            2,
+            1,
+            383,
+            97,
+            6
+          ],
+          [
+            7,
+            3,
+            4,
+            48,
+            470,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            537
+          ]
+        ],
+        "subjects": {
+          "2": {
+            "windows": 302,
+            "accuracy": 0.6754966887417219
+          },
+          "4": {
+            "windows": 317,
+            "accuracy": 0.7350157728706624
+          },
+          "9": {
+            "windows": 288,
+            "accuracy": 0.6041666666666666
+          },
+          "10": {
+            "windows": 294,
+            "accuracy": 0.5544217687074829
+          },
+          "12": {
+            "windows": 320,
+            "accuracy": 0.71875
+          },
+          "13": {
+            "windows": 327,
+            "accuracy": 0.7492354740061162
+          },
+          "18": {
+            "windows": 364,
+            "accuracy": 0.8159340659340659
+          },
+          "20": {
+            "windows": 354,
+            "accuracy": 0.7824858757062146
+          },
+          "24": {
+            "windows": 381,
+            "accuracy": 0.8136482939632546
+          }
+        }
+      },
+      "prediction_sha256": "dbc21c06e5ed149de74d33a96ae68d3d97c7e0553bb1c79f7a9b34ffc3c91d01"
+    },
+    "moments": {
+      "features": 18,
+      "radius": 0.35,
+      "wells": 1591,
+      "validation": [
+        {
+          "radius": 0.35,
+          "balanced_accuracy": 0.7292740807901804,
+          "wells": 1416
+        },
+        {
+          "radius": 0.6,
+          "balanced_accuracy": 0.7213792660161293,
+          "wells": 383
+        },
+        {
+          "radius": 0.9,
+          "balanced_accuracy": 0.629927675366149,
+          "wells": 130
+        },
+        {
+          "radius": 1.2,
+          "balanced_accuracy": 0.641957209690246,
+          "wells": 65
+        }
+      ],
+      "test": {
+        "accuracy": 0.7709535120461486,
+        "balanced_accuracy": 0.760694405029119,
+        "macro_f1": 0.7567904595799998,
+        "confusion": [
+          [
+            424,
+            36,
+            36,
+            0,
+            0,
+            0
+          ],
+          [
+            138,
+            282,
+            51,
+            0,
+            0,
+            0
+          ],
+          [
+            84,
+            58,
+            278,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            236,
+            249,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            17,
+            515,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            537
+          ]
+        ],
+        "subjects": {
+          "2": {
+            "windows": 302,
+            "accuracy": 0.7516556291390728
+          },
+          "4": {
+            "windows": 317,
+            "accuracy": 0.8264984227129337
+          },
+          "9": {
+            "windows": 288,
+            "accuracy": 0.6979166666666666
+          },
+          "10": {
+            "windows": 294,
+            "accuracy": 0.7482993197278912
+          },
+          "12": {
+            "windows": 320,
+            "accuracy": 0.71875
+          },
+          "13": {
+            "windows": 327,
+            "accuracy": 0.7706422018348624
+          },
+          "18": {
+            "windows": 364,
+            "accuracy": 0.7967032967032966
+          },
+          "20": {
+            "windows": 354,
+            "accuracy": 0.8135593220338984
+          },
+          "24": {
+            "windows": 381,
+            "accuracy": 0.7926509186351706
+          }
+        }
+      },
+      "prediction_sha256": "7960b423fe884b788e64ae8441996d4bc9f55aab5218d3269bc9d1257d511cda"
+    },
+    "oscillators": {
+      "features": 25,
+      "radius": 0.35,
+      "wells": 2458,
+      "validation": [
+        {
+          "radius": 0.35,
+          "balanced_accuracy": 0.5070900663090566,
+          "wells": 2067
+        },
+        {
+          "radius": 0.6,
+          "balanced_accuracy": 0.41074118600846554,
+          "wells": 308
+        },
+        {
+          "radius": 0.9,
+          "balanced_accuracy": 0.450544927077761,
+          "wells": 66
+        },
+        {
+          "radius": 1.2,
+          "balanced_accuracy": 0.3815289729392184,
+          "wells": 29
+        }
+      ],
+      "test": {
+        "accuracy": 0.5307091957923312,
+        "balanced_accuracy": 0.5404507545275303,
+        "macro_f1": 0.5354166887237558,
+        "confusion": [
+          [
+            237,
+            113,
+            138,
+            0,
+            6,
+            2
+          ],
+          [
+            67,
+            323,
+            74,
+            3,
+            0,
+            4
+          ],
+          [
+            56,
+            41,
+            323,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            214,
+            164,
+            112
+          ],
+          [
+            0,
+            2,
+            0,
+            176,
+            261,
+            93
+          ],
+          [
+            0,
+            0,
+            0,
+            187,
+            144,
+            206
+          ]
+        ],
+        "subjects": {
+          "2": {
+            "windows": 302,
+            "accuracy": 0.609271523178808
+          },
+          "4": {
+            "windows": 317,
+            "accuracy": 0.4353312302839117
+          },
+          "9": {
+            "windows": 288,
+            "accuracy": 0.3263888888888889
+          },
+          "10": {
+            "windows": 294,
+            "accuracy": 0.5578231292517006
+          },
+          "12": {
+            "windows": 320,
+            "accuracy": 0.625
+          },
+          "13": {
+            "windows": 327,
+            "accuracy": 0.5015290519877675
+          },
+          "18": {
+            "windows": 364,
+            "accuracy": 0.5494505494505495
+          },
+          "20": {
+            "windows": 354,
+            "accuracy": 0.536723163841808
+          },
+          "24": {
+            "windows": 381,
+            "accuracy": 0.6036745406824147
+          }
+        }
+      },
+      "prediction_sha256": "ddf9ba6f4f1e4a003b7bc137416e30fe26844e1a6fa469486db3eb52f48ba11e"
+    },
+    "npc_context": {
+      "features": 35,
+      "radius": 0.35,
+      "wells": 4454,
+      "validation": [
+        {
+          "radius": 0.35,
+          "balanced_accuracy": 0.7223902920177122,
+          "wells": 3449
+        },
+        {
+          "radius": 0.6,
+          "balanced_accuracy": 0.6392073750263005,
+          "wells": 1053
+        },
+        {
+          "radius": 0.9,
+          "balanced_accuracy": 0.5983081810020187,
+          "wells": 200
+        },
+        {
+          "radius": 1.2,
+          "balanced_accuracy": 0.5958844490219806,
+          "wells": 60
+        }
+      ],
+      "test": {
+        "accuracy": 0.7183576518493383,
+        "balanced_accuracy": 0.7129990676412099,
+        "macro_f1": 0.7134315594049073,
+        "confusion": [
+          [
+            289,
+            81,
+            114,
+            0,
+            12,
+            0
+          ],
+          [
+            74,
+            328,
+            64,
+            3,
+            2,
+            0
+          ],
+          [
+            109,
+            33,
+            278,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            313,
+            175,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            142,
+            390,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            10,
+            8,
+            519
+          ]
+        ],
+        "subjects": {
+          "2": {
+            "windows": 302,
+            "accuracy": 0.6754966887417219
+          },
+          "4": {
+            "windows": 317,
+            "accuracy": 0.6466876971608833
+          },
+          "9": {
+            "windows": 288,
+            "accuracy": 0.6076388888888888
+          },
+          "10": {
+            "windows": 294,
+            "accuracy": 0.6802721088435374
+          },
+          "12": {
+            "windows": 320,
+            "accuracy": 0.778125
+          },
+          "13": {
+            "windows": 327,
+            "accuracy": 0.746177370030581
+          },
+          "18": {
+            "windows": 364,
+            "accuracy": 0.7884615384615384
+          },
+          "20": {
+            "windows": 354,
+            "accuracy": 0.7175141242937854
+          },
+          "24": {
+            "windows": 381,
+            "accuracy": 0.7847769028871391
+          }
+        }
+      },
+      "prediction_sha256": "160f400750e16d4957495ec4b9b36ed12db5119dd6ccd3e8e142c52d7849b942"
+    },
+    "moments_and_oscillators": {
+      "features": 43,
+      "radius": 0.35,
+      "wells": 3512,
+      "validation": [
+        {
+          "radius": 0.35,
+          "balanced_accuracy": 0.7441044887732917,
+          "wells": 2898
+        },
+        {
+          "radius": 0.6,
+          "balanced_accuracy": 0.6793588300504347,
+          "wells": 656
+        },
+        {
+          "radius": 0.9,
+          "balanced_accuracy": 0.6228261723158015,
+          "wells": 146
+        },
+        {
+          "radius": 1.2,
+          "balanced_accuracy": 0.5297427552523447,
+          "wells": 50
+        }
+      ],
+      "test": {
+        "accuracy": 0.7600950118764845,
+        "balanced_accuracy": 0.7569140091296375,
+        "macro_f1": 0.755110607263341,
+        "confusion": [
+          [
+            314,
+            77,
+            105,
+            0,
+            0,
+            0
+          ],
+          [
+            42,
+            368,
+            61,
+            0,
+            0,
+            0
+          ],
+          [
+            58,
+            43,
+            319,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            305,
+            180,
+            3
+          ],
+          [
+            0,
+            0,
+            1,
+            125,
+            406,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            5,
+            528
+          ]
+        ],
+        "subjects": {
+          "2": {
+            "windows": 302,
+            "accuracy": 0.7284768211920529
+          },
+          "4": {
+            "windows": 317,
+            "accuracy": 0.6498422712933754
+          },
+          "9": {
+            "windows": 288,
+            "accuracy": 0.6493055555555556
+          },
+          "10": {
+            "windows": 294,
+            "accuracy": 0.7653061224489796
+          },
+          "12": {
+            "windows": 320,
+            "accuracy": 0.803125
+          },
+          "13": {
+            "windows": 327,
+            "accuracy": 0.8012232415902141
+          },
+          "18": {
+            "windows": 364,
+            "accuracy": 0.8104395604395604
+          },
+          "20": {
+            "windows": 354,
+            "accuracy": 0.7740112994350282
+          },
+          "24": {
+            "windows": 381,
+            "accuracy": 0.8241469816272966
+          }
+        }
+      },
+      "prediction_sha256": "a940f7285b959d9b416318ccde48394a937c1e641f2152e0b7d3cb852c28265f"
+    },
+    "shuffled_oscillators": {
+      "features": 25,
+      "radius": 0.6,
+      "wells": 3515,
+      "validation": [
+        {
+          "radius": 0.35,
+          "balanced_accuracy": 0.3737665652003362,
+          "wells": 5536
+        },
+        {
+          "radius": 0.6,
+          "balanced_accuracy": 0.3793879744367954,
+          "wells": 2834
+        },
+        {
+          "radius": 0.9,
+          "balanced_accuracy": 0.346523044896464,
+          "wells": 365
+        },
+        {
+          "radius": 1.2,
+          "balanced_accuracy": 0.33412473561982764,
+          "wells": 40
+        }
+      ],
+      "test": {
+        "accuracy": 0.36002714625042415,
+        "balanced_accuracy": 0.35950857458227997,
+        "macro_f1": 0.35149724440876834,
+        "confusion": [
+          [
+            255,
+            145,
+            93,
+            0,
+            2,
+            1
+          ],
+          [
+            229,
+            156,
+            85,
+            1,
+            0,
+            0
+          ],
+          [
+            180,
+            133,
+            106,
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            248,
+            135,
+            104
+          ],
+          [
+            2,
+            1,
+            0,
+            222,
+            174,
+            133
+          ],
+          [
+            1,
+            0,
+            0,
+            256,
+            158,
+            122
+          ]
+        ],
+        "subjects": {
+          "2": {
+            "windows": 302,
+            "accuracy": 0.40066225165562913
+          },
+          "4": {
+            "windows": 317,
+            "accuracy": 0.33753943217665616
+          },
+          "9": {
+            "windows": 288,
+            "accuracy": 0.3645833333333333
+          },
+          "10": {
+            "windows": 294,
+            "accuracy": 0.35034013605442177
+          },
+          "12": {
+            "windows": 320,
+            "accuracy": 0.34375
+          },
+          "13": {
+            "windows": 327,
+            "accuracy": 0.36085626911314983
+          },
+          "18": {
+            "windows": 364,
+            "accuracy": 0.38186813186813184
+          },
+          "20": {
+            "windows": 354,
+            "accuracy": 0.3644067796610169
+          },
+          "24": {
+            "windows": 381,
+            "accuracy": 0.33858267716535434
+          }
+        }
+      },
+      "prediction_sha256": "a71f023eb59e17f82c817172e76b55a3d1eca7d92f12ce224da3d85184773e31"
+    }
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "system": "Windows"
+  },
+  "sources": {
+    "engram_npc.py": "99f64b68c82931249d1e07139d498c016fb4c84bde0b2a85d8530bf9916c390b",
+    "engram_history.py": "8bd5a2361a1eaff6a9b5c90d8b32e0669c5770ff192c3c1812ec043b910b13ca",
+    "engram_codec.py": "80ab009f4ab6628ac2b19bb54854b0d1b91e2a46bcf45a5dbd59da7e38adaa87",
+    "research/experiments/npc_real_signals.py": "423581af2dfe32ee97a82c94cff82ab08054c05a19cbc1ad1f866ec41caaae57"
+  }
+}

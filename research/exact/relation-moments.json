@@ -1,0 +1,46 @@
+{
+  "scope": "Algebraic components for parallel centered moments, affine view, and a specific globally centered triple-product nuisance. Not a whole-module certificate.",
+  "request": {
+    "claims": [
+      "--reals forall a b x y u v. (a+b)*(a*x*u+b*y*v)-(a*x+b*y)*(a*u+b*v) = a*b*(x-y)*(u-v) :: true or false = true",
+      "--reals forall x y m n a b c d. (a*(x+b)-a*(m+b))*(c*(y+d)-c*(n+d))=a*c*(x-m)*(y-n) :: true or false = true",
+      "--reals forall l b m. ((1+m)/4)*((1+b-b*m)*(l+b-b*m)+(-1+b-b*m)*(-l+b-b*m))-((1-m)/4)*((1-b-b*m)*(-l-b-b*m)+(-1-b-b*m)*(l-b-b*m)) = l+b^2*(m^3-m) :: true or false = true"
+    ]
+  },
+  "answer": {
+    "kind": "verdicts",
+    "refuted": 0,
+    "verdicts": [
+      {
+        "claim": "--reals forall a b x y u v. (a+b)*(a*x*u+b*y*v)-(a*x+b*y)*(a*u+b*v) = a*b*(x-y)*(u-v) :: true or false = true",
+        "derived": "true",
+        "said": "true",
+        "verdict": "CONFIRMED"
+      },
+      {
+        "claim": "--reals forall x y m n a b c d. (a*(x+b)-a*(m+b))*(c*(y+d)-c*(n+d))=a*c*(x-m)*(y-n) :: true or false = true",
+        "derived": "true",
+        "said": "true",
+        "verdict": "CONFIRMED"
+      },
+      {
+        "claim": "--reals forall l b m. ((1+m)/4)*((1+b-b*m)*(l+b-b*m)+(-1+b-b*m)*(-l+b-b*m))-((1-m)/4)*((1-b-b*m)*(-l-b-b*m)+(-1-b-b*m)*(l-b-b*m)) = l+b^2*(m^3-m) :: true or false = true",
+        "derived": "true",
+        "said": "true",
+        "verdict": "CONFIRMED"
+      }
+    ]
+  },
+  "invocation": {
+    "invocationId": "b823c8ee-0ad5-4c04-9483-eb663d2fe952",
+    "outputBytes": 627,
+    "peakMemoryBytes": 14221312,
+    "timing": {
+      "execution_us": 59999,
+      "queued_us": 115,
+      "startup_us": 2
+    },
+    "tool": "wolf.scryer.check",
+    "version": "1.0.28"
+  }
+}

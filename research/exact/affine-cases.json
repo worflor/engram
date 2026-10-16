@@ -1,0 +1,792 @@
+{
+  "scope": "Exact affine translation identity and finite affine/homogeneous design counterexample. No proof DAG replay or whole-codec certification.",
+  "studies": [
+    {
+      "case": "affine_design",
+      "request": {
+        "subject": "[[7,-8,1],[166/25,-7,1],[848/125,-166/25,1]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "7",
+              "-8",
+              "1"
+            ],
+            [
+              "166/25",
+              "-7",
+              "1"
+            ],
+            [
+              "848/125",
+              "-166/25",
+              "1"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 3,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "3",
+              "value": 3
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "-171/625",
+              "value": "-171/625"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^3 \u2212 x^2 + 497/125x + 171/625",
+              "value": {
+                "coefficients": [
+                  "171/625",
+                  "497/125",
+                  "-1",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "171",
+                    "2485",
+                    "-625",
+                    "625"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^3 \u2212 x^2 + 497/125x + 171/625",
+              "value": [
+                [
+                  "171/625",
+                  "497/125",
+                  "-1",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^3 \u2212 x^2 + 497/125x + 171/625",
+              "value": {
+                "coefficients": [
+                  "171/625",
+                  "497/125",
+                  "-1",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "-0.06758635\u2026",
+              "value": [
+                "-0.06758635\u2026"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "-0.06758635\u2026 (multiplicity 1)",
+              "value": [
+                {
+                  "coefficients": [
+                    "171",
+                    "2485",
+                    "-625",
+                    "625"
+                  ],
+                  "isolation": {
+                    "hi": "5",
+                    "lo": "-5"
+                  },
+                  "multiplicity": 1,
+                  "name": "-0.06758635\u2026"
+                }
+              ]
+            }
+          ],
+          "subject": "[[7, -8, 1], [166/25, -7, 1], [848/125, -166/25, 1]]"
+        },
+        "subject": "[[7,-8,1],[166/25,-7,1],[848/125,-166/25,1]]",
+        "text": [
+          "[[7, -8, 1], [166/25, -7, 1], [848/125, -166/25, 1]]",
+          "",
+          "  rank over \u211a: 3",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: -171/625",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^3 \u2212 x^2 + 497/125x + 171/625",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^3 \u2212 x^2 + 497/125x + 171/625",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^3 \u2212 x^2 + 497/125x + 171/625",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+          "  real eigenvalues: -0.06758635\u2026",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: -0.06758635\u2026 (multiplicity 1)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "c83e5a37-0ee7-48ec-86f9-8cb6fe739a3c",
+        "outputBytes": 5395,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 44531,
+          "queued_us": 109,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "homogeneous_design",
+      "request": {
+        "subject": "[[7,-8],[166/25,-7],[848/125,-166/25]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "7",
+              "-8"
+            ],
+            [
+              "166/25",
+              "-7"
+            ],
+            [
+              "848/125",
+              "-166/25"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace"
+            ],
+            "degree": 3,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            }
+          ],
+          "subject": "[[7, -8], [166/25, -7], [848/125, -166/25]]"
+        },
+        "subject": "[[7,-8],[166/25,-7],[848/125,-166/25]]",
+        "text": [
+          "[[7, -8], [166/25, -7], [848/125, -166/25]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "ddac73c4-89b7-4c7c-8f1e-cba544399bf6",
+        "outputBytes": 1917,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 35813,
+          "queued_us": 185,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "homogeneous_augmented",
+      "request": {
+        "subject": "[[7,-8,166/25],[166/25,-7,848/125],[848/125,-166/25,7]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "7",
+              "-8",
+              "166/25"
+            ],
+            [
+              "166/25",
+              "-7",
+              "848/125"
+            ],
+            [
+              "848/125",
+              "-166/25",
+              "7"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 3,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "3",
+              "value": 3
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "-22743/15625",
+              "value": "-22743/15625"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^3 \u2212 7x^2 + 103/25x + 22743/15625",
+              "value": {
+                "coefficients": [
+                  "22743/15625",
+                  "103/25",
+                  "-7",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "22743",
+                    "64375",
+                    "-109375",
+                    "15625"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^3 \u2212 7x^2 + 103/25x + 22743/15625",
+              "value": [
+                [
+                  "22743/15625",
+                  "103/25",
+                  "-7",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^3 \u2212 7x^2 + 103/25x + 22743/15625",
+              "value": {
+                "coefficients": [
+                  "22743/15625",
+                  "103/25",
+                  "-7",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "-0.24645593\u2026, 0.93587818\u2026, 6.31057774\u2026",
+              "value": [
+                "-0.24645593\u2026",
+                "0.93587818\u2026",
+                "6.31057774\u2026"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "-0.24645593\u2026 (multiplicity 1), 0.93587818\u2026 (multiplicity 1), 6.31057774\u2026 (multiplicity 1)",
+              "value": [
+                {
+                  "coefficients": [
+                    "22743",
+                    "64375",
+                    "-109375",
+                    "15625"
+                  ],
+                  "isolation": {
+                    "hi": "0",
+                    "lo": "-8"
+                  },
+                  "multiplicity": 1,
+                  "name": "-0.24645593\u2026"
+                },
+                {
+                  "coefficients": [
+                    "22743",
+                    "64375",
+                    "-109375",
+                    "15625"
+                  ],
+                  "isolation": {
+                    "hi": "4",
+                    "lo": "0"
+                  },
+                  "multiplicity": 1,
+                  "name": "0.93587818\u2026"
+                },
+                {
+                  "coefficients": [
+                    "22743",
+                    "64375",
+                    "-109375",
+                    "15625"
+                  ],
+                  "isolation": {
+                    "hi": "8",
+                    "lo": "4"
+                  },
+                  "multiplicity": 1,
+                  "name": "6.31057774\u2026"
+                }
+              ]
+            }
+          ],
+          "subject": "[[7, -8, 166/25], [166/25, -7, 848/125], [848/125, -166/25, 7]]"
+        },
+        "subject": "[[7,-8,166/25],[166/25,-7,848/125],[848/125,-166/25,7]]",
+        "text": [
+          "[[7, -8, 166/25], [166/25, -7, 848/125], [848/125, -166/25, 7]]",
+          "",
+          "  rank over \u211a: 3",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: -22743/15625",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^3 \u2212 7x^2 + 103/25x + 22743/15625",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^3 \u2212 7x^2 + 103/25x + 22743/15625",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^3 \u2212 7x^2 + 103/25x + 22743/15625",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+          "  real eigenvalues: -0.24645593\u2026, 0.93587818\u2026, 6.31057774\u2026",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: -0.24645593\u2026 (multiplicity 1), 0.93587818\u2026 (multiplicity 1), 6.31057774\u2026 (multiplicity 1)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "17316ec5-b7f4-425a-b1df-149a9574158c",
+        "outputBytes": 5970,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 47392,
+          "queued_us": 108,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "translation_identity",
+      "request": {
+        "subject": "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c)",
+        "route": "reals"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "reals",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "variable",
+              "quantifier",
+              "true or false",
+              "witness",
+              "the sign chart"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "normal form",
+              "by": "each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+              "says": "0 nonzero terms = 0",
+              "value": {
+                "atoms": [
+                  {
+                    "relation": "=",
+                    "source": "(k*x-g*y+c*(1-k+g))-(c+k*(x-c)-g*(y-c))",
+                    "terms": [],
+                    "variables": [
+                      "c",
+                      "g",
+                      "k",
+                      "x",
+                      "y"
+                    ]
+                  }
+                ],
+                "kind": "polynomial-normalization",
+                "matrix": {
+                  "idx": 0,
+                  "k": "atom"
+                },
+                "prefix": [
+                  {
+                    "quant": "forall",
+                    "variable": "c"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "g"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "k"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "x"
+                  },
+                  {
+                    "quant": "forall",
+                    "variable": "y"
+                  }
+                ],
+                "source": "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c)"
+              }
+            },
+            {
+              "asks": "quantifier prefix",
+              "by": "the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+              "says": "forall c. forall g. forall k. forall x. forall y",
+              "value": [
+                {
+                  "quant": "forall",
+                  "variable": "c"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "g"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "k"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "x"
+                },
+                {
+                  "quant": "forall",
+                  "variable": "y"
+                }
+              ]
+            },
+            {
+              "asks": "variable",
+              "by": "the one real unknown the sentence quantifies over",
+              "says": "c",
+              "value": "c"
+            },
+            {
+              "asks": "quantifier",
+              "by": "a universal claim: does every real value meet the statement",
+              "says": "forall",
+              "value": "forall"
+            },
+            {
+              "asks": "true or false",
+              "by": "every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling",
+              "says": "true",
+              "value": true
+            }
+          ],
+          "subject": "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c)"
+        },
+        "subject": "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c)",
+        "text": [
+          "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c)",
+          "",
+          "  normal form: 0 nonzero terms = 0",
+          "      each left-minus-right expression is normalized over the rational polynomial ring and independently replayed by collision-free Kronecker expansion; domain restrictions are never erased",
+          "  quantifier prefix: forall c. forall g. forall k. forall x. forall y",
+          "      the original quantifiers, in scope order; only vacuous binders over the nonempty real domain may be removed",
+          "  variable: c",
+          "      the one real unknown the sentence quantifies over",
+          "  quantifier: forall",
+          "      a universal claim: does every real value meet the statement",
+          "  true or false: true",
+          "      every cell of the real line satisfies the statement, so it holds for all real values: a decision by exhausting the finitely many sign patterns, not by sampling"
+        ]
+      },
+      "invocation": {
+        "invocationId": "3c1ee477-ae76-453e-bce7-b25d5429ba6d",
+        "outputBytes": 2803,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 40485,
+          "queued_us": 113,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    }
+  ],
+  "checks": {
+    "request": {
+      "claims": [
+        "[[7,-8,1],[166/25,-7,1],[848/125,-166/25,1]] :: rank over \u211a = 3",
+        "[[7,-8,1],[166/25,-7,1],[848/125,-166/25,1]] :: determinant = -171/625",
+        "[[7,-8],[166/25,-7],[848/125,-166/25]] :: rank over \u211a = 2",
+        "[[7,-8,166/25],[166/25,-7,848/125],[848/125,-166/25,7]] :: rank over \u211a = 3",
+        "[[7,-8,166/25],[166/25,-7,848/125],[848/125,-166/25,7]] :: determinant = -22743/15625"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "[[7,-8,1],[166/25,-7,1],[848/125,-166/25,1]] :: rank over \u211a = 3",
+          "derived": "3",
+          "said": "3",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[7,-8,1],[166/25,-7,1],[848/125,-166/25,1]] :: determinant = -171/625",
+          "derived": "-171/625",
+          "said": "-171/625",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[7,-8],[166/25,-7],[848/125,-166/25]] :: rank over \u211a = 2",
+          "derived": "2",
+          "said": "2",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[7,-8,166/25],[166/25,-7,848/125],[848/125,-166/25,7]] :: rank over \u211a = 3",
+          "derived": "3",
+          "said": "3",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[7,-8,166/25],[166/25,-7,848/125],[848/125,-166/25,7]] :: determinant = -22743/15625",
+          "derived": "-22743/15625",
+          "said": "-22743/15625",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "6425e1ab-e930-496b-bd5e-b9f36303a275",
+      "outputBytes": 735,
+      "peakMemoryBytes": 13893632,
+      "timing": {
+        "execution_us": 59668,
+        "queued_us": 52,
+        "startup_us": 1
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  },
+  "identity_check": {
+    "request": {
+      "claims": [
+        "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c) :: true or false = true"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "forall c. forall g. forall k. forall x. forall y. k*x-g*y+c*(1-k+g) = c+k*(x-c)-g*(y-c) :: true or false = true",
+          "derived": "true",
+          "said": "true",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "14d7d221-efdc-4dea-b86d-6ee6619a7b37",
+      "outputBytes": 221,
+      "peakMemoryBytes": 13893632,
+      "timing": {
+        "execution_us": 42740,
+        "queued_us": 44,
+        "startup_us": 1
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  }
+}

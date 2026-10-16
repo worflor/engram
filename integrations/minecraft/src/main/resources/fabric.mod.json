@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "engram_npc",
+  "version": "0.4.0",
+  "name": "Engram NPC Laboratory",
+  "description": "Development-only real-world witness/action lane for the Engram reference NPC.",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.woflo.engram.lab.ExperienceLab"],
+    "fabric-gametest": ["dev.woflo.engram.lab.ExperienceLab"]
+  },
+  "depends": {"fabricloader": ">=0.19.5", "minecraft": "1.21.1", "java": ">=21", "fabric-api": "*"}
+}

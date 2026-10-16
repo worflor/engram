@@ -1,0 +1,230 @@
+{
+  "braid_representation": {
+    "checks": {
+      "ab_power_6_exponent_sum": 12,
+      "ab_power_6_is_identity": true,
+      "aba_equals_bab": true,
+      "adjacent_inverse_cancellation": true
+    },
+    "matrix_sigma1": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "matrix_sigma2": [
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "recognition": {
+      "accuracy": 1.0,
+      "base_negative_matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "base_permutation": [
+        2,
+        1,
+        0
+      ],
+      "base_positive_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "base_unsigned_counts": [
+        2,
+        1
+      ],
+      "equivalent_words_classified": 2000,
+      "equivalent_words_total": 2000,
+      "exponent_sum_baseline_balanced_accuracy": 1.0,
+      "exponent_sum_baseline_note": "The positive and negative base words have exponent sums +3 and -3; this comparison alone is trivially solved by exponent sum.",
+      "max_word_length": 51,
+      "paired_control_baselines": {
+        "basis": "Every positive/negative generated pair has identical control features and opposite labels; 0.5 is the exact balanced accuracy for any deterministic classifier using only that feature.",
+        "permutation_only_balanced_accuracy": 0.5,
+        "unsigned_generator_counts_only_balanced_accuracy": 0.5
+      },
+      "same_permutation_collisions": 1000,
+      "same_unsigned_count_collisions": 1000,
+      "samples_per_class": 1000,
+      "seed": 260101
+    },
+    "scope": "This SL(2,Z) representation distinguishes the selected pair but is not faithful: (sigma1 sigma2)^6 maps to I despite exponent sum 12. Recognition is authored algebraic equivalence, not learned semantics."
+  },
+  "knot_scope": "Out of scope: these finite witnesses are open paths; no closure convention is defined, so no knot score is computed.",
+  "order_controlled_braid_campaign": {
+    "base_exponent_sum": 4,
+    "base_matrices": [
+      [
+        [
+          -3,
+          2
+        ],
+        [
+          -2,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          -1
+        ]
+      ]
+    ],
+    "base_permutation": [
+      0,
+      1,
+      2
+    ],
+    "base_signed_counts": [
+      2,
+      0,
+      2,
+      0
+    ],
+    "base_words": [
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        2,
+        1
+      ]
+    ],
+    "control_baselines": {
+      "basis": "Every paired example has equal stated control features and opposite labels, so those controls cannot separate a pair.",
+      "exponent_sum_only_balanced_accuracy": 0.5,
+      "permutation_only_balanced_accuracy": 0.5,
+      "signed_generator_counts_only_balanced_accuracy": 0.5,
+      "unsigned_generator_counts_only_balanced_accuracy": 0.5
+    },
+    "matrix_prototype_recognition": {
+      "accuracy": 1.0,
+      "correct": 2000,
+      "total": 2000
+    },
+    "paired_inverse_insertions": {
+      "feature_equal_pairs": {
+        "exponent_sum": 1000,
+        "permutation": 1000,
+        "signed_counts": 1000,
+        "unsigned_counts": 1000
+      },
+      "maximum_word_length": 52
+    },
+    "samples_per_class": 1000,
+    "scope": "Exact recognition of two authored B3 elements under free cancellation. The raw ordered word is itself sufficient; this does not show a matrix advantage over a general ordered-word model, nor that braids encode semantic relations.",
+    "seed": 260102
+  },
+  "path_signature": {
+    "collision_probe": {
+      "endpoint": [
+        "2",
+        "2"
+      ],
+      "level1_equal": true,
+      "level2_equal": true,
+      "level3_equal": false,
+      "level3_first": [
+        "4/3",
+        "1",
+        "2",
+        "2",
+        "1",
+        "0",
+        "2",
+        "4/3"
+      ],
+      "level3_second": [
+        "4/3",
+        "2",
+        "0",
+        "1",
+        "2",
+        "2",
+        "1",
+        "4/3"
+      ],
+      "paths": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "scope": "Open finite witness paths; no canonical closure, knot invariant, or semantic interpretation is asserted.",
+      "signed_area": "0"
+    },
+    "definition": "Truncated Chen signature of piecewise-linear open paths in R^2, exact rational tensor coordinates, levels 1-3."
+  },
+  "provenance": "Exact finite mathematical probes authored for relational-memory design; no Minecraft or Pet Plus runtime was executed.",
+  "schema": "engram.relational-topology/v1",
+  "source_sha256": {
+    "research/experiments/relational_topology.py": "1e59945d686e937fa7e596c6a3aae670b638464eac9814cd47c95703b1a65aaa",
+    "tests/research/test_relational_topology.py": "214cdd08a8e246fe8dfaf9cfa847d0faac25229f80c6493ac8b70a26aae70699"
+  }
+}

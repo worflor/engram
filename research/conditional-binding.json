@@ -1,0 +1,5524 @@
+{
+  "schema": "engram.conditional-binding/v1",
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008
+  ],
+  "episodes_per_seed_scenario": 64,
+  "scenarios": {
+    "clean": {},
+    "amplitude_range": {
+      "scales": true
+    },
+    "context_offsets": {
+      "offset": 3.0,
+      "scales": true
+    },
+    "offsets_and_imbalance": {
+      "offset": 3.0,
+      "fraction_positive": 0.8,
+      "scales": true
+    },
+    "rare_role": {
+      "fraction_positive": 0.95
+    },
+    "sensor_noise_025": {
+      "noise": 0.25
+    },
+    "sensor_noise_1": {
+      "noise": 1.0
+    },
+    "sensor_noise_2": {
+      "noise": 2.0
+    },
+    "binding_flips_010": {
+      "flip": 0.1
+    },
+    "binding_flips_050": {
+      "flip": 0.5
+    },
+    "binding_flips_100": {
+      "flip": 1.0
+    },
+    "unseen_role_keys": {
+      "unseen": true
+    }
+  },
+  "stream_samples": 128,
+  "streams": 6144,
+  "diagnostic_decisions": 30720,
+  "exact_parity": {
+    "conditional_sources": {
+      "-1": [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ],
+      "1": [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "marginals": [
+      {
+        "coordinates": [
+          0
+        ],
+        "equal": true,
+        "probabilities": {
+          "(-1,)": "1/2",
+          "(1,)": "1/2"
+        }
+      },
+      {
+        "coordinates": [
+          1
+        ],
+        "equal": true,
+        "probabilities": {
+          "(-1,)": "1/2",
+          "(1,)": "1/2"
+        }
+      },
+      {
+        "coordinates": [
+          2
+        ],
+        "equal": true,
+        "probabilities": {
+          "(-1,)": "1/2",
+          "(1,)": "1/2"
+        }
+      },
+      {
+        "coordinates": [
+          0,
+          1
+        ],
+        "equal": true,
+        "probabilities": {
+          "(-1, -1)": "1/4",
+          "(-1, 1)": "1/4",
+          "(1, -1)": "1/4",
+          "(1, 1)": "1/4"
+        }
+      },
+      {
+        "coordinates": [
+          0,
+          2
+        ],
+        "equal": true,
+        "probabilities": {
+          "(-1, -1)": "1/4",
+          "(-1, 1)": "1/4",
+          "(1, -1)": "1/4",
+          "(1, 1)": "1/4"
+        }
+      },
+      {
+        "coordinates": [
+          1,
+          2
+        ],
+        "equal": true,
+        "probabilities": {
+          "(-1, -1)": "1/4",
+          "(-1, 1)": "1/4",
+          "(1, -1)": "1/4",
+          "(1, 1)": "1/4"
+        }
+      }
+    ],
+    "conditional_yz": {
+      "-1": {
+        "-1": "1",
+        "1": "-1"
+      },
+      "1": {
+        "-1": "-1",
+        "1": "1"
+      }
+    },
+    "target_information_bits": {
+      "any_one_coordinate": 0,
+      "any_two_coordinates": 0,
+      "all_three_coordinates": 1
+    },
+    "scope": "Uniform binary parity law. These exact information statements are not a chosen partial-information-decomposition estimator or a claim of novel synergy mathematics."
+  },
+  "level_loss": {
+    "correlation_views_equal": true,
+    "owner_consequence_means": [
+      -1.0,
+      1.0
+    ],
+    "interpretation": "Normalized projection loses constant levels; the full summary still contains the distinction."
+  },
+  "four_way_obstruction": {
+    "fixed_role_full_first_second_moments_equal": true,
+    "per_role_sums": [
+      0,
+      0,
+      0
+    ],
+    "per_role_cross_products": [
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "refined_context_scores": {
+      "-1": -1.0,
+      "1": 1.0
+    },
+    "scope": "Four-way parity is genuinely lost by fixed-role full second moments. Conditioning additionally on a retains the b/outcome relation. No generic automatic refinement rule is established."
+  },
+  "numeric_mean_scatter_bytes_per_stream": [
+    96
+  ],
+  "storage_scope": "Only mean/scatter numeric payload, excluding keys, Python objects, integer counters and snapshots; there are two observed contexts in this campaign.",
+  "maximum_chunk_merge_covariance_error": 1.4210854715202004e-14,
+  "maximum_json_scatter_error": 0.0,
+  "scope": "Algebraic readouts of known authored relations, not trained policies, PID estimates, real sensor data, or calibrated uncertainty. Noisy identity can corrupt a relational summary.",
+  "aggregate": [
+    {
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.482421875,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.40625
+    },
+    {
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 0.548828125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.484375
+    },
+    {
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 0.51953125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.421875
+    },
+    {
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.439453125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.265625
+    },
+    {
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.431640625,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.296875
+    },
+    {
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.45703125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.375
+    },
+    {
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 0.98828125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.96875
+    },
+    {
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 0.986328125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.953125
+    },
+    {
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 0.986328125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.953125
+    },
+    {
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 0.986328125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.953125
+    },
+    {
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 1.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 1.0
+    },
+    {
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 0.486328125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.34375
+    },
+    {
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 0.486328125,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.34375
+    },
+    {
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.375
+    },
+    {
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.375
+    },
+    {
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 0.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.0
+    },
+    {
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 0.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.0
+    },
+    {
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 0.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.0
+    },
+    {
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 0.0,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.0
+    },
+    {
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 512,
+      "accuracy": 0.5,
+      "coverage": 1.0,
+      "minimum_seed_accuracy": 0.5
+    },
+    {
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 512,
+      "accuracy": 0.0,
+      "coverage": 0.0,
+      "minimum_seed_accuracy": 0.0
+    },
+    {
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 512,
+      "accuracy": 0.0,
+      "coverage": 0.0,
+      "minimum_seed_accuracy": 0.0
+    }
+  ],
+  "runs": [
+    {
+      "seed": 1001,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 27,
+      "covered": 64,
+      "accuracy": 0.421875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 17,
+      "covered": 64,
+      "accuracy": 0.265625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 19,
+      "covered": 64,
+      "accuracy": 0.296875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 25,
+      "covered": 64,
+      "accuracy": 0.390625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 35,
+      "covered": 64,
+      "accuracy": 0.546875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 35,
+      "covered": 64,
+      "accuracy": 0.546875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1001,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 22,
+      "covered": 64,
+      "accuracy": 0.34375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 22,
+      "covered": 64,
+      "accuracy": 0.34375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 24,
+      "covered": 64,
+      "accuracy": 0.375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 24,
+      "covered": 64,
+      "accuracy": 0.375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1002,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 39,
+      "covered": 64,
+      "accuracy": 0.609375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 26,
+      "covered": 64,
+      "accuracy": 0.40625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 29,
+      "covered": 64,
+      "accuracy": 0.453125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 29,
+      "covered": 64,
+      "accuracy": 0.453125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 24,
+      "covered": 64,
+      "accuracy": 0.375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 24,
+      "covered": 64,
+      "accuracy": 0.375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 25,
+      "covered": 64,
+      "accuracy": 0.390625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 25,
+      "covered": 64,
+      "accuracy": 0.390625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1003,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 22,
+      "covered": 64,
+      "accuracy": 0.34375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 22,
+      "covered": 64,
+      "accuracy": 0.34375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 24,
+      "covered": 64,
+      "accuracy": 0.375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 38,
+      "covered": 64,
+      "accuracy": 0.59375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 38,
+      "covered": 64,
+      "accuracy": 0.59375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1004,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 26,
+      "covered": 64,
+      "accuracy": 0.40625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 39,
+      "covered": 64,
+      "accuracy": 0.609375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1005,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 29,
+      "covered": 64,
+      "accuracy": 0.453125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 37,
+      "covered": 64,
+      "accuracy": 0.578125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 35,
+      "covered": 64,
+      "accuracy": 0.546875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 31,
+      "covered": 64,
+      "accuracy": 0.484375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 29,
+      "covered": 64,
+      "accuracy": 0.453125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 28,
+      "covered": 64,
+      "accuracy": 0.4375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 63,
+      "covered": 64,
+      "accuracy": 0.984375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 37,
+      "covered": 64,
+      "accuracy": 0.578125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 37,
+      "covered": 64,
+      "accuracy": 0.578125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 36,
+      "covered": 64,
+      "accuracy": 0.5625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1006,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 35,
+      "covered": 64,
+      "accuracy": 0.546875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 31,
+      "covered": 64,
+      "accuracy": 0.484375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 38,
+      "covered": 64,
+      "accuracy": 0.59375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 27,
+      "covered": 64,
+      "accuracy": 0.421875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 31,
+      "covered": 64,
+      "accuracy": 0.484375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 31,
+      "covered": 64,
+      "accuracy": 0.484375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 31,
+      "covered": 64,
+      "accuracy": 0.484375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1007,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "clean",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "clean",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "clean",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "clean",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "clean",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "amplitude_range",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "amplitude_range",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "amplitude_range",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "amplitude_range",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "amplitude_range",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "context_offsets",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "context_offsets",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 33,
+      "covered": 64,
+      "accuracy": 0.515625,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "context_offsets",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "context_offsets",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "context_offsets",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "offsets_and_imbalance",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "offsets_and_imbalance",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 29,
+      "covered": 64,
+      "accuracy": 0.453125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "offsets_and_imbalance",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "offsets_and_imbalance",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "rare_role",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "rare_role",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "rare_role",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "rare_role",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "rare_role",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_025",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 31,
+      "covered": 64,
+      "accuracy": 0.484375,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_025",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_025",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_025",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_1",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 30,
+      "covered": 64,
+      "accuracy": 0.46875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_1",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_1",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_1",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_2",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_2",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 62,
+      "covered": 64,
+      "accuracy": 0.96875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_2",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 61,
+      "covered": 64,
+      "accuracy": 0.953125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 61,
+      "covered": 64,
+      "accuracy": 0.953125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "sensor_noise_2",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 61,
+      "covered": 64,
+      "accuracy": 0.953125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_010",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_010",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_010",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_010",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_010",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 64,
+      "covered": 64,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_050",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_050",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 34,
+      "covered": 64,
+      "accuracy": 0.53125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_050",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 34,
+      "covered": 64,
+      "accuracy": 0.53125,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_050",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 35,
+      "covered": 64,
+      "accuracy": 0.546875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_050",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 35,
+      "covered": 64,
+      "accuracy": 0.546875,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_100",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_100",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_100",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_100",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "binding_flips_100",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 64,
+      "accuracy": 0.0,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "unseen_role_keys",
+      "method": "pooled_correlation",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "unseen_role_keys",
+      "method": "raw_triple_product",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "unseen_role_keys",
+      "method": "globally_centered_triple",
+      "episodes": 64,
+      "correct": 32,
+      "covered": 64,
+      "accuracy": 0.5,
+      "coverage": 1.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_covariance",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    },
+    {
+      "seed": 1008,
+      "scenario": "unseen_role_keys",
+      "method": "conditional_correlation",
+      "episodes": 64,
+      "correct": 0,
+      "covered": 0,
+      "accuracy": 0.0,
+      "coverage": 0.0
+    }
+  ],
+  "sources": {
+    "engram_relations.py": "10c589755c2fa74489e4430e785a14dbff0915bf17b9a8e52d8c180cff95ae69",
+    "research/experiments/conditional_binding.py": "048b908b38f6574130963e141decde2e016692085cc384435b3bfa20759a2569"
+  }
+}

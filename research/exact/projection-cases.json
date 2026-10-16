@@ -1,0 +1,1883 @@
+{
+  "schema": "engram-exact-projection-cases-1",
+  "date": "2026-10-15",
+  "scope": "Exact rational matrix findings supporting finite counterexamples. Nine studies and eight confirmed scalar/boolean checks through deployed Scryer 1.0.28. No replayed proof DAG or whole-program certification.",
+  "studies": [
+    {
+      "case": "stable_real_well",
+      "request": {
+        "subject": "[[9/5,-81/100],[1,0]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "9/5",
+              "-81/100"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 2,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "81/100",
+              "value": "81/100"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^2 \u2212 9/5x + 81/100",
+              "value": {
+                "coefficients": [
+                  "81/100",
+                  "-9/5",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "-9",
+                    "10"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^2 \u2212 9/5x + 81/100",
+              "value": [
+                [
+                  "81/100",
+                  "-9/5",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^2 \u2212 9/5x + 81/100",
+              "value": {
+                "coefficients": [
+                  "81/100",
+                  "-9/5",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "9/10",
+              "value": [
+                "9/10"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "9/10 (multiplicity 2)",
+              "value": [
+                {
+                  "coefficients": [
+                    "-9",
+                    "10"
+                  ],
+                  "isolation": {
+                    "hi": "9/10",
+                    "lo": "9/10"
+                  },
+                  "multiplicity": 2,
+                  "name": "9/10"
+                }
+              ]
+            }
+          ],
+          "subject": "[[9/5, -81/100], [1, 0]]"
+        },
+        "subject": "[[9/5,-81/100],[1,0]]",
+        "text": [
+          "[[9/5, -81/100], [1, 0]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 81/100",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^2 \u2212 9/5x + 81/100",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^2 \u2212 9/5x + 81/100",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^2 \u2212 9/5x + 81/100",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+          "  real eigenvalues: 9/10",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: 9/10 (multiplicity 2)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "67342047-2d02-4f45-a77c-0988d08f9ea9",
+        "outputBytes": 5053,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 37939,
+          "queued_us": 253,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "stable_imaginary_well_realification",
+      "request": {
+        "subject": "[[0,-9/5,81/100,0],[9/5,0,0,81/100],[1,0,0,0],[0,1,0,0]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "0",
+              "-9/5",
+              "81/100",
+              "0"
+            ],
+            [
+              "9/5",
+              "0",
+              "0",
+              "81/100"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 4,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "4",
+              "value": 4
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "6561/10000",
+              "value": "6561/10000"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^4 + 81/50x^2 + 6561/10000",
+              "value": {
+                "coefficients": [
+                  "6561/10000",
+                  "0",
+                  "81/50",
+                  "0",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "81",
+                    "0",
+                    "100"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^4 + 81/50x^2 + 6561/10000",
+              "value": [
+                [
+                  "6561/10000",
+                  "0",
+                  "81/50",
+                  "0",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^4 + 81/50x^2 + 6561/10000",
+              "value": {
+                "coefficients": [
+                  "6561/10000",
+                  "0",
+                  "81/50",
+                  "0",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "Sturm counts no real roots, so every eigenvalue is genuinely complex",
+              "says": "none",
+              "value": []
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "none",
+              "value": []
+            }
+          ],
+          "subject": "[[0, -9/5, 81/100, 0], [9/5, 0, 0, 81/100], [1, 0, 0, 0], [0, 1, 0, 0]]"
+        },
+        "subject": "[[0,-9/5,81/100,0],[9/5,0,0,81/100],[1,0,0,0],[0,1,0,0]]",
+        "text": [
+          "[[0, -9/5, 81/100, 0], [9/5, 0, 0, 81/100], [1, 0, 0, 0], [0, 1, 0, 0]]",
+          "",
+          "  rank over \u211a: 4",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 6561/10000",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^4 + 81/50x^2 + 6561/10000",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^4 + 81/50x^2 + 6561/10000",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^4 + 81/50x^2 + 6561/10000",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+          "  real eigenvalues: none",
+          "      Sturm counts no real roots, so every eigenvalue is genuinely complex",
+          "  real eigenvalue multiplicities: none",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "ace9b18c-ec76-43fb-87db-f09b563e165d",
+        "outputBytes": 4948,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 38330,
+          "queued_us": 130,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "coefficient_mean_realification",
+      "request": {
+        "subject": "[[9/10,-9/10,0,0],[9/10,9/10,0,0],[1,0,0,0],[0,1,0,0]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "9/10",
+              "-9/10",
+              "0",
+              "0"
+            ],
+            [
+              "9/10",
+              "9/10",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 4,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "(0, 0, 1, 0), (0, 0, 0, 1)",
+              "value": [
+                [
+                  "0",
+                  "0",
+                  "1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "0",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "0",
+              "value": "0"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^4 \u2212 9/5x^3 + 81/50x^2",
+              "value": {
+                "coefficients": [
+                  "0",
+                  "0",
+                  "81/50",
+                  "-9/5",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "81",
+                    "-90",
+                    "50"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x | x^3 \u2212 9/5x^2 + 81/50x",
+              "value": [
+                [
+                  "0",
+                  "1"
+                ],
+                [
+                  "0",
+                  "81/50",
+                  "-9/5",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^3 \u2212 9/5x^2 + 81/50x",
+              "value": {
+                "coefficients": [
+                  "0",
+                  "81/50",
+                  "-9/5",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "0",
+              "value": [
+                "0"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "0 (multiplicity 2)",
+              "value": [
+                {
+                  "coefficients": [
+                    "0",
+                    "1"
+                  ],
+                  "isolation": {
+                    "hi": "0",
+                    "lo": "0"
+                  },
+                  "multiplicity": 2,
+                  "name": "0"
+                }
+              ]
+            }
+          ],
+          "subject": "[[9/10, -9/10, 0, 0], [9/10, 9/10, 0, 0], [1, 0, 0, 0], [0, 1, 0, 0]]"
+        },
+        "subject": "[[9/10,-9/10,0,0],[9/10,9/10,0,0],[1,0,0,0],[0,1,0,0]]",
+        "text": [
+          "[[9/10, -9/10, 0, 0], [9/10, 9/10, 0, 0], [1, 0, 0, 0], [0, 1, 0, 0]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: (0, 0, 1, 0), (0, 0, 0, 1)",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 2",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 0",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^4 \u2212 9/5x^3 + 81/50x^2",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x | x^3 \u2212 9/5x^2 + 81/50x",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^3 \u2212 9/5x^2 + 81/50x",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+          "  real eigenvalues: 0",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: 0 (multiplicity 2)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "c1b75d15-16bd-4383-b9b4-da49d563479e",
+        "outputBytes": 5380,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 42509,
+          "queued_us": 135,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "repeated_root_transient",
+      "request": {
+        "subject": "[[99/50,-9801/10000],[1,0]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "99/50",
+              "-9801/10000"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 2,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "9801/10000",
+              "value": "9801/10000"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^2 \u2212 99/50x + 9801/10000",
+              "value": {
+                "coefficients": [
+                  "9801/10000",
+                  "-99/50",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "-99",
+                    "100"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^2 \u2212 99/50x + 9801/10000",
+              "value": [
+                [
+                  "9801/10000",
+                  "-99/50",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^2 \u2212 99/50x + 9801/10000",
+              "value": {
+                "coefficients": [
+                  "9801/10000",
+                  "-99/50",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "99/100",
+              "value": [
+                "99/100"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "99/100 (multiplicity 2)",
+              "value": [
+                {
+                  "coefficients": [
+                    "-99",
+                    "100"
+                  ],
+                  "isolation": {
+                    "hi": "99/100",
+                    "lo": "99/100"
+                  },
+                  "multiplicity": 2,
+                  "name": "99/100"
+                }
+              ]
+            }
+          ],
+          "subject": "[[99/50, -9801/10000], [1, 0]]"
+        },
+        "subject": "[[99/50,-9801/10000],[1,0]]",
+        "text": [
+          "[[99/50, -9801/10000], [1, 0]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 9801/10000",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^2 \u2212 99/50x + 9801/10000",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^2 \u2212 99/50x + 9801/10000",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^2 \u2212 99/50x + 9801/10000",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+          "  real eigenvalues: 99/100",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: 99/100 (multiplicity 2)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "30a33e88-2766-473a-abb5-6c105591c925",
+        "outputBytes": 5163,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 37386,
+          "queued_us": 140,
+          "startup_us": 115
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "tanh_rational_samples_augmented",
+      "request": {
+        "subject": "[[3/5,0,15/17],[15/17,-3/5,63/65],[63/65,-15/17,255/257]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "3/5",
+              "0",
+              "15/17"
+            ],
+            [
+              "15/17",
+              "-3/5",
+              "63/65"
+            ],
+            [
+              "63/65",
+              "-15/17",
+              "255/257"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 3,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "3",
+              "value": 3
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "-1469664/82071665",
+              "value": "-1469664/82071665"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^3 \u2212 255/257x^2 \u2212 9/25x + 1469664/82071665",
+              "value": {
+                "coefficients": [
+                  "1469664/82071665",
+                  "-9/25",
+                  "-255/257",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "7348320",
+                    "-147728997",
+                    "-407164875",
+                    "410358325"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^3 \u2212 255/257x^2 \u2212 9/25x + 1469664/82071665",
+              "value": [
+                [
+                  "1469664/82071665",
+                  "-9/25",
+                  "-255/257",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^3 \u2212 255/257x^2 \u2212 9/25x + 1469664/82071665",
+              "value": {
+                "coefficients": [
+                  "1469664/82071665",
+                  "-9/25",
+                  "-255/257",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "-0.31781292\u2026, 0.04452342\u2026, 1.26550739\u2026",
+              "value": [
+                "-0.31781292\u2026",
+                "0.04452342\u2026",
+                "1.26550739\u2026"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "-0.31781292\u2026 (multiplicity 1), 0.04452342\u2026 (multiplicity 1), 1.26550739\u2026 (multiplicity 1)",
+              "value": [
+                {
+                  "coefficients": [
+                    "7348320",
+                    "-147728997",
+                    "-407164875",
+                    "410358325"
+                  ],
+                  "isolation": {
+                    "hi": "0",
+                    "lo": "-2"
+                  },
+                  "multiplicity": 1,
+                  "name": "-0.31781292\u2026"
+                },
+                {
+                  "coefficients": [
+                    "7348320",
+                    "-147728997",
+                    "-407164875",
+                    "410358325"
+                  ],
+                  "isolation": {
+                    "hi": "1",
+                    "lo": "0"
+                  },
+                  "multiplicity": 1,
+                  "name": "0.04452342\u2026"
+                },
+                {
+                  "coefficients": [
+                    "7348320",
+                    "-147728997",
+                    "-407164875",
+                    "410358325"
+                  ],
+                  "isolation": {
+                    "hi": "2",
+                    "lo": "1"
+                  },
+                  "multiplicity": 1,
+                  "name": "1.26550739\u2026"
+                }
+              ]
+            }
+          ],
+          "subject": "[[3/5, 0, 15/17], [15/17, -3/5, 63/65], [63/65, -15/17, 255/257]]"
+        },
+        "subject": "[[3/5,0,15/17],[15/17,-3/5,63/65],[63/65,-15/17,255/257]]",
+        "text": [
+          "[[3/5, 0, 15/17], [15/17, -3/5, 63/65], [63/65, -15/17, 255/257]]",
+          "",
+          "  rank over \u211a: 3",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: -1469664/82071665",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^3 \u2212 255/257x^2 \u2212 9/25x + 1469664/82071665",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^3 \u2212 255/257x^2 \u2212 9/25x + 1469664/82071665",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^3 \u2212 255/257x^2 \u2212 9/25x + 1469664/82071665",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+          "  real eigenvalues: -0.31781292\u2026, 0.04452342\u2026, 1.26550739\u2026",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: -0.31781292\u2026 (multiplicity 1), 0.04452342\u2026 (multiplicity 1), 1.26550739\u2026 (multiplicity 1)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "78d888f6-d9c1-406d-a906-1d36d80d0409",
+        "outputBytes": 6145,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 52653,
+          "queued_us": 117,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "tanh_rational_samples_coefficients",
+      "request": {
+        "subject": "[[3/5,0],[15/17,-3/5],[63/65,-15/17]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "3/5",
+              "0"
+            ],
+            [
+              "15/17",
+              "-3/5"
+            ],
+            [
+              "63/65",
+              "-15/17"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace"
+            ],
+            "degree": 3,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            }
+          ],
+          "subject": "[[3/5, 0], [15/17, -3/5], [63/65, -15/17]]"
+        },
+        "subject": "[[3/5,0],[15/17,-3/5],[63/65,-15/17]]",
+        "text": [
+          "[[3/5, 0], [15/17, -3/5], [63/65, -15/17]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "3c81796c-1bbd-49e6-93bd-a079ef8f8023",
+        "outputBytes": 1913,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 35966,
+          "queued_us": 132,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "nearby_stable_well_realification",
+      "request": {
+        "subject": "[[199/100,-1/50,-39597/40000,199/10000],[1/50,199/100,-199/10000,-39597/40000],[1,0,0,0],[0,1,0,0]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "199/100",
+              "-1/50",
+              "-39597/40000",
+              "199/10000"
+            ],
+            [
+              "1/50",
+              "199/100",
+              "-199/10000",
+              "-39597/40000"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 4,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "4",
+              "value": 4
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "62742241/64000000",
+              "value": "62742241/64000000"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^4 \u2212 199/50x^3 + 118807/20000x^2 \u2212 1576279/400000x + 62742241/64000000",
+              "value": {
+                "coefficients": [
+                  "62742241/64000000",
+                  "-1576279/400000",
+                  "118807/20000",
+                  "-199/50",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "7921",
+                    "-15920",
+                    "8000"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^4 \u2212 199/50x^3 + 118807/20000x^2 \u2212 1576279/400000x + 62742241/64000000",
+              "value": [
+                [
+                  "62742241/64000000",
+                  "-1576279/400000",
+                  "118807/20000",
+                  "-199/50",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^4 \u2212 199/50x^3 + 118807/20000x^2 \u2212 1576279/400000x + 62742241/64000000",
+              "value": {
+                "coefficients": [
+                  "62742241/64000000",
+                  "-1576279/400000",
+                  "118807/20000",
+                  "-199/50",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "Sturm counts no real roots, so every eigenvalue is genuinely complex",
+              "says": "none",
+              "value": []
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "none",
+              "value": []
+            }
+          ],
+          "subject": "[[199/100, -1/50, -39597/40000, 199/10000], [1/50, 199/100, -199/10000, -39597/40000], [1, 0, 0, 0], [0, 1, 0, 0]]"
+        },
+        "subject": "[[199/100,-1/50,-39597/40000,199/10000],[1/50,199/100,-199/10000,-39597/40000],[1,0,0,0],[0,1,0,0]]",
+        "text": [
+          "[[199/100, -1/50, -39597/40000, 199/10000], [1/50, 199/100, -199/10000, -39597/40000], [1, 0, 0, 0], [0, 1, 0, 0]]",
+          "",
+          "  rank over \u211a: 4",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 62742241/64000000",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^4 \u2212 199/50x^3 + 118807/20000x^2 \u2212 1576279/400000x + 62742241/64000000",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^4 \u2212 199/50x^3 + 118807/20000x^2 \u2212 1576279/400000x + 62742241/64000000",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^4 \u2212 199/50x^3 + 118807/20000x^2 \u2212 1576279/400000x + 62742241/64000000",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial has a repeated factor, so a Jordan block is genuinely missing an eigenvector and no field repairs that",
+          "  real eigenvalues: none",
+          "      Sturm counts no real roots, so every eigenvalue is genuinely complex",
+          "  real eigenvalue multiplicities: none",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "db8cb63b-9414-4e9f-8b12-3785e5c95c43",
+        "outputBytes": 5539,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 38557,
+          "queued_us": 115,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "nearby_mean_well",
+      "request": {
+        "subject": "[[199/100,-39597/40000],[1,0]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "199/100",
+              "-39597/40000"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 2,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "39597/40000",
+              "value": "39597/40000"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^2 \u2212 199/100x + 39597/40000",
+              "value": {
+                "coefficients": [
+                  "39597/40000",
+                  "-199/100",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "-197",
+                    "200"
+                  ],
+                  [
+                    "-201",
+                    "200"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^2 \u2212 199/100x + 39597/40000",
+              "value": [
+                [
+                  "39597/40000",
+                  "-199/100",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^2 \u2212 199/100x + 39597/40000",
+              "value": {
+                "coefficients": [
+                  "39597/40000",
+                  "-199/100",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial splits into distinct linear factors over \u211a, which is what diagonalisability is",
+              "says": "yes",
+              "value": true
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "197/200, 201/200",
+              "value": [
+                "197/200",
+                "201/200"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "197/200 (multiplicity 1), 201/200 (multiplicity 1)",
+              "value": [
+                {
+                  "coefficients": [
+                    "-197",
+                    "200"
+                  ],
+                  "isolation": {
+                    "hi": "197/200",
+                    "lo": "197/200"
+                  },
+                  "multiplicity": 1,
+                  "name": "197/200"
+                },
+                {
+                  "coefficients": [
+                    "-201",
+                    "200"
+                  ],
+                  "isolation": {
+                    "hi": "201/200",
+                    "lo": "201/200"
+                  },
+                  "multiplicity": 1,
+                  "name": "201/200"
+                }
+              ]
+            }
+          ],
+          "subject": "[[199/100, -39597/40000], [1, 0]]"
+        },
+        "subject": "[[199/100,-39597/40000],[1,0]]",
+        "text": [
+          "[[199/100, -39597/40000], [1, 0]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 39597/40000",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^2 \u2212 199/100x + 39597/40000",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^2 \u2212 199/100x + 39597/40000",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^2 \u2212 199/100x + 39597/40000",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: yes",
+          "      the minimal polynomial splits into distinct linear factors over \u211a, which is what diagonalisability is",
+          "  real eigenvalues: 197/200, 201/200",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: 197/200 (multiplicity 1), 201/200 (multiplicity 1)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "5a72d700-ff9f-466e-a3ef-062c33e060e5",
+        "outputBytes": 5377,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 40608,
+          "queued_us": 105,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "case": "stable_switching_two_step_product",
+      "request": {
+        "subject": "[[-81/20,729/500],[9/5,-81/100]]",
+        "route": "matrix"
+      },
+      "answer": {
+        "data": {
+          "rows": [
+            [
+              "-81/20",
+              "729/500"
+            ],
+            [
+              "9/5",
+              "-81/100"
+            ]
+          ]
+        },
+        "kind": "study",
+        "route": "matrix",
+        "study": {
+          "declined": [
+            {
+              "asks": "Smith normal form",
+              "why": "Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries"
+            },
+            {
+              "asks": "index over \u2124",
+              "why": "an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice"
+            },
+            {
+              "asks": "cokernel",
+              "why": "the integer cokernel is undefined for a matrix with non-integral rational entries"
+            }
+          ],
+          "estimate": {
+            "attempts": [
+              "rank",
+              "nullspace",
+              "determinant",
+              "characteristic polynomial",
+              "similarity invariants",
+              "eigenvalues"
+            ],
+            "degree": 2,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "rank over \u211a",
+              "by": "the dimension the rows span, from one exact elimination",
+              "says": "2",
+              "value": 2
+            },
+            {
+              "asks": "nullspace over \u211a",
+              "by": "a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+              "says": "{0}",
+              "value": []
+            },
+            {
+              "asks": "nullity",
+              "by": "the dimension of the right kernel, equal to the number of columns minus the rank",
+              "says": "0",
+              "value": 0
+            },
+            {
+              "asks": "determinant",
+              "by": "the product of the pivots with the row swaps counted",
+              "says": "6561/10000",
+              "value": "6561/10000"
+            },
+            {
+              "asks": "characteristic polynomial",
+              "by": "the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+              "says": "x^2 + 243/50x + 6561/10000",
+              "value": {
+                "coefficients": [
+                  "6561/10000",
+                  "243/50",
+                  "1"
+                ],
+                "factors": [
+                  [
+                    "6561",
+                    "48600",
+                    "10000"
+                  ]
+                ]
+              }
+            },
+            {
+              "asks": "similarity invariants",
+              "by": "the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+              "says": "x^2 + 243/50x + 6561/10000",
+              "value": [
+                [
+                  "6561/10000",
+                  "243/50",
+                  "1"
+                ]
+              ]
+            },
+            {
+              "asks": "minimal polynomial",
+              "by": "the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+              "says": "x^2 + 243/50x + 6561/10000",
+              "value": {
+                "coefficients": [
+                  "6561/10000",
+                  "243/50",
+                  "1"
+                ]
+              }
+            },
+            {
+              "asks": "diagonalisable over \u211a",
+              "by": "the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+              "says": "no",
+              "value": false
+            },
+            {
+              "asks": "real eigenvalues",
+              "by": "the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+              "says": "(\u2212243 \u2212 162\u221a2)/100, (162\u221a2 \u2212 243)/100",
+              "value": [
+                "(\u2212243 \u2212 162\u221a2)/100",
+                "(162\u221a2 \u2212 243)/100"
+              ]
+            },
+            {
+              "asks": "real eigenvalue multiplicities",
+              "by": "squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+              "says": "(\u2212243 \u2212 162\u221a2)/100 (multiplicity 1), (162\u221a2 \u2212 243)/100 (multiplicity 1)",
+              "value": [
+                {
+                  "coefficients": [
+                    "6561",
+                    "48600",
+                    "10000"
+                  ],
+                  "isolation": {
+                    "hi": "-3",
+                    "lo": "-6"
+                  },
+                  "multiplicity": 1,
+                  "name": "(\u2212243 \u2212 162\u221a2)/100"
+                },
+                {
+                  "coefficients": [
+                    "6561",
+                    "48600",
+                    "10000"
+                  ],
+                  "isolation": {
+                    "hi": "0",
+                    "lo": "-3"
+                  },
+                  "multiplicity": 1,
+                  "name": "(162\u221a2 \u2212 243)/100"
+                }
+              ]
+            }
+          ],
+          "subject": "[[-81/20, 729/500], [9/5, -81/100]]"
+        },
+        "subject": "[[-81/20,729/500],[9/5,-81/100]]",
+        "text": [
+          "[[-81/20, 729/500], [9/5, -81/100]]",
+          "",
+          "  rank over \u211a: 2",
+          "      the dimension the rows span, from one exact elimination",
+          "  nullspace over \u211a: {0}",
+          "      a basis of the right kernel A\u00b7v = 0, from exact elimination; every null vector is a unique rational linear combination of these vectors",
+          "  nullity: 0",
+          "      the dimension of the right kernel, equal to the number of columns minus the rank",
+          "  determinant: 6561/10000",
+          "      the product of the pivots with the row swaps counted",
+          "  characteristic polynomial: x^2 + 243/50x + 6561/10000",
+          "      the monic determinant of xI \u2212 A, computed by Berkowitz over the exact coefficient field; the structured factors, when available, are primitive integral representatives of distinct factors",
+          "  similarity invariants: x^2 + 243/50x + 6561/10000",
+          "      the invariant factors of xI \u2212 A over \u211a[x], each dividing the next; two matrices are similar exactly when these monic lists agree, so this line is the whole similarity class",
+          "  minimal polynomial: x^2 + 243/50x + 6561/10000",
+          "      the largest invariant factor: the unique monic polynomial of least degree annihilating A",
+          "  diagonalisable over \u211a: no",
+          "      the minimal polynomial is squarefree but has a factor of higher degree, so the eigenvalues live in an extension: diagonalisable there, not over \u211a",
+          "  real eigenvalues: (\u2212243 \u2212 162\u221a2)/100, (162\u221a2 \u2212 243)/100",
+          "      the distinct real roots of the characteristic polynomial; decimal displays, when needed, are accompanied by exact defining polynomials and isolating intervals in real eigenvalue multiplicities",
+          "  real eigenvalue multiplicities: (\u2212243 \u2212 162\u221a2)/100 (multiplicity 1), (162\u221a2 \u2212 243)/100 (multiplicity 1)",
+          "      squarefree decomposition and Sturm isolation of the characteristic polynomial; the defining polynomials and rational isolating intervals are exact, including when a displayed name is decimal",
+          "",
+          "  not settled:",
+          "    Smith normal form: Smith normal form is an integer-lattice invariant, while this matrix has non-integral rational entries",
+          "    index over \u2124: an index over \u2124 requires an integral matrix; rational entries do not define an integer sublattice",
+          "    cokernel: the integer cokernel is undefined for a matrix with non-integral rational entries"
+        ]
+      },
+      "invocation": {
+        "invocationId": "42dd824f-3adc-4e1b-bfd5-0b907f9c8164",
+        "outputBytes": 5616,
+        "peakMemoryBytes": 13697024,
+        "timing": {
+          "execution_us": 40706,
+          "queued_us": 129,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      }
+    }
+  ],
+  "check": {
+    "request": {
+      "claims": [
+        "[[3/5,0,15/17],[15/17,-3/5,63/65],[63/65,-15/17,255/257]] :: rank over \u211a = 3",
+        "[[3/5,0,15/17],[15/17,-3/5,63/65],[63/65,-15/17,255/257]] :: determinant = -1469664/82071665",
+        "[[3/5,0],[15/17,-3/5],[63/65,-15/17]] :: rank over \u211a = 2",
+        "[[199/100,-39597/40000],[1,0]] :: determinant = 39597/40000",
+        "40000x^2 - 79600x + 39597 :: discriminant = 640000",
+        "[[-81/20,729/500],[9/5,-81/100]] :: determinant = 6561/10000",
+        "[[9/5,-81/100],[1,0]] :: determinant = 81/100",
+        "[[99/50,-9801/10000],[1,0]] :: diagonalisable over \u211a = false"
+      ]
+    },
+    "answer": {
+      "kind": "verdicts",
+      "refuted": 0,
+      "verdicts": [
+        {
+          "claim": "[[3/5,0,15/17],[15/17,-3/5,63/65],[63/65,-15/17,255/257]] :: rank over \u211a = 3",
+          "derived": "3",
+          "said": "3",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[3/5,0,15/17],[15/17,-3/5,63/65],[63/65,-15/17,255/257]] :: determinant = -1469664/82071665",
+          "derived": "-1469664/82071665",
+          "said": "-1469664/82071665",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[3/5,0],[15/17,-3/5],[63/65,-15/17]] :: rank over \u211a = 2",
+          "derived": "2",
+          "said": "2",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[199/100,-39597/40000],[1,0]] :: determinant = 39597/40000",
+          "derived": "39597/40000",
+          "said": "39597/40000",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "40000x^2 - 79600x + 39597 :: discriminant = 640000",
+          "derived": "640000",
+          "said": "640000",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[-81/20,729/500],[9/5,-81/100]] :: determinant = 6561/10000",
+          "derived": "6561/10000",
+          "said": "6561/10000",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[9/5,-81/100],[1,0]] :: determinant = 81/100",
+          "derived": "81/100",
+          "said": "81/100",
+          "verdict": "CONFIRMED"
+        },
+        {
+          "claim": "[[99/50,-9801/10000],[1,0]] :: diagonalisable over \u211a = false",
+          "derived": "no",
+          "note": "(same value, spelled differently)",
+          "said": "the engine reads no",
+          "verdict": "CONFIRMED"
+        }
+      ]
+    },
+    "invocation": {
+      "invocationId": "961660cd-1d8d-42a4-a12d-14208bc75b2d",
+      "outputBytes": 1180,
+      "peakMemoryBytes": 13893632,
+      "timing": {
+        "execution_us": 85963,
+        "queued_us": 77,
+        "startup_us": 2
+      },
+      "tool": "wolf.scryer.check",
+      "version": "1.0.28"
+    }
+  }
+}

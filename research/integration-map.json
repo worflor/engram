@@ -1,0 +1,1073 @@
+{
+  "schema": "engram-research-integration-1",
+  "scope": "Original local portfolio rag_tests text sources; no corpora, weights, logs or checkpoints.",
+  "method": "Content/path inventory and mechanism-level integration. Categories route review; they do not certify historical scripts.",
+  "categories": {
+    "host-model-audit": {
+      "maintained_targets": [
+        "engram_metrics.py",
+        "tests/python/test_network.py"
+      ],
+      "disposition": "Centered variance, persistence and identity-shuffle controls integrated; transformer execution remains a consumer experiment."
+    },
+    "training-and-coordinates": {
+      "maintained_targets": [
+        "engram_training.py",
+        "engram_network.py",
+        "examples/train_bytes.py"
+      ],
+      "disposition": "Reusable streaming training, byte PMI/SVD, composition refinement, checkpoint resume, consolidation and numeric well descriptions integrated; corpus schedules and exact old runs are not library APIs."
+    },
+    "acceleration-and-batching": {
+      "maintained_targets": [
+        "engram_acceleration.py",
+        "engram_training.py",
+        "examples/gpu_training.py"
+      ],
+      "disposition": "Coalesced fitting, stable two-pass RMS, bounded ordered batches and CPU-authoritative updates integrated; historical kernel variants are research comparisons."
+    },
+    "core-geometry-and-replay": {
+      "maintained_targets": [
+        "engram_codec.py",
+        "engram_analysis.py",
+        "engram_wire.py",
+        "engram_memory_io.py",
+        "tests/python/test_reference.py",
+        "tests/python/test_network.py"
+      ],
+      "disposition": "Shared coordinate, K/G/RMS, graph, spectrum, replay/import and numerical contracts have maintained regression coverage; exploratory conclusions are not promoted automatically."
+    },
+    "generation-and-feedback": {
+      "maintained_targets": [
+        "engram_codec.py",
+        "engram_network.py",
+        "examples/feedback.py",
+        "examples/well_network.py"
+      ],
+      "disposition": "Parameter-history dreaming, per-well continuation, graph walks, lazy meta fitting and reproducible bounded feedback integrated; generation is evaluated separately from reconstruction."
+    },
+    "host-language-experiment": {
+      "maintained_targets": [
+        "engram_retrieval.py",
+        "engram_embeddings.py",
+        "engram_network.py"
+      ],
+      "disposition": "Embedding, relationship and memory interfaces integrated; local language-model prompting and semantic claims require separate host evaluation."
+    }
+  },
+  "entries": [
+    {
+      "source": "crystallography/campaign2_findings.md",
+      "sha256": "66081453521b09badc15ecafa99e563484271241502bf466eeffaa5c9c12b01f",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "crystallography/journal.md",
+      "sha256": "b53406857ee3b13fd83938105bb85d8d24568e6abfa0f59c1036c0af4c6e7d44",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "crystallography/scripts/analyze_dispersion.py",
+      "sha256": "a75ba988bf053d3d8abd68bdeaf1824c62f5a42dd20134a490e2c19dbfe809ae",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "crystallography/scripts/analyze_phases.py",
+      "sha256": "ca794aa24b91411e2044e28c4970ebd15524cca8ec2af30d833316fb023c855f",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "crystallography/scripts/instrument.py",
+      "sha256": "5bf6b34c0c39f15bac8597d0248f5178d314cb8c4b451dd257f6a101e18237aa",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "engram/alexandria.py",
+      "sha256": "9488dbc3187dfa476cd0fea1076c5d374b5940c017db37aa7932ae6aae6710bc",
+      "category": "training-and-coordinates",
+      "run_procedure_retired_from_checkout": true
+    },
+    {
+      "source": "engram/bench_embed.py",
+      "sha256": "c5c4e9fd7d5092b827175ef0aa33d0a990993e357b64453f0dc1063fda8e9810",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/bench_ingest.py",
+      "sha256": "13b6553c4ea816177509a1306e5db16c9ec6270bd9089256fc0d65840c993741",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/curriculum.py",
+      "sha256": "ef2bfbbf2e2dd45dd7a1cb505accb6b115ba31b3505917c5568ef37f1c06ec33",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/ENGRAM_FORMAT_V1.md",
+      "sha256": "38c2add18871ab7bfaefc92ba45dc691395a599e5849700a5b5c352af7577978",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_deep.py",
+      "sha256": "aeb7dfcbb1a6b059c6f294dfc84fd2f13f2744509a19b55a5c6e349d51d8238d",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_determinism.py",
+      "sha256": "41c266b42f82d32df6a55575fe8aaa2356754724a1a01aed0ddf74f017d89978",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_dream.py",
+      "sha256": "8a2c97a3ba599ebd6754ef94e6f48373ad55b78c707640d1e4e62c4734d96f3d",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiment_escape.py",
+      "sha256": "db5ef64463d9d06e296879d5b3a5c392b288cee10bf8813ba1f55e7f3a734fcd",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_escape_full.py",
+      "sha256": "37ef77266cd5226232316f6621f22d56268daa6235768b5929b1715da1d4df30",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_escape_mode.py",
+      "sha256": "19f3e8ccc69ecd5e85c4ce2f58af9dd360fe1ef4b125e5f93c0805471979acbe",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_fingerprint.py",
+      "sha256": "930904c0596443d826c4618ab789bf4880af92bde3374eafb7cd0d5d064ffb4c",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_geometry.py",
+      "sha256": "acff9cc71d7f9b8d059c65dd7b9a0b035a0badc7e2b87554f6a45dd029a41d0d",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_model_size.py",
+      "sha256": "d3ebe702e0c724119796360addcaa0c7cd5e8bb2c1211c5a015469978ba9925d",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "engram/experiment_orbit.py",
+      "sha256": "bea647232bbd0ba013262ce18567f322897f142e39545719291d1cec0e28ec8f",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiment_prompt.py",
+      "sha256": "525cda29541177121f64d4aa8371d466e6e861d0c922d25f1106f939552a9eb3",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "engram/experiments/engram_alexandria_session.py",
+      "sha256": "7166b26cda98f93ad48c33e4f458ae01f866a9fca63aee13dddad84eb05c656d",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/experiments/engram_babel_test.py",
+      "sha256": "691aac7b1bc66c52702c8a78cecf1d5b29b687f4928c0df897d2529aed07be8c",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_bench.py",
+      "sha256": "e7a4cc28296e618f8e30f959c5ee2ce5d06e45dee4e65e4c9d1011b21813417d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/experiments/engram_category_test.py",
+      "sha256": "9bcae7336b8827873774bf24bea5e3f0a20828a0aefd6d34761250ecd5b19466",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_cpr_test.py",
+      "sha256": "ea6cf159de50b9f0c702da15fb5bd33d910df57f60dfd13cdd93dc76638d2252",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_crosslingual_test.py",
+      "sha256": "cb683c68191d5ae41f3eb29e96080698653ce14d8840fcbf38a4ea49144c2671",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_curiosity_test.py",
+      "sha256": "0e8f8b8c22c2b6daa755864e2b6d990ff668688222465c41ee92dd78a873dafb",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_depth_test.py",
+      "sha256": "29810cac5f020c8dc29776e17f0149d7335bd08b83ece285e1ee1779b4df22f6",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_generation_test.py",
+      "sha256": "d17a5401746304732cf08f433187416133b4c9535babea674f342c6cd7ac00ec",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_glove_test.py",
+      "sha256": "5d687bd56914bb13ccae55ecfd7b7bfae16d170132d585cda343a41ee3b717b7",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_inner_voice.py",
+      "sha256": "6648bc269a14eebc583401bc0adff7a99f0697fba38084a76310954f3ffa829e",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "engram/experiments/engram_logos_test.py",
+      "sha256": "14d0bf669aec2c91fb05f3871f0b97c8f86d76b3d2a9656fb09edc53e9a8d62a",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "engram/experiments/engram_loop.py",
+      "sha256": "79efa396d9739c851d8cceacc055e7e4fd5752a14f593d04dd7ef1163a9b7f8b",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_mirror_test.py",
+      "sha256": "6cf3df6964e8f0f5f459b71c1fbec60e5f7493692a13dbf7a3e1bc3fd1c2448c",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_mutualism_test.py",
+      "sha256": "fa9c48ec4baa0a3645d83a6e44687ebb455c14fbeacecc50cf0b1afb6efd3766",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_offspring_test.py",
+      "sha256": "56ed07d389093804c842d69906cb7e7ac71f4de1f566e64ccf21247139d0777b",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_real_air.py",
+      "sha256": "d81ec1a53331e67abcac159810e27bf2df8763ad4ca108be14f786ba76e6d937",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "engram/experiments/engram_replication_test.py",
+      "sha256": "3f4493b901cd2f11462ece877b5b116cbc2bc35364ba90034d23e6a16d083f01",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/experiments/engram_residual_anatomy.py",
+      "sha256": "562eecbbe8f72f846909913b9061b5a1324dc2663eda4ef91ff972466ec82905",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/experiments/engram_stress.py",
+      "sha256": "57696fb68079af364574847ede830901a53a6f01a85ae2e2192d0d6dd354111c",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/experiments/engram_symbiosis_test.py",
+      "sha256": "2d8b2f127f23b6317a5fada1c885b0a6fb16dc415bbb717d1817c37a07e73086",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/fast_embed.py",
+      "sha256": "053489b7c5823e326cfd062acf65102cb48cf7afc000566fe0142f8cdf6939c4",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/finalize.py",
+      "sha256": "fd3e2b43d7ffcaa00b0fa7eeb2983a3b3535c118d0402dbe73bafa14886332e0",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/genesis.py",
+      "sha256": "95a992ca3cc64bcd833527b5fa48e89454072071b2d441cfbd40cfaa9b60ba9e",
+      "category": "training-and-coordinates",
+      "run_procedure_retired_from_checkout": true
+    },
+    {
+      "source": "engram/genesis_chain.py",
+      "sha256": "9624f5a3669a23ee9408018056511e149a688425f866803233db5e0bc2db300e",
+      "category": "training-and-coordinates",
+      "run_procedure_retired_from_checkout": true
+    },
+    {
+      "source": "engram/gpu/__init__.py",
+      "sha256": "fe8cd84cd2a98542936e9faff964a66724da45cf931c4f45921a5057cbe4ebd2",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/bench_async_completion.py",
+      "sha256": "9ed82bbdc8783647c94781e1f588fafc632a17e6a8e4041328096141fafadf18",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/__init__.py",
+      "sha256": "b811728e6f6f9d7d1a25d740162b444d36c7430b8ce5c4d95fb578803967f42b",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_fit.py",
+      "sha256": "7917bf1f6019eec1b9c2c9dc408cfdd7ff014a0704d7c241ce90d82a3f7e0bed",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_fit_v2.py",
+      "sha256": "04e05718f69f440c027fc8f903236ef7e9497b3b7d498f20fb21d1991ad2e95f",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_minmax.py",
+      "sha256": "3457a85938228aa3199d994b62235114fef37f84d5b56447b8e0c45595389e5e",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_scaling.py",
+      "sha256": "55be6a5f1c4515b1eb866d73af05d5295816d8aad6d2be35147c2aa183920528",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_v10.py",
+      "sha256": "42f4b5435d59269e12a98884324f8e0d1064a85f9cdd8c5b0d5fd7dd6946686c",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_v11.py",
+      "sha256": "8f4e807f319295e4ce7d06bc9249aa25a4baf8b3665e05887c1ae5332385aaf4",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/benches/bench_v8.py",
+      "sha256": "59edc6c858a0fc5857a732d864b35685966fee595b7c8bfd748b544405ea40d0",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/brain.py",
+      "sha256": "727cd09cdd79f9fd1fb4dac37d470f10c36a0372ed1d3ef4c29b197a5eb1bb13",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/chain_engine.py",
+      "sha256": "fb356036b2ed03307d430499b81c1389edda6df4886f54449e385b54adc6f39d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/engine.py",
+      "sha256": "777b84b52638b033bfc4fb6a96b72bdf49cd14c169e30c0ffe673e5f5a74ab66",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/FINDINGS.md",
+      "sha256": "d3e7ccd9b8e118acded9a5804c2573c789dc92c4658c76b1e521a208c48ae5a4",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/probes/__init__.py",
+      "sha256": "4963f032c6b30cd00ce70031ae0b82eb7cb713148b4d49e299764ae8caab1b0a",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/probes/probe_ceiling.py",
+      "sha256": "2794d0ca344adc7e932fda777090e50f5a277ee36a93e095f3abd338635c7eea",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/probes/probe_envelope.py",
+      "sha256": "c4a80abc1528d45060daa05f673da457d47aef55f28c3aa984b14c9f3cbcc759",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/probes/probe_v2_errors.py",
+      "sha256": "c053a96a62f6e7c0be3d4d81c4a50025a26fb0a94d69d67e182f5d8ceb705168",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/absorb_gap.wgsl",
+      "sha256": "8517b5d8ad715ffd0b67a37a9ad23e8cfb509019630027b5c6d15390268b902c",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/absorb_route.wgsl",
+      "sha256": "f83d8a80b4709171205f6ec78402514707b712c994a1875ad6641aa345ea92b0",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/finalize_indirect.wgsl",
+      "sha256": "d9a26a5bcdecf458fb23fb2f2c5add71ac9ffad251ae97db7c48e1de11fdce9c",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/fit_pair_v3.wgsl",
+      "sha256": "cb3cfe3d0b8042ae3ce5ba1bbbb6ee62b8d41f6e28ae7a6416e6f7b28dfab1e0",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/gather_seeds.wgsl",
+      "sha256": "f64fc0ca443a355502178a7480c3b9e166cfcf95bfe0274b1c7c04678fe7d82d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/gather_smooth_pair.wgsl",
+      "sha256": "672a352831b2ef9fb34289e1e26bcff2a94d0f1d08aecf202fca2f3a104542b5",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/gather_smooth_pair_f16.wgsl",
+      "sha256": "e13fecb537851c38dd9c1a8a0b5dae9207a3e424905660fff3624923fbcd4259",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/gather_smooth_pair_i8.wgsl",
+      "sha256": "f0ec002d8e234afa542a107c6da5c403d9f19956b9bc0872dc68389a8059ee6c",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/per_article_reduce.wgsl",
+      "sha256": "77bd7348527c0d5857d2ef01de6d4eea7cf83458452adaf684757fc9e8d4b01b",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/segment.wgsl",
+      "sha256": "c4f1a373e0f1b308f190cc02fcbebabb4e76822139442bf9af3744475d0879ac",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/traj_features.wgsl",
+      "sha256": "0e0014fa9ad7148ea9793cfb333e6e90121e8c55eb85864c593516eb58f1179f",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair.wgsl",
+      "sha256": "e870938c2275b51ac27ef87d48bb25bd1ff7f105239372dd704caa0e0e16d4af",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v10_f16.wgsl",
+      "sha256": "2aa9208e1160ec439f74aacc89c971df2e89e246cc375176cf70b0d314268843",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v11_df.wgsl",
+      "sha256": "c9122ac3712eb696c575d9ce06f27f9644d69cd2ea4bb6d20e229678672ae311",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v2.wgsl",
+      "sha256": "6e11470fec3da2376862009e8825ec0aa8e0ffbfd7db55ef7f935117950bd8ae",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v4.wgsl",
+      "sha256": "f8ea040bdf54cb8f7e52c396af52d76fa3d05ef92891687725dc91d790b035cd",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v5_noresid.wgsl",
+      "sha256": "d3e3922c8aa6bb02e1a987dc0117f069f54b269ca4b25bbb72b1b39455e35eef",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v8_sm.wgsl",
+      "sha256": "cc7fa172fa587143ad0245c5aa8c7c09c2e36f0f6518b21871a28b70c7d15f78",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_v9_hybrid.wgsl",
+      "sha256": "4e33f5f5a0dc90556026feb2765fc29c58df4a745bbe6a1665b0286d8ab857e7",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/fit_pair_wg128.wgsl",
+      "sha256": "0f29eae3875a27ac8186af2b857a5f73501d9ec152213286e76f62877f92705c",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/gather_smooth_pair_v1.wgsl",
+      "sha256": "2e5d168c73d8c291733ac001b198e3c3a0271401b3905b74ac8e6d46b5953fd9",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/shaders/variants/memcpy_probe.wgsl",
+      "sha256": "93bfa4c05f8831e3b2c63d13b4a73c962ed61b52b144a9bdc064276fb620fa12",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/test_chain_engine.py",
+      "sha256": "053a4a1b6a8a1647c5d6cd4adfdd3698d4a655c16ac0bf4e1bb810cfbbdb5387",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/test_gather_kernel.py",
+      "sha256": "b6e370239a36cba889286600ac849cb4c2bab1b9ba34363bde3b868f9182d971",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu/unified.py",
+      "sha256": "95b56296a0b7959f2e58939d38967a2e894b8b80dba1c29b3a1882ecc425da82",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/gpu_ingest.py",
+      "sha256": "24bf86536a5ebada7da86df1b32d1e3a0375722442549eea8f09d01980f6b2e6",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/hetero_ingest.py",
+      "sha256": "cb560518c2579045725ee6108b4ecc038b923da93f1dabe29b29efe03b4a9306",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/hetero_v2.py",
+      "sha256": "23c56a18cd1d09aeae6b33ed0d8cb18b9976e255fd94f4862409164fc90e6ec8",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/hetero_v3.py",
+      "sha256": "3f2de26ea0ba64ada9f92cff1f8e4230fa2bc7c924f395762d3bf390069ace7f",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/ingest.py",
+      "sha256": "e1d4826b4a0f858c793486abbd24a8a45d25c706dcd999b197f3ca1c20d38809",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/mass/bench_full_pipeline.py",
+      "sha256": "a561b9d76105cf3c3db3e186bc0bea243269ade49569ef20792929c5404ed03d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/bench_v0.py",
+      "sha256": "aff6000d0c8a874d6aa7fbf366c0a2e2172d731bb7bfd8a7cc989c6acbcf8e2a",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/bench_v1.py",
+      "sha256": "5ebdcfd3ccdcb1f33e3e607df2286d9a227f614615d4ec7e121056fdda298b5b",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/bench_v2.py",
+      "sha256": "4abe1e4bc7b2fb39992ae9dafabfe6020cea2b5676cee2d91e7e033d163d0611",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/bench_v3.py",
+      "sha256": "645a56e858529f96e17009c514ac64c6c4a72c87c0ced39f5f2b5481027cf485",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/bench_v3_parallel.py",
+      "sha256": "114f879af39cad0640f268c6d7c3babb94eb8ab97a8b98975ed3ed30a798f2d2",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/bench_v3_realistic.py",
+      "sha256": "080299ec844dd2090f9279e72b9e8bb281658855daf93f547c0a62169469192f",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/corpus.py",
+      "sha256": "e77663d79507abc33a4b38acbefb46279eb8ba4447581c38309d56b450502ee4",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/bench_gpu.py",
+      "sha256": "73d711d8cd085da1c5d1ca7230e3b62ea3844d476284ce3b0a00325d8458cbbf",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/bench_gpu_v2.py",
+      "sha256": "e3804da04b2f1f47e4607a760c36c9cd89d68916cce896a30e797017d1bcf6b2",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/bench_gpu_v3.py",
+      "sha256": "31aefb07d5e214da8a52fc1f91c6b95d22bcd41a65ac2e9c27447dd0060c6e88",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/bench_scale.py",
+      "sha256": "3fb4b66df7742a814b43462eba577148012ed77443b12958ebee3b319b7e6b66",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/nano_sm.py",
+      "sha256": "64b75c01412b6d6a2d443ebcf7a7b64ae6dddd528e91d2fb6fc9a2eda53e23f8",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/run_gpu.py",
+      "sha256": "4e4cc184885b119565e96490dae6ef8064e4dd9d4d94f87e241acc86f6bd027d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/run_gpu_v2.py",
+      "sha256": "af1277fe58528950f62b45083cadb0f55782e3cc3763a0e9e63cda61006d0ba0",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/run_gpu_v3.py",
+      "sha256": "bf18f02ab4643a9d19f4c6403b94710369f27cf79af7646bdb84c543e0dc1f25",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/shaders/nano_scan.wgsl",
+      "sha256": "2514d839cf3eb4f324fc50abb8283cceaa3b022292efdd5062efb09e11ebc326",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/shaders/nano_scan_v2.wgsl",
+      "sha256": "15ef1abebd0374cb4739647d2bcda7949f4012bd5c2e796f368b079736e0d610",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/shaders/nano_scan_v3.wgsl",
+      "sha256": "36b0b4a78a0b03b6cee01edaab31d95513caf5e25929bb9a8c049ee6faed58c0",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/gpu/test_nano.py",
+      "sha256": "cceb0c88e1579b2b4790569b7e849041d01f5ef6149dc3c51ccbafd6e328555e",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/test_codec_equivalence.py",
+      "sha256": "c5a626b56e52b3b4e9c65e6c98e46a58f81bd0f6987dc2b7b5d760027f7b7706",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/test_real.py",
+      "sha256": "ad7bfe4bcb38bc6fc17a88bdf1d50bc525fd6f9135182f6d27ee91826bdc2bf2",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/test_real_v4.py",
+      "sha256": "72761807eba2f351913f782a4dda58bb28c9dc302e7ab156da5cfd37f6aa8415",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/test_real_v5.py",
+      "sha256": "bfbce21c9e784421b04bd1cb16fcb33380c1a8d09816915c0b87563565b1a3af",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/v0_python.py",
+      "sha256": "f5e2439ecc91603b16f49d0bfe49510192d81c9a80be182041360975f59e4368",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/v1_numba.py",
+      "sha256": "a508523e1ee0dae685283360c725b21fdc23120bbb987b6473f626bc4edda860",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/v2_tokenize.py",
+      "sha256": "d3cddfbc492b92dc58ca309d6931e0ec7ed8af40097e37508ac877418d5cbc95",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/v3_fused.py",
+      "sha256": "bbd04318e391766e3340956b41b51b77ee4c91aa0bbb768ccf0bd9799bc12224",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/v4_tables.py",
+      "sha256": "eb46f17a55aeaf1d0a56a06977a5af587728ed4b4a2467e73ce71ae7bb15f67d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass/v5_batch.py",
+      "sha256": "0d2f6c3c2dbf173cdf06dd9ee9619b36c7dd233452c70d33fb30550419a571ca",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mass_embed.py",
+      "sha256": "fa9e621905c53e9e456abf4fb1550f3653dcebdf69ed2002aabdaca267e3e0e5",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/mouth.py",
+      "sha256": "85f3a0f18371b4eaf48f8e01a6421a97281b43179e3d24ce80269ff00735f604",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "engram/profile_well_spawning.py",
+      "sha256": "7a9ea1186872de9ea9deb22158d4e9d99bc1c2500b71960750f7ef938d4675e5",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/sources.py",
+      "sha256": "8b2eb93def885b98ff4f8c7dec4d419f7d50b72d3c68e6feb058e6975f692763",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/test_bi_processor.py",
+      "sha256": "45507840fc175875315c432b6f9a978c77884ee59580b75d7e1f91047c301323",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_bytes_vs_words.py",
+      "sha256": "a5cfe5f0359925dfd380f0d1ac0182f2d16412fefb01c62a2c9a69bd74577ab3",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_engram.py",
+      "sha256": "d7fbaae555d5f8d67887d95d398378aa137bee819599e9c11655e4d88428b2df",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_escape_energy_sweep.py",
+      "sha256": "152e3dfcacc5d0ab831ef070beab508e85755e2097f0d926f255f43408698034",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_full_validation.py",
+      "sha256": "36399efd01c700ff4e995ffce7bcb064de5b815c54c962b818acdc72cf0d7313",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_genesis_chain_api.py",
+      "sha256": "e1249f1282a5d84119473f508aa16fb5d17c0eb2dab3e2a51e4c70a8e335cc53",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/test_gpu_absorb.py",
+      "sha256": "8faba17107f22e56fe0f6fbbd78046724659444ac9cd8907a49cd2e675a9410f",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_gpu_ingest.py",
+      "sha256": "1e636f4ffc26cdc944e5a8ab34171f2c60793818e8746295a60fe5d68fd0a779",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_hetero_ingest.py",
+      "sha256": "5ea17192b54a642ed639f84ceb2943a7dc74a281456ac6d1152432497f6b6030",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_hetero_real.py",
+      "sha256": "fbb2c4df0e0181673180373bfc46a553aa6220f5b76cca2e482d607bd3c682e4",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_hetero_v2.py",
+      "sha256": "9090ba3c5aa3c79ab239197683132deebab0ca16ecd0d9c8faf6cab57ae5c4bd",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_hetero_v2_real.py",
+      "sha256": "f497f300b290c537db3172052d4f15381e3fd5360b8f8b01e83281aa511c2f1e",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_hetero_v3.py",
+      "sha256": "ef49f287244dcf39b1e6e3122564a0eac4fbc3a04391d3c15d3a4fd086365b84",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_hetero_v3_real.py",
+      "sha256": "f20d0cae531ec25f737df603ecaa42b4f0648a4f59f46c53cc3af84cb1ec4555",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_memory_safety.py",
+      "sha256": "d24771108e579bce6b1ad08f8cec562f88e9f39c6ee4fe2ce8dc094599c02d79",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_on_article_async.py",
+      "sha256": "be98660186be27fc6bd1b56ffe7282e2ddcbcfc7871d7429ebaba5722ddbd7ff",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_per_well_dream.py",
+      "sha256": "1c884f46402150cf6db8b0bc22e279ad14baba371ef5fc0512f3187c6728a24b",
+      "category": "generation-and-feedback"
+    },
+    {
+      "source": "engram/test_per_well_meta.py",
+      "sha256": "83b7f5487c0277264f5c7698a8dffd73cb11572d8e810bb279ac4155ae7f3fcf",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_refinement_convergence.py",
+      "sha256": "125ad119a575c59d52774d5f4d5a9b3aea26451c3b2f4877f9c66b1be077fdd4",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/test_stress_real.py",
+      "sha256": "47f08fed4a0ace9858440bc548adf360b6f522b44b4fd0cb6d7d37881847554d",
+      "category": "acceleration-and-batching"
+    },
+    {
+      "source": "engram/test_unified.py",
+      "sha256": "aaeea77e5208f2928c8d47e5ccefc9d15c34e519dc5c8a4752caa84c5e4bb84d",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_well_G_completion.py",
+      "sha256": "c6268096b4c93e716b102ec1315ff7f65c931bd358cd1f1c2ea10f0ecdaf8990",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_well_graph.py",
+      "sha256": "b647c6be7ebfe6bb61bb790b275790035c2f22010c66e9f9ca7b7fc612ee2484",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram/test_well_naming.py",
+      "sha256": "106a45553fb90fb36e6a6f63b27e08c301b56a241662ab031a4529b937f3c3cf",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/well_naming.py",
+      "sha256": "1c9be6b7ff124520cac643b8a63609c19e0514abcd40958e392f49e25273e861",
+      "category": "training-and-coordinates"
+    },
+    {
+      "source": "engram/well_simulate.py",
+      "sha256": "8d3b01ab7ed9bfe816491351958a503bc1fb370a0fe69ee2bd897703129c0a6e",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "engram_codec.py",
+      "sha256": "44b24af1b5b733440aef0a0356a7b1751cb980a4e141277507adc7b14c3ff6e3",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "legacy/engram_iterations/engram.py",
+      "sha256": "7313fab730a5ff645fcbe908ccb4e6195fa38293fb2bc92331eef83db302cabb",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "legacy/engram_iterations/engram_bridge.py",
+      "sha256": "3767d132fc5d991e244da853e217c3598100ad5f6f340d7c022be4ac34a14410",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "legacy/engram_iterations/engram_v2.py",
+      "sha256": "5dc71950881ddce9f9b37d94a5fff380365f6aee664bf28c6ef5a6a10595234b",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "legacy/engram_iterations/engram_v2_real_air.py",
+      "sha256": "3e3d329699ef9d38af439fbfab8c9b2e0e144cbf26b2e6df1ab9ef1c792c6c23",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "legacy/engram_iterations/engram_v3.py",
+      "sha256": "e161766742bfec0eb14def809df22533fce2ee4769f1dd611ef43f85568c48ca",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "legacy/engram_iterations/engram_v3_real_air.py",
+      "sha256": "61d92b7dff92995c28c00eaa41d790bc27ba969faf123b9276454fdc3dd8bad2",
+      "category": "host-language-experiment"
+    },
+    {
+      "source": "README.md",
+      "sha256": "742ebf400d71f9f05bbef26be1b5d643d75a3ea79c17da5c46c6910ddbdc3a00",
+      "category": "core-geometry-and-replay"
+    },
+    {
+      "source": "seance/CALCULUS.md",
+      "sha256": "c867529f5778aa494d5c2dbaeacc1faacf04c762f99e5819f6248fdec8be8d21",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/FINDINGS.md",
+      "sha256": "1fc4b346265fff05b22e69c8a3c3f258c7968202fdfa790f715b98a6aed2271b",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/MANIFESTO.md",
+      "sha256": "bf8b38f85649023ded09de68920ede4cbfb2736ad73b64d63cdb0231fc5df620",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/NORTHSTAR.md",
+      "sha256": "bc7c24bbc0c297d13481196723aca9b7ce9355e670a5f82d819a23de572a657e",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/crystal_calculus.py",
+      "sha256": "eae4ed497a53f2e6d9e47e505295e20f4abd94f45ec383cdcc8d0508a66e6036",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/dream_threshold_sweep.py",
+      "sha256": "0ef3b5ea562fbd118b762212c6eea57749456350df36370bb5c6eeff931da820",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/hollow_crystal.py",
+      "sha256": "0e7cc7f9a1f1cfcf8c8f7b5056bea287edf84a97eb138524001ce7b7b43f4260",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/llm_impulse_response.py",
+      "sha256": "2487de8e964a55fb6898cb77cc53fb0ae5ed2f0368b6670ee78d695a1a23f924",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/qkv_phase.py",
+      "sha256": "5e2973ce65e441d1442cfc847753d9fc3a74a5d064458b28906c8aba9d8a46f9",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/qkv_spacetime.py",
+      "sha256": "a48bdfafea61ebbdb30f169e3c977bfc908ec1a55a9937fd7458e486fefc7321",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/qkv_tessellate_vs_engram.py",
+      "sha256": "4c7cb2e5aef5f5e830cf57427681c6c18d7ec967e09a28d9dd58e117122892dc",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/resonance_engine.py",
+      "sha256": "8ce9d13edacb29de4142d0d33fde1ecf7628d3d2ce81aad587da29e43b765815",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/universal_constants.py",
+      "sha256": "b7fa4810feaee05eeadc9dd9530ab5d43bbc5cbeb3bc07993241bbebe6c168d4",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/analysis/wild_predictions.py",
+      "sha256": "a83b35b349377e7cbf0b10850ebfab4a561824096e8bf32e16ea18405d686fe9",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/experiments/exp1_engram_fitting.py",
+      "sha256": "a801feaf2ce61d4848d13887e3cee57520d071b7d501feca301820a4bfd93248",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/experiments/exp5_crosslayer_engram.py",
+      "sha256": "5001ce6a00c72f97eb0904335a64afacb965baaf6a0b853152d2d1c51bf0057e",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/experiments/exp_combined_seance.py",
+      "sha256": "552beeb067d71a021ec439a8aab7ae4b9487c112162524fcf4f52af32386ecdc",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/experiments/exp_embed_seance.py",
+      "sha256": "99869b357c0342c132736af1c6d029e2bd46e0e14711587b4515a6852fe354c2",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/dream_diffuse.py",
+      "sha256": "4a295420956573828c928f57df5aa2baa4968064c0339d1daa6094e468fccecf",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/engram_correction.py",
+      "sha256": "4ac59efb07c39b58f91a35653b5190f9f94ad2674e36575560574db15f225c0a",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/harness.py",
+      "sha256": "b5329e70c3ddfaf2270534e56bcf36790b68cd29391b83d10bb711fe7b7626e4",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/manifold.py",
+      "sha256": "e23fd5133f53c45c20405dc8a1d73453502b3207226f286f9d58957179e5eba8",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/navigate.py",
+      "sha256": "de088f45349c8be4d58e077bb0f55b065458a88c7b72f6c29d22ce206088a699",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/reason.py",
+      "sha256": "855454394ea6275e5b1ff08ada2c7f7c950783394059ef68d0e17edf0fd3370f",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/seance_core.py",
+      "sha256": "09073e48fbf7d4ae6eb2d16c3138bb46cfcb34c41f5ef9a3def247d40a32ee27",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/seance_real.py",
+      "sha256": "8adbd855fa29b9a0a2bc77fc04515ef6b9ac3f5d996f4a385c53ca98568cdab7",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/seance_v2.py",
+      "sha256": "509a966b8bb15581013750742a9eb2385d907c8607a133a48db975af2b7741f3",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/sidecar.py",
+      "sha256": "af3003ca0bf1fa71194e26390d51488c805832c430bc0908654e3e85c5cbd3d6",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/spectral_seance.py",
+      "sha256": "d750985287d453d57aa10e191f56e3a7ea3a469cbc111fbd88c7f0da0930c1e3",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/telemetry.py",
+      "sha256": "4e7428d81ef57a431ac8d8c7f8cca005deefce98e5528690a6844752de863476",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/walker.py",
+      "sha256": "92d9c428301ca7839a5c08bb9d4f13a2514975d6f6f654f9e3650f70f15f99a6",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/wick_fast.py",
+      "sha256": "d751e0debb93372736a39b9fd7826ccdedc15ddde729d2e6b14a17ada289b3f8",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/legacy/wick_search.py",
+      "sha256": "7e2b65d491cf6f4b5732438e09ce8c81b242d1bcd642fb2cf49e3488d438ee81",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/research/tests/stress_test_nav.py",
+      "sha256": "5402860a24171bb8867eb12e079062bec6c93fa8f4fac2a56b609768cf054648",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/seance-rs/README.md",
+      "sha256": "a936aa99bb4fb64f788907ed046375edf456701fe2f217ed39d65aa858579e8a",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/seance-rs/src/main.rs",
+      "sha256": "d29bc696f79cd51fe83647dd9934825d41fdffd3833ca56a70575a48110c8fa0",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/seance_engine.py",
+      "sha256": "e35823235803cfcea35e3a700e3cd618d05265279f1dde9dd41a776ac7e30b33",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/spectral_multi.py",
+      "sha256": "7e3df3f3f2fe7c55024db4bd5e7da4a2cfdedd21349bf9cc6a0018e0c3464232",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/spectral_nav.py",
+      "sha256": "f4b677c982c734ad535bd7fdf6ea2c1ce654b36d208a37fbdd0f1c56974a67a7",
+      "category": "host-model-audit"
+    },
+    {
+      "source": "seance/STATUS.md",
+      "sha256": "2edb4bcf66f1a1e63927fc48f69def60eaa6c14c3c462731c6a11ec955f36cc5",
+      "category": "host-model-audit"
+    }
+  ]
+}

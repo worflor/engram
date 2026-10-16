@@ -1,0 +1,35 @@
+plugins {
+    id 'net.fabricmc.fabric-loom-remap' version '1.17.21'
+}
+
+group = 'dev.woflo.engram'
+version = '0.4.0'
+base { archivesName = 'engram-npc-laboratory' }
+if (providers.gradleProperty('engram.buildDir').isPresent()) {
+    layout.buildDirectory = file(providers.gradleProperty('engram.buildDir').get())
+}
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings loom.officialMojangMappings()
+    modImplementation 'net.fabricmc:fabric-loader:0.19.5'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.116.17+1.21.1'
+}
+java { toolchain.languageVersion = JavaLanguageVersion.of(21) }
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+tasks.withType(JavaExec).configureEach {
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+}
+loom {
+    runs {
+        gametest {
+            server()
+            name 'Engram experience NPC'
+            vmArg '-Xmx1024m'
+            vmArg '-Dfabric-api.gametest'
+            vmArg "-Dfabric-api.gametest.report-file=${providers.gradleProperty('engram.report').get()}"
+            vmArg "-Dengram.lane=${providers.gradleProperty('engram.lane').get()}"
+            vmArg "-Dengram.session=${providers.gradleProperty('engram.session').get()}"
+            runDir providers.gradleProperty('engram.runDir').get()
+        }
+    }
+}

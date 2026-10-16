@@ -1,0 +1,1112 @@
+{
+  "extracted": "2026-10-15",
+  "sources": {
+    "neuron": {
+      "url": "https://github.com/worflor/neuron",
+      "commit": "0c07f6d450e555a36e042e4613f61d39103bb4a8"
+    },
+    "portfolio": {
+      "url": "https://github.com/worflor/worflor.github.io",
+      "commit": "d027b55674b1bea4d993b82b6d0721835d68ea9c",
+      "note": "Engram sources are ignored local files, not attributed to this commit; file hashes identify the actual inputs."
+    },
+    "wdym": {
+      "url": "https://github.com/worflor/what-do-you-mean",
+      "commit": "a7f30854cfd4799146af63d8f9a26633f99021ee"
+    },
+    "structure": {
+      "url": "https://github.com/worflor/agentic-project-system",
+      "commit": "de7274830fc4eec68253e34e4e6865cc2540fce8"
+    },
+    "vixen": {
+      "url": "https://github.com/worflor/vixen",
+      "commit": "3f6a6683f54380516181f3a8f62958ae628957d0"
+    },
+    "manifold": {
+      "url": "https://github.com/worflor/git-desktop-premium-ultra-promax-plus-R",
+      "commit": "e1b2691e54bbebd9bdaa1fd479a7764695ca4e37"
+    }
+  },
+  "files": [
+    {
+      "path": "src/brain.rs",
+      "source": "neuron/crates/engram/src/brain.rs",
+      "sha256": "e3dfe8df8149ce31f3c346f16459dab9069bb19bf74ca121e40c17e0107f2c5f"
+    },
+    {
+      "path": "src/brain_io.rs",
+      "source": "neuron/crates/engram/src/brain_io.rs",
+      "sha256": "f430c04b905f67b6c8c5b5c3fc92895f31d7cbc9e0ab6397ec3f7125510a394e"
+    },
+    {
+      "path": "src/decode.rs",
+      "source": "neuron/crates/engram/src/decode.rs",
+      "sha256": "27f675d633dd17412f96b286d7d442e1d92fbdac59b7bcb39a5a2383b7248b44"
+    },
+    {
+      "path": "src/encode.rs",
+      "source": "neuron/crates/engram/src/encode.rs",
+      "sha256": "20c5b00e910b684d5c4af5e77b63e3dc1b8867b5cf34121d1543f347b6b1238e"
+    },
+    {
+      "path": "src/fit.rs",
+      "source": "neuron/crates/engram/src/fit.rs",
+      "sha256": "9ccbfb2a0d2f2b15040fd914bd7657d1861817894649400ad9a569a82c7807f1"
+    },
+    {
+      "path": "src/histogram.rs",
+      "source": "neuron/crates/engram/src/histogram.rs",
+      "sha256": "3cf594dc356eaadd449166b3c7b955995935a1b210ddb85e3468004ccac6d786"
+    },
+    {
+      "path": "src/lib.rs",
+      "source": "neuron/crates/engram/src/lib.rs",
+      "sha256": "ee07ac42498968f129986d8d95a059c7126eae44a5300e0878a8fc9d09bed65e"
+    },
+    {
+      "path": "src/predict.rs",
+      "source": "neuron/crates/engram/src/predict.rs",
+      "sha256": "0352f50e6e64a44bfab5284017d2f2ec844d25b2888fc28f0495ce868206eeb0"
+    },
+    {
+      "path": "src/segment.rs",
+      "source": "neuron/crates/engram/src/segment.rs",
+      "sha256": "f74b34a32a0c192f5e3081e899a1331fb6821d9b9a743a5dfbb7263508b054ac"
+    },
+    {
+      "path": "src/streaming.rs",
+      "source": "neuron/crates/engram/src/streaming.rs",
+      "sha256": "c50c1a86bd7ccaee865e46fc29c6eb7ab5e3efd01254c0dee261bb53e9bc7bed"
+    },
+    {
+      "path": "src/types.rs",
+      "source": "neuron/crates/engram/src/types.rs",
+      "sha256": "c58e7cb8aef867c9519c366ec6f6ce999edd5e04e3b2159f90d20f860ae43bdb"
+    },
+    {
+      "path": "src/wire.rs",
+      "source": "neuron/crates/engram/src/wire.rs",
+      "sha256": "2b08929789c0a4f1373aa8f8c67d0142a1a0f0cca74e128f09b5d14f27b911a3"
+    },
+    {
+      "path": "tests/fixtures/long_form.txt",
+      "source": "neuron/crates/engram/tests/fixtures/long_form.txt",
+      "sha256": "b34219ceb2db013abb714a07be3dbaebdf281f2d2001ad937196e246ebf6d570"
+    },
+    {
+      "path": "tests/fixtures/repetitive.txt",
+      "source": "neuron/crates/engram/tests/fixtures/repetitive.txt",
+      "sha256": "cea9ac8ac3478e8c83dc808f5dbebafe60ce6beceaed94d300a106b8c8eb12be"
+    },
+    {
+      "path": "tests/fixtures/short_burst.txt",
+      "source": "neuron/crates/engram/tests/fixtures/short_burst.txt",
+      "sha256": "ed00170da1d929dfb15beeeffd060e121a02e7b1b89e162e94b59a7cafa0c0ed"
+    },
+    {
+      "path": "tests/fixtures/varied_vocab.txt",
+      "source": "neuron/crates/engram/tests/fixtures/varied_vocab.txt",
+      "sha256": "bde5428a2c7e3626476fb0972e72aa380afb394952661a3b81a85d2cf0325927"
+    },
+    {
+      "path": "tests/integration.rs",
+      "source": "neuron/crates/engram/tests/integration.rs",
+      "sha256": "a95532ec9f86a57abc726106709c7ac6e3caeb0e8d8d265fc0d4d2ced7ad66c6"
+    },
+    {
+      "path": "LICENSE.md",
+      "source": "neuron/crates/engram/LICENSE.md",
+      "sha256": "c55717cbbd0f73a1ef95f47be4b1242786a6869265562421d494974a1f2667b1"
+    },
+    {
+      "path": "LICENSES/Whisper-Protocol-1.0.md",
+      "source": "portfolio/src/scripts/whisper/LICENSE.md (local working copy)",
+      "sha256": "00a2f25734bcd4363cbab11e1e282ed5ab9035a9c7622f2bff3f6b71f7882681"
+    },
+    {
+      "path": "engram_codec.py",
+      "source": "portfolio/rag_tests/engram_codec.py (local, ignored)",
+      "sha256": "44b24af1b5b733440aef0a0356a7b1751cb980a4e141277507adc7b14c3ff6e3"
+    },
+    {
+      "path": "research/portfolio/engram/bench_embed.py",
+      "source": "portfolio/rag_tests/engram/bench_embed.py (local, ignored)",
+      "sha256": "c5c4e9fd7d5092b827175ef0aa33d0a990993e357b64453f0dc1063fda8e9810"
+    },
+    {
+      "path": "research/portfolio/engram/bench_ingest.py",
+      "source": "portfolio/rag_tests/engram/bench_ingest.py (local, ignored)",
+      "sha256": "13b6553c4ea816177509a1306e5db16c9ec6270bd9089256fc0d65840c993741"
+    },
+    {
+      "path": "research/portfolio/engram/curriculum.py",
+      "source": "portfolio/rag_tests/engram/curriculum.py (local, ignored)",
+      "sha256": "ef2bfbbf2e2dd45dd7a1cb505accb6b115ba31b3505917c5568ef37f1c06ec33"
+    },
+    {
+      "path": "research/portfolio/engram/ENGRAM_FORMAT_V1.md",
+      "source": "portfolio/rag_tests/engram/ENGRAM_FORMAT_V1.md (local, ignored)",
+      "sha256": "38c2add18871ab7bfaefc92ba45dc691395a599e5849700a5b5c352af7577978"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_deep.py",
+      "source": "portfolio/rag_tests/engram/experiment_deep.py (local, ignored)",
+      "sha256": "aeb7dfcbb1a6b059c6f294dfc84fd2f13f2744509a19b55a5c6e349d51d8238d"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_determinism.py",
+      "source": "portfolio/rag_tests/engram/experiment_determinism.py (local, ignored)",
+      "sha256": "41c266b42f82d32df6a55575fe8aaa2356754724a1a01aed0ddf74f017d89978"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_dream.py",
+      "source": "portfolio/rag_tests/engram/experiment_dream.py (local, ignored)",
+      "sha256": "8a2c97a3ba599ebd6754ef94e6f48373ad55b78c707640d1e4e62c4734d96f3d"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_escape.py",
+      "source": "portfolio/rag_tests/engram/experiment_escape.py (local, ignored)",
+      "sha256": "db5ef64463d9d06e296879d5b3a5c392b288cee10bf8813ba1f55e7f3a734fcd"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_escape_full.py",
+      "source": "portfolio/rag_tests/engram/experiment_escape_full.py (local, ignored)",
+      "sha256": "37ef77266cd5226232316f6621f22d56268daa6235768b5929b1715da1d4df30"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_escape_mode.py",
+      "source": "portfolio/rag_tests/engram/experiment_escape_mode.py (local, ignored)",
+      "sha256": "19f3e8ccc69ecd5e85c4ce2f58af9dd360fe1ef4b125e5f93c0805471979acbe"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_fingerprint.py",
+      "source": "portfolio/rag_tests/engram/experiment_fingerprint.py (local, ignored)",
+      "sha256": "930904c0596443d826c4618ab789bf4880af92bde3374eafb7cd0d5d064ffb4c"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_geometry.py",
+      "source": "portfolio/rag_tests/engram/experiment_geometry.py (local, ignored)",
+      "sha256": "acff9cc71d7f9b8d059c65dd7b9a0b035a0badc7e2b87554f6a45dd029a41d0d"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_model_size.py",
+      "source": "portfolio/rag_tests/engram/experiment_model_size.py (local, ignored)",
+      "sha256": "d3ebe702e0c724119796360addcaa0c7cd5e8bb2c1211c5a015469978ba9925d"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_orbit.py",
+      "source": "portfolio/rag_tests/engram/experiment_orbit.py (local, ignored)",
+      "sha256": "bea647232bbd0ba013262ce18567f322897f142e39545719291d1cec0e28ec8f"
+    },
+    {
+      "path": "research/portfolio/engram/experiment_prompt.py",
+      "source": "portfolio/rag_tests/engram/experiment_prompt.py (local, ignored)",
+      "sha256": "525cda29541177121f64d4aa8371d466e6e861d0c922d25f1106f939552a9eb3"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_alexandria_session.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_alexandria_session.py (local, ignored)",
+      "sha256": "7166b26cda98f93ad48c33e4f458ae01f866a9fca63aee13dddad84eb05c656d"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_babel_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_babel_test.py (local, ignored)",
+      "sha256": "691aac7b1bc66c52702c8a78cecf1d5b29b687f4928c0df897d2529aed07be8c"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_bench.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_bench.py (local, ignored)",
+      "sha256": "e7a4cc28296e618f8e30f959c5ee2ce5d06e45dee4e65e4c9d1011b21813417d"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_category_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_category_test.py (local, ignored)",
+      "sha256": "9bcae7336b8827873774bf24bea5e3f0a20828a0aefd6d34761250ecd5b19466"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_cpr_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_cpr_test.py (local, ignored)",
+      "sha256": "ea6cf159de50b9f0c702da15fb5bd33d910df57f60dfd13cdd93dc76638d2252"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_crosslingual_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_crosslingual_test.py (local, ignored)",
+      "sha256": "cb683c68191d5ae41f3eb29e96080698653ce14d8840fcbf38a4ea49144c2671"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_curiosity_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_curiosity_test.py (local, ignored)",
+      "sha256": "0e8f8b8c22c2b6daa755864e2b6d990ff668688222465c41ee92dd78a873dafb"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_depth_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_depth_test.py (local, ignored)",
+      "sha256": "29810cac5f020c8dc29776e17f0149d7335bd08b83ece285e1ee1779b4df22f6"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_generation_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_generation_test.py (local, ignored)",
+      "sha256": "d17a5401746304732cf08f433187416133b4c9535babea674f342c6cd7ac00ec"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_glove_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_glove_test.py (local, ignored)",
+      "sha256": "5d687bd56914bb13ccae55ecfd7b7bfae16d170132d585cda343a41ee3b717b7"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_inner_voice.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_inner_voice.py (local, ignored)",
+      "sha256": "6648bc269a14eebc583401bc0adff7a99f0697fba38084a76310954f3ffa829e"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_logos_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_logos_test.py (local, ignored)",
+      "sha256": "14d0bf669aec2c91fb05f3871f0b97c8f86d76b3d2a9656fb09edc53e9a8d62a"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_loop.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_loop.py (local, ignored)",
+      "sha256": "79efa396d9739c851d8cceacc055e7e4fd5752a14f593d04dd7ef1163a9b7f8b"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_mirror_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_mirror_test.py (local, ignored)",
+      "sha256": "6cf3df6964e8f0f5f459b71c1fbec60e5f7493692a13dbf7a3e1bc3fd1c2448c"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_mutualism_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_mutualism_test.py (local, ignored)",
+      "sha256": "fa9c48ec4baa0a3645d83a6e44687ebb455c14fbeacecc50cf0b1afb6efd3766"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_offspring_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_offspring_test.py (local, ignored)",
+      "sha256": "56ed07d389093804c842d69906cb7e7ac71f4de1f566e64ccf21247139d0777b"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_real_air.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_real_air.py (local, ignored)",
+      "sha256": "d81ec1a53331e67abcac159810e27bf2df8763ad4ca108be14f786ba76e6d937"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_replication_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_replication_test.py (local, ignored)",
+      "sha256": "3f4493b901cd2f11462ece877b5b116cbc2bc35364ba90034d23e6a16d083f01"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_residual_anatomy.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_residual_anatomy.py (local, ignored)",
+      "sha256": "562eecbbe8f72f846909913b9061b5a1324dc2663eda4ef91ff972466ec82905"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_stress.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_stress.py (local, ignored)",
+      "sha256": "57696fb68079af364574847ede830901a53a6f01a85ae2e2192d0d6dd354111c"
+    },
+    {
+      "path": "research/portfolio/engram/experiments/engram_symbiosis_test.py",
+      "source": "portfolio/rag_tests/engram/experiments/engram_symbiosis_test.py (local, ignored)",
+      "sha256": "2d8b2f127f23b6317a5fada1c885b0a6fb16dc415bbb717d1817c37a07e73086"
+    },
+    {
+      "path": "research/portfolio/engram/fast_embed.py",
+      "source": "portfolio/rag_tests/engram/fast_embed.py (local, ignored)",
+      "sha256": "053489b7c5823e326cfd062acf65102cb48cf7afc000566fe0142f8cdf6939c4"
+    },
+    {
+      "path": "research/portfolio/engram/finalize.py",
+      "source": "portfolio/rag_tests/engram/finalize.py (local, ignored)",
+      "sha256": "fd3e2b43d7ffcaa00b0fa7eeb2983a3b3535c118d0402dbe73bafa14886332e0"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/__init__.py",
+      "source": "portfolio/rag_tests/engram/gpu/__init__.py (local, ignored)",
+      "sha256": "fe8cd84cd2a98542936e9faff964a66724da45cf931c4f45921a5057cbe4ebd2"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/bench_async_completion.py",
+      "source": "portfolio/rag_tests/engram/gpu/bench_async_completion.py (local, ignored)",
+      "sha256": "9ed82bbdc8783647c94781e1f588fafc632a17e6a8e4041328096141fafadf18"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/__init__.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/__init__.py (local, ignored)",
+      "sha256": "b811728e6f6f9d7d1a25d740162b444d36c7430b8ce5c4d95fb578803967f42b"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_fit.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_fit.py (local, ignored)",
+      "sha256": "7917bf1f6019eec1b9c2c9dc408cfdd7ff014a0704d7c241ce90d82a3f7e0bed"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_fit_v2.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_fit_v2.py (local, ignored)",
+      "sha256": "04e05718f69f440c027fc8f903236ef7e9497b3b7d498f20fb21d1991ad2e95f"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_minmax.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_minmax.py (local, ignored)",
+      "sha256": "3457a85938228aa3199d994b62235114fef37f84d5b56447b8e0c45595389e5e"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_scaling.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_scaling.py (local, ignored)",
+      "sha256": "55be6a5f1c4515b1eb866d73af05d5295816d8aad6d2be35147c2aa183920528"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_v10.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_v10.py (local, ignored)",
+      "sha256": "42f4b5435d59269e12a98884324f8e0d1064a85f9cdd8c5b0d5fd7dd6946686c"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_v11.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_v11.py (local, ignored)",
+      "sha256": "8f4e807f319295e4ce7d06bc9249aa25a4baf8b3665e05887c1ae5332385aaf4"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/benches/bench_v8.py",
+      "source": "portfolio/rag_tests/engram/gpu/benches/bench_v8.py (local, ignored)",
+      "sha256": "59edc6c858a0fc5857a732d864b35685966fee595b7c8bfd748b544405ea40d0"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/brain.py",
+      "source": "portfolio/rag_tests/engram/gpu/brain.py (local, ignored)",
+      "sha256": "727cd09cdd79f9fd1fb4dac37d470f10c36a0372ed1d3ef4c29b197a5eb1bb13"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/chain_engine.py",
+      "source": "portfolio/rag_tests/engram/gpu/chain_engine.py (local, ignored)",
+      "sha256": "fb356036b2ed03307d430499b81c1389edda6df4886f54449e385b54adc6f39d"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/engine.py",
+      "source": "portfolio/rag_tests/engram/gpu/engine.py (local, ignored)",
+      "sha256": "777b84b52638b033bfc4fb6a96b72bdf49cd14c169e30c0ffe673e5f5a74ab66"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/FINDINGS.md",
+      "source": "portfolio/rag_tests/engram/gpu/FINDINGS.md (local, ignored)",
+      "sha256": "d3e7ccd9b8e118acded9a5804c2573c789dc92c4658c76b1e521a208c48ae5a4"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/probes/__init__.py",
+      "source": "portfolio/rag_tests/engram/gpu/probes/__init__.py (local, ignored)",
+      "sha256": "4963f032c6b30cd00ce70031ae0b82eb7cb713148b4d49e299764ae8caab1b0a"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/probes/probe_ceiling.py",
+      "source": "portfolio/rag_tests/engram/gpu/probes/probe_ceiling.py (local, ignored)",
+      "sha256": "2794d0ca344adc7e932fda777090e50f5a277ee36a93e095f3abd338635c7eea"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/probes/probe_envelope.py",
+      "source": "portfolio/rag_tests/engram/gpu/probes/probe_envelope.py (local, ignored)",
+      "sha256": "c4a80abc1528d45060daa05f673da457d47aef55f28c3aa984b14c9f3cbcc759"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/probes/probe_v2_errors.py",
+      "source": "portfolio/rag_tests/engram/gpu/probes/probe_v2_errors.py (local, ignored)",
+      "sha256": "c053a96a62f6e7c0be3d4d81c4a50025a26fb0a94d69d67e182f5d8ceb705168"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/absorb_gap.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/absorb_gap.wgsl (local, ignored)",
+      "sha256": "8517b5d8ad715ffd0b67a37a9ad23e8cfb509019630027b5c6d15390268b902c"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/absorb_route.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/absorb_route.wgsl (local, ignored)",
+      "sha256": "f83d8a80b4709171205f6ec78402514707b712c994a1875ad6641aa345ea92b0"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/finalize_indirect.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/finalize_indirect.wgsl (local, ignored)",
+      "sha256": "d9a26a5bcdecf458fb23fb2f2c5add71ac9ffad251ae97db7c48e1de11fdce9c"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/fit_pair_v3.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/fit_pair_v3.wgsl (local, ignored)",
+      "sha256": "cb3cfe3d0b8042ae3ce5ba1bbbb6ee62b8d41f6e28ae7a6416e6f7b28dfab1e0"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/gather_seeds.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/gather_seeds.wgsl (local, ignored)",
+      "sha256": "f64fc0ca443a355502178a7480c3b9e166cfcf95bfe0274b1c7c04678fe7d82d"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/gather_smooth_pair.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/gather_smooth_pair.wgsl (local, ignored)",
+      "sha256": "672a352831b2ef9fb34289e1e26bcff2a94d0f1d08aecf202fca2f3a104542b5"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/gather_smooth_pair_f16.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/gather_smooth_pair_f16.wgsl (local, ignored)",
+      "sha256": "e13fecb537851c38dd9c1a8a0b5dae9207a3e424905660fff3624923fbcd4259"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/gather_smooth_pair_i8.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/gather_smooth_pair_i8.wgsl (local, ignored)",
+      "sha256": "f0ec002d8e234afa542a107c6da5c403d9f19956b9bc0872dc68389a8059ee6c"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/per_article_reduce.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/per_article_reduce.wgsl (local, ignored)",
+      "sha256": "77bd7348527c0d5857d2ef01de6d4eea7cf83458452adaf684757fc9e8d4b01b"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/segment.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/segment.wgsl (local, ignored)",
+      "sha256": "c4f1a373e0f1b308f190cc02fcbebabb4e76822139442bf9af3744475d0879ac"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/traj_features.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/traj_features.wgsl (local, ignored)",
+      "sha256": "0e0014fa9ad7148ea9793cfb333e6e90121e8c55eb85864c593516eb58f1179f"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair.wgsl (local, ignored)",
+      "sha256": "e870938c2275b51ac27ef87d48bb25bd1ff7f105239372dd704caa0e0e16d4af"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v10_f16.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v10_f16.wgsl (local, ignored)",
+      "sha256": "2aa9208e1160ec439f74aacc89c971df2e89e246cc375176cf70b0d314268843"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v11_df.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v11_df.wgsl (local, ignored)",
+      "sha256": "c9122ac3712eb696c575d9ce06f27f9644d69cd2ea4bb6d20e229678672ae311"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v2.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v2.wgsl (local, ignored)",
+      "sha256": "6e11470fec3da2376862009e8825ec0aa8e0ffbfd7db55ef7f935117950bd8ae"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v4.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v4.wgsl (local, ignored)",
+      "sha256": "f8ea040bdf54cb8f7e52c396af52d76fa3d05ef92891687725dc91d790b035cd"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v5_noresid.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v5_noresid.wgsl (local, ignored)",
+      "sha256": "d3e3922c8aa6bb02e1a987dc0117f069f54b269ca4b25bbb72b1b39455e35eef"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v8_sm.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v8_sm.wgsl (local, ignored)",
+      "sha256": "cc7fa172fa587143ad0245c5aa8c7c09c2e36f0f6518b21871a28b70c7d15f78"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_v9_hybrid.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_v9_hybrid.wgsl (local, ignored)",
+      "sha256": "4e33f5f5a0dc90556026feb2765fc29c58df4a745bbe6a1665b0286d8ab857e7"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/fit_pair_wg128.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/fit_pair_wg128.wgsl (local, ignored)",
+      "sha256": "0f29eae3875a27ac8186af2b857a5f73501d9ec152213286e76f62877f92705c"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/gather_smooth_pair_v1.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/gather_smooth_pair_v1.wgsl (local, ignored)",
+      "sha256": "2e5d168c73d8c291733ac001b198e3c3a0271401b3905b74ac8e6d46b5953fd9"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/shaders/variants/memcpy_probe.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/variants/memcpy_probe.wgsl (local, ignored)",
+      "sha256": "93bfa4c05f8831e3b2c63d13b4a73c962ed61b52b144a9bdc064276fb620fa12"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/test_chain_engine.py",
+      "source": "portfolio/rag_tests/engram/gpu/test_chain_engine.py (local, ignored)",
+      "sha256": "053a4a1b6a8a1647c5d6cd4adfdd3698d4a655c16ac0bf4e1bb810cfbbdb5387"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/test_gather_kernel.py",
+      "source": "portfolio/rag_tests/engram/gpu/test_gather_kernel.py (local, ignored)",
+      "sha256": "b6e370239a36cba889286600ac849cb4c2bab1b9ba34363bde3b868f9182d971"
+    },
+    {
+      "path": "research/portfolio/engram/gpu/unified.py",
+      "source": "portfolio/rag_tests/engram/gpu/unified.py (local, ignored)",
+      "sha256": "95b56296a0b7959f2e58939d38967a2e894b8b80dba1c29b3a1882ecc425da82"
+    },
+    {
+      "path": "research/portfolio/engram/gpu_ingest.py",
+      "source": "portfolio/rag_tests/engram/gpu_ingest.py (local, ignored)",
+      "sha256": "24bf86536a5ebada7da86df1b32d1e3a0375722442549eea8f09d01980f6b2e6"
+    },
+    {
+      "path": "research/portfolio/engram/hetero_ingest.py",
+      "source": "portfolio/rag_tests/engram/hetero_ingest.py (local, ignored)",
+      "sha256": "cb560518c2579045725ee6108b4ecc038b923da93f1dabe29b29efe03b4a9306"
+    },
+    {
+      "path": "research/portfolio/engram/hetero_v2.py",
+      "source": "portfolio/rag_tests/engram/hetero_v2.py (local, ignored)",
+      "sha256": "23c56a18cd1d09aeae6b33ed0d8cb18b9976e255fd94f4862409164fc90e6ec8"
+    },
+    {
+      "path": "research/portfolio/engram/hetero_v3.py",
+      "source": "portfolio/rag_tests/engram/hetero_v3.py (local, ignored)",
+      "sha256": "3f2de26ea0ba64ada9f92cff1f8e4230fa2bc7c924f395762d3bf390069ace7f"
+    },
+    {
+      "path": "research/portfolio/engram/ingest.py",
+      "source": "portfolio/rag_tests/engram/ingest.py (local, ignored)",
+      "sha256": "e1d4826b4a0f858c793486abbd24a8a45d25c706dcd999b197f3ca1c20d38809"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_full_pipeline.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_full_pipeline.py (local, ignored)",
+      "sha256": "a561b9d76105cf3c3db3e186bc0bea243269ade49569ef20792929c5404ed03d"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_v0.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_v0.py (local, ignored)",
+      "sha256": "aff6000d0c8a874d6aa7fbf366c0a2e2172d731bb7bfd8a7cc989c6acbcf8e2a"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_v1.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_v1.py (local, ignored)",
+      "sha256": "5ebdcfd3ccdcb1f33e3e607df2286d9a227f614615d4ec7e121056fdda298b5b"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_v2.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_v2.py (local, ignored)",
+      "sha256": "4abe1e4bc7b2fb39992ae9dafabfe6020cea2b5676cee2d91e7e033d163d0611"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_v3.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_v3.py (local, ignored)",
+      "sha256": "645a56e858529f96e17009c514ac64c6c4a72c87c0ced39f5f2b5481027cf485"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_v3_parallel.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_v3_parallel.py (local, ignored)",
+      "sha256": "114f879af39cad0640f268c6d7c3babb94eb8ab97a8b98975ed3ed30a798f2d2"
+    },
+    {
+      "path": "research/portfolio/engram/mass/bench_v3_realistic.py",
+      "source": "portfolio/rag_tests/engram/mass/bench_v3_realistic.py (local, ignored)",
+      "sha256": "080299ec844dd2090f9279e72b9e8bb281658855daf93f547c0a62169469192f"
+    },
+    {
+      "path": "research/portfolio/engram/mass/corpus.py",
+      "source": "portfolio/rag_tests/engram/mass/corpus.py (local, ignored)",
+      "sha256": "e77663d79507abc33a4b38acbefb46279eb8ba4447581c38309d56b450502ee4"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/bench_gpu.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/bench_gpu.py (local, ignored)",
+      "sha256": "73d711d8cd085da1c5d1ca7230e3b62ea3844d476284ce3b0a00325d8458cbbf"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/bench_gpu_v2.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/bench_gpu_v2.py (local, ignored)",
+      "sha256": "e3804da04b2f1f47e4607a760c36c9cd89d68916cce896a30e797017d1bcf6b2"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/bench_gpu_v3.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/bench_gpu_v3.py (local, ignored)",
+      "sha256": "31aefb07d5e214da8a52fc1f91c6b95d22bcd41a65ac2e9c27447dd0060c6e88"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/bench_scale.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/bench_scale.py (local, ignored)",
+      "sha256": "3fb4b66df7742a814b43462eba577148012ed77443b12958ebee3b319b7e6b66"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/nano_sm.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/nano_sm.py (local, ignored)",
+      "sha256": "64b75c01412b6d6a2d443ebcf7a7b64ae6dddd528e91d2fb6fc9a2eda53e23f8"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/run_gpu.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/run_gpu.py (local, ignored)",
+      "sha256": "4e4cc184885b119565e96490dae6ef8064e4dd9d4d94f87e241acc86f6bd027d"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/run_gpu_v2.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/run_gpu_v2.py (local, ignored)",
+      "sha256": "af1277fe58528950f62b45083cadb0f55782e3cc3763a0e9e63cda61006d0ba0"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/run_gpu_v3.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/run_gpu_v3.py (local, ignored)",
+      "sha256": "bf18f02ab4643a9d19f4c6403b94710369f27cf79af7646bdb84c543e0dc1f25"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/shaders/nano_scan.wgsl",
+      "source": "portfolio/rag_tests/engram/mass/gpu/shaders/nano_scan.wgsl (local, ignored)",
+      "sha256": "2514d839cf3eb4f324fc50abb8283cceaa3b022292efdd5062efb09e11ebc326"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/shaders/nano_scan_v2.wgsl",
+      "source": "portfolio/rag_tests/engram/mass/gpu/shaders/nano_scan_v2.wgsl (local, ignored)",
+      "sha256": "15ef1abebd0374cb4739647d2bcda7949f4012bd5c2e796f368b079736e0d610"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/shaders/nano_scan_v3.wgsl",
+      "source": "portfolio/rag_tests/engram/mass/gpu/shaders/nano_scan_v3.wgsl (local, ignored)",
+      "sha256": "36b0b4a78a0b03b6cee01edaab31d95513caf5e25929bb9a8c049ee6faed58c0"
+    },
+    {
+      "path": "research/portfolio/engram/mass/gpu/test_nano.py",
+      "source": "portfolio/rag_tests/engram/mass/gpu/test_nano.py (local, ignored)",
+      "sha256": "cceb0c88e1579b2b4790569b7e849041d01f5ef6149dc3c51ccbafd6e328555e"
+    },
+    {
+      "path": "research/portfolio/engram/mass/test_codec_equivalence.py",
+      "source": "portfolio/rag_tests/engram/mass/test_codec_equivalence.py (local, ignored)",
+      "sha256": "c5a626b56e52b3b4e9c65e6c98e46a58f81bd0f6987dc2b7b5d760027f7b7706"
+    },
+    {
+      "path": "research/portfolio/engram/mass/test_real.py",
+      "source": "portfolio/rag_tests/engram/mass/test_real.py (local, ignored)",
+      "sha256": "ad7bfe4bcb38bc6fc17a88bdf1d50bc525fd6f9135182f6d27ee91826bdc2bf2"
+    },
+    {
+      "path": "research/portfolio/engram/mass/test_real_v4.py",
+      "source": "portfolio/rag_tests/engram/mass/test_real_v4.py (local, ignored)",
+      "sha256": "72761807eba2f351913f782a4dda58bb28c9dc302e7ab156da5cfd37f6aa8415"
+    },
+    {
+      "path": "research/portfolio/engram/mass/test_real_v5.py",
+      "source": "portfolio/rag_tests/engram/mass/test_real_v5.py (local, ignored)",
+      "sha256": "bfbce21c9e784421b04bd1cb16fcb33380c1a8d09816915c0b87563565b1a3af"
+    },
+    {
+      "path": "research/portfolio/engram/mass/v0_python.py",
+      "source": "portfolio/rag_tests/engram/mass/v0_python.py (local, ignored)",
+      "sha256": "f5e2439ecc91603b16f49d0bfe49510192d81c9a80be182041360975f59e4368"
+    },
+    {
+      "path": "research/portfolio/engram/mass/v1_numba.py",
+      "source": "portfolio/rag_tests/engram/mass/v1_numba.py (local, ignored)",
+      "sha256": "a508523e1ee0dae685283360c725b21fdc23120bbb987b6473f626bc4edda860"
+    },
+    {
+      "path": "research/portfolio/engram/mass/v2_tokenize.py",
+      "source": "portfolio/rag_tests/engram/mass/v2_tokenize.py (local, ignored)",
+      "sha256": "d3cddfbc492b92dc58ca309d6931e0ec7ed8af40097e37508ac877418d5cbc95"
+    },
+    {
+      "path": "research/portfolio/engram/mass/v3_fused.py",
+      "source": "portfolio/rag_tests/engram/mass/v3_fused.py (local, ignored)",
+      "sha256": "bbd04318e391766e3340956b41b51b77ee4c91aa0bbb768ccf0bd9799bc12224"
+    },
+    {
+      "path": "research/portfolio/engram/mass/v4_tables.py",
+      "source": "portfolio/rag_tests/engram/mass/v4_tables.py (local, ignored)",
+      "sha256": "eb46f17a55aeaf1d0a56a06977a5af587728ed4b4a2467e73ce71ae7bb15f67d"
+    },
+    {
+      "path": "research/portfolio/engram/mass/v5_batch.py",
+      "source": "portfolio/rag_tests/engram/mass/v5_batch.py (local, ignored)",
+      "sha256": "0d2f6c3c2dbf173cdf06dd9ee9619b36c7dd233452c70d33fb30550419a571ca"
+    },
+    {
+      "path": "research/portfolio/engram/mass_embed.py",
+      "source": "portfolio/rag_tests/engram/mass_embed.py (local, ignored)",
+      "sha256": "fa9e621905c53e9e456abf4fb1550f3653dcebdf69ed2002aabdaca267e3e0e5"
+    },
+    {
+      "path": "research/portfolio/engram/mouth.py",
+      "source": "portfolio/rag_tests/engram/mouth.py (local, ignored)",
+      "sha256": "85f3a0f18371b4eaf48f8e01a6421a97281b43179e3d24ce80269ff00735f604"
+    },
+    {
+      "path": "research/portfolio/engram/profile_well_spawning.py",
+      "source": "portfolio/rag_tests/engram/profile_well_spawning.py (local, ignored)",
+      "sha256": "7a9ea1186872de9ea9deb22158d4e9d99bc1c2500b71960750f7ef938d4675e5"
+    },
+    {
+      "path": "research/portfolio/engram/sources.py",
+      "source": "portfolio/rag_tests/engram/sources.py (local, ignored)",
+      "sha256": "8b2eb93def885b98ff4f8c7dec4d419f7d50b72d3c68e6feb058e6975f692763"
+    },
+    {
+      "path": "research/portfolio/engram/test_bi_processor.py",
+      "source": "portfolio/rag_tests/engram/test_bi_processor.py (local, ignored)",
+      "sha256": "45507840fc175875315c432b6f9a978c77884ee59580b75d7e1f91047c301323"
+    },
+    {
+      "path": "research/portfolio/engram/test_bytes_vs_words.py",
+      "source": "portfolio/rag_tests/engram/test_bytes_vs_words.py (local, ignored)",
+      "sha256": "a5cfe5f0359925dfd380f0d1ac0182f2d16412fefb01c62a2c9a69bd74577ab3"
+    },
+    {
+      "path": "legacy/python/test_engram.py",
+      "source": "portfolio/rag_tests/engram/test_engram.py (local, ignored)",
+      "sha256": "d7fbaae555d5f8d67887d95d398378aa137bee819599e9c11655e4d88428b2df"
+    },
+    {
+      "path": "research/portfolio/engram/test_escape_energy_sweep.py",
+      "source": "portfolio/rag_tests/engram/test_escape_energy_sweep.py (local, ignored)",
+      "sha256": "152e3dfcacc5d0ab831ef070beab508e85755e2097f0d926f255f43408698034"
+    },
+    {
+      "path": "research/portfolio/engram/test_full_validation.py",
+      "source": "portfolio/rag_tests/engram/test_full_validation.py (local, ignored)",
+      "sha256": "36399efd01c700ff4e995ffce7bcb064de5b815c54c962b818acdc72cf0d7313"
+    },
+    {
+      "path": "research/portfolio/engram/test_genesis_chain_api.py",
+      "source": "portfolio/rag_tests/engram/test_genesis_chain_api.py (local, ignored)",
+      "sha256": "e1249f1282a5d84119473f508aa16fb5d17c0eb2dab3e2a51e4c70a8e335cc53"
+    },
+    {
+      "path": "research/portfolio/engram/test_gpu_absorb.py",
+      "source": "portfolio/rag_tests/engram/test_gpu_absorb.py (local, ignored)",
+      "sha256": "8faba17107f22e56fe0f6fbbd78046724659444ac9cd8907a49cd2e675a9410f"
+    },
+    {
+      "path": "research/portfolio/engram/test_gpu_ingest.py",
+      "source": "portfolio/rag_tests/engram/test_gpu_ingest.py (local, ignored)",
+      "sha256": "1e636f4ffc26cdc944e5a8ab34171f2c60793818e8746295a60fe5d68fd0a779"
+    },
+    {
+      "path": "research/portfolio/engram/test_hetero_ingest.py",
+      "source": "portfolio/rag_tests/engram/test_hetero_ingest.py (local, ignored)",
+      "sha256": "5ea17192b54a642ed639f84ceb2943a7dc74a281456ac6d1152432497f6b6030"
+    },
+    {
+      "path": "research/portfolio/engram/test_hetero_real.py",
+      "source": "portfolio/rag_tests/engram/test_hetero_real.py (local, ignored)",
+      "sha256": "fbb2c4df0e0181673180373bfc46a553aa6220f5b76cca2e482d607bd3c682e4"
+    },
+    {
+      "path": "research/portfolio/engram/test_hetero_v2.py",
+      "source": "portfolio/rag_tests/engram/test_hetero_v2.py (local, ignored)",
+      "sha256": "9090ba3c5aa3c79ab239197683132deebab0ca16ecd0d9c8faf6cab57ae5c4bd"
+    },
+    {
+      "path": "research/portfolio/engram/test_hetero_v2_real.py",
+      "source": "portfolio/rag_tests/engram/test_hetero_v2_real.py (local, ignored)",
+      "sha256": "f497f300b290c537db3172052d4f15381e3fd5360b8f8b01e83281aa511c2f1e"
+    },
+    {
+      "path": "research/portfolio/engram/test_hetero_v3.py",
+      "source": "portfolio/rag_tests/engram/test_hetero_v3.py (local, ignored)",
+      "sha256": "ef49f287244dcf39b1e6e3122564a0eac4fbc3a04391d3c15d3a4fd086365b84"
+    },
+    {
+      "path": "research/portfolio/engram/test_hetero_v3_real.py",
+      "source": "portfolio/rag_tests/engram/test_hetero_v3_real.py (local, ignored)",
+      "sha256": "f20d0cae531ec25f737df603ecaa42b4f0648a4f59f46c53cc3af84cb1ec4555"
+    },
+    {
+      "path": "research/portfolio/engram/test_memory_safety.py",
+      "source": "portfolio/rag_tests/engram/test_memory_safety.py (local, ignored)",
+      "sha256": "d24771108e579bce6b1ad08f8cec562f88e9f39c6ee4fe2ce8dc094599c02d79"
+    },
+    {
+      "path": "research/portfolio/engram/test_on_article_async.py",
+      "source": "portfolio/rag_tests/engram/test_on_article_async.py (local, ignored)",
+      "sha256": "be98660186be27fc6bd1b56ffe7282e2ddcbcfc7871d7429ebaba5722ddbd7ff"
+    },
+    {
+      "path": "research/portfolio/engram/test_per_well_dream.py",
+      "source": "portfolio/rag_tests/engram/test_per_well_dream.py (local, ignored)",
+      "sha256": "1c884f46402150cf6db8b0bc22e279ad14baba371ef5fc0512f3187c6728a24b"
+    },
+    {
+      "path": "research/portfolio/engram/test_per_well_meta.py",
+      "source": "portfolio/rag_tests/engram/test_per_well_meta.py (local, ignored)",
+      "sha256": "83b7f5487c0277264f5c7698a8dffd73cb11572d8e810bb279ac4155ae7f3fcf"
+    },
+    {
+      "path": "research/portfolio/engram/test_refinement_convergence.py",
+      "source": "portfolio/rag_tests/engram/test_refinement_convergence.py (local, ignored)",
+      "sha256": "125ad119a575c59d52774d5f4d5a9b3aea26451c3b2f4877f9c66b1be077fdd4"
+    },
+    {
+      "path": "research/portfolio/engram/test_stress_real.py",
+      "source": "portfolio/rag_tests/engram/test_stress_real.py (local, ignored)",
+      "sha256": "47f08fed4a0ace9858440bc548adf360b6f522b44b4fd0cb6d7d37881847554d"
+    },
+    {
+      "path": "research/portfolio/engram/test_unified.py",
+      "source": "portfolio/rag_tests/engram/test_unified.py (local, ignored)",
+      "sha256": "aaeea77e5208f2928c8d47e5ccefc9d15c34e519dc5c8a4752caa84c5e4bb84d"
+    },
+    {
+      "path": "research/portfolio/engram/test_well_G_completion.py",
+      "source": "portfolio/rag_tests/engram/test_well_G_completion.py (local, ignored)",
+      "sha256": "c6268096b4c93e716b102ec1315ff7f65c931bd358cd1f1c2ea10f0ecdaf8990"
+    },
+    {
+      "path": "research/portfolio/engram/test_well_graph.py",
+      "source": "portfolio/rag_tests/engram/test_well_graph.py (local, ignored)",
+      "sha256": "b647c6be7ebfe6bb61bb790b275790035c2f22010c66e9f9ca7b7fc612ee2484"
+    },
+    {
+      "path": "research/portfolio/engram/test_well_naming.py",
+      "source": "portfolio/rag_tests/engram/test_well_naming.py (local, ignored)",
+      "sha256": "106a45553fb90fb36e6a6f63b27e08c301b56a241662ab031a4529b937f3c3cf"
+    },
+    {
+      "path": "research/portfolio/engram/well_naming.py",
+      "source": "portfolio/rag_tests/engram/well_naming.py (local, ignored)",
+      "sha256": "1c9be6b7ff124520cac643b8a63609c19e0514abcd40958e392f49e25273e861"
+    },
+    {
+      "path": "research/portfolio/engram/well_simulate.py",
+      "source": "portfolio/rag_tests/engram/well_simulate.py (local, ignored)",
+      "sha256": "8d3b01ab7ed9bfe816491351958a503bc1fb370a0fe69ee2bd897703129c0a6e"
+    },
+    {
+      "path": "legacy/python/engram.py",
+      "source": "portfolio/rag_tests/legacy/engram_iterations/engram.py",
+      "sha256": "7313fab730a5ff645fcbe908ccb4e6195fa38293fb2bc92331eef83db302cabb"
+    },
+    {
+      "path": "legacy/python/engram_bridge.py",
+      "source": "portfolio/rag_tests/legacy/engram_iterations/engram_bridge.py",
+      "sha256": "3767d132fc5d991e244da853e217c3598100ad5f6f340d7c022be4ac34a14410"
+    },
+    {
+      "path": "legacy/python/engram_v2.py",
+      "source": "portfolio/rag_tests/legacy/engram_iterations/engram_v2.py",
+      "sha256": "5dc71950881ddce9f9b37d94a5fff380365f6aee664bf28c6ef5a6a10595234b"
+    },
+    {
+      "path": "legacy/python/engram_v2_real_air.py",
+      "source": "portfolio/rag_tests/legacy/engram_iterations/engram_v2_real_air.py",
+      "sha256": "3e3d329699ef9d38af439fbfab8c9b2e0e144cbf26b2e6df1ab9ef1c792c6c23"
+    },
+    {
+      "path": "legacy/python/engram_v3.py",
+      "source": "portfolio/rag_tests/legacy/engram_iterations/engram_v3.py",
+      "sha256": "e161766742bfec0eb14def809df22533fce2ee4769f1dd611ef43f85568c48ca"
+    },
+    {
+      "path": "legacy/python/engram_v3_real_air.py",
+      "source": "portfolio/rag_tests/legacy/engram_iterations/engram_v3_real_air.py",
+      "sha256": "61d92b7dff92995c28c00eaa41d790bc27ba969faf123b9276454fdc3dd8bad2"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/brain.rs",
+      "source": "portfolio/engram/src/brain.rs (local, ignored)",
+      "sha256": "08eabc54e95491115797e4827471cebc5b1f2e6b8180af47d97186852e959ba0"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/brain_io.rs",
+      "source": "portfolio/engram/src/brain_io.rs (local, ignored)",
+      "sha256": "f48eaa899d9bff10344975f423bf15b06e88b969355a90f1aeba0783505fccc8"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/decode.rs",
+      "source": "portfolio/engram/src/decode.rs (local, ignored)",
+      "sha256": "afb256c659b02f601e0dd7df70938d36474111c338122496491736daf8e55dab"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/encode.rs",
+      "source": "portfolio/engram/src/encode.rs (local, ignored)",
+      "sha256": "bada292c0ad814a311de0008eed9ae29284980e9bc010869e9d89a2d5950a765"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/fit.rs",
+      "source": "portfolio/engram/src/fit.rs (local, ignored)",
+      "sha256": "dffbe08c16e3fa6d83999f4845982a7de702a6984416fdfc1176e60308b48d6b"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/histogram.rs",
+      "source": "portfolio/engram/src/histogram.rs (local, ignored)",
+      "sha256": "edc62be9d137591514a899302a8c2944151c9c8fc30bce0139c85460beee7b9d"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/lib.rs",
+      "source": "portfolio/engram/src/lib.rs (local, ignored)",
+      "sha256": "26f0d433c0a6d1fb13dfeb975fcd83fdb05a6fa5a61b6cdeb6ba99bdf03cd577"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/predict.rs",
+      "source": "portfolio/engram/src/predict.rs (local, ignored)",
+      "sha256": "b2fb5f4a5a4b58aa9ac7aeafc9ac3810d21d9ae901341341fab19857dc5b6d3f"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/segment.rs",
+      "source": "portfolio/engram/src/segment.rs (local, ignored)",
+      "sha256": "792494a0e2170ffb56e2baf977770f976c9fbf5c54ca1ac1246611a71360a94c"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/streaming.rs",
+      "source": "portfolio/engram/src/streaming.rs (local, ignored)",
+      "sha256": "c051f261395d259be1fee0722483bb9182463a22bf3d4565c70042c6ad2668ed"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/types.rs",
+      "source": "portfolio/engram/src/types.rs (local, ignored)",
+      "sha256": "b16db6b47aad0013f3e7d02fcbd5310d9f551d7b0c7fc3ba5b211222564a28e7"
+    },
+    {
+      "path": "legacy/rust-portfolio/src/wire.rs",
+      "source": "portfolio/engram/src/wire.rs (local, ignored)",
+      "sha256": "43788d6c861062e7683ed50119e2c406412a78dfa961886f321529e34156eb56"
+    },
+    {
+      "path": "legacy/design/HARNESS.md",
+      "source": "portfolio/engram/HARNESS.md (local, ignored)",
+      "sha256": "6474f3b1b6d1f2e0fd3675681622b3c24fb1f4009d8904f0a0eb547e30d16191"
+    },
+    {
+      "path": "integrations/wdym/java/woflo/wdym/engram/EngramBrain.java",
+      "source": "wdym/src/main/java/woflo/wdym/engram/EngramBrain.java",
+      "sha256": "25da9b72d6b5884cf5498626932b3d27b8429dffa3cde54f37f2f061a94ccea2"
+    },
+    {
+      "path": "integrations/wdym/java/woflo/wdym/engram/EngramSegment.java",
+      "source": "wdym/src/main/java/woflo/wdym/engram/EngramSegment.java",
+      "sha256": "dbd8d85eca12e009a2d805283af05e130ce856c0bee3392e4d9912743d51cb9b"
+    },
+    {
+      "path": "integrations/wdym/java/woflo/wdym/engram/EngramService.java",
+      "source": "wdym/src/main/java/woflo/wdym/engram/EngramService.java",
+      "sha256": "a92debfeb6ddd021aebbd96377d886540cb568d6e26d6b8816ff91f5396985fc"
+    },
+    {
+      "path": "integrations/wdym/java/woflo/wdym/engram/GloveEmbedder.java",
+      "source": "wdym/src/main/java/woflo/wdym/engram/GloveEmbedder.java",
+      "sha256": "7a3045cf52faf7d7de0cd8034031f6bcc81f91633426ce3faf4639f6ad0bab9d"
+    },
+    {
+      "path": "integrations/wdym/WORK-NOTICE.md",
+      "source": "wdym/LICENSE.md",
+      "sha256": "67b721f3e81b9a7590f0762e9ccd2a930021b83cc584f9539ea9beccabb227c5"
+    },
+    {
+      "path": "integrations/wdym/LICENSES/WLCSL-1.0.md",
+      "source": "wdym/LICENSES/WLCSL-1.0.md",
+      "sha256": "88e410fbd353dd133548906189425eb91b4fad4805fb17ee78e80dbe98af22ac"
+    },
+    {
+      "path": "engram_kernels/fit.wgsl",
+      "source": "portfolio/rag_tests/engram/gpu/shaders/fit_pair_v3.wgsl (local, ignored)",
+      "sha256": "cb3cfe3d0b8042ae3ce5ba1bbbb6ee62b8d41f6e28ae7a6416e6f7b28dfab1e0",
+      "note": "Packaged narrow fitting kernel with new bounded wrapper; retains Whisper Protocol License."
+    },
+    {
+      "path": "integrations/minecraft/gradle/wrapper/gradle-wrapper.jar",
+      "source": "tiercel/sandbox/minecraft/gradle/wrapper/gradle-wrapper.jar (official Gradle wrapper, unchanged)",
+      "sha256": "7a9ce74cff467ca1bf60a4fcd9f05185acceda4d0f382434d393e17864262c5d",
+      "license": "Apache-2.0; Gradle distribution license/notice retained in LICENSES/"
+    },
+    {
+      "path": "integrations/minecraft/gradle/wrapper/gradle-wrapper.properties",
+      "source": "tiercel/sandbox/minecraft/gradle/wrapper/gradle-wrapper.properties (official Gradle wrapper, unchanged)",
+      "sha256": "78d0d4a2d0d35132ce8f7d86849af45477f6095860d311ec5cc6f617202b61b4",
+      "license": "Apache-2.0; Gradle distribution license/notice retained in LICENSES/"
+    }
+  ],
+  "normalizations": [
+    "Personal absolute dataset paths changed to Path.home()/Downloads.",
+    "The obsolete EngramCodec-era test moved beside its matching legacy Python module.",
+    "Source import boundaries are described in docs/briefs/source-lineage.md; format contracts are defined in docs/reference/FORMATS.md.",
+    "Source text normalized to LF; historical whitespace otherwise preserved."
+  ],
+  "artifacts": [
+    {
+      "path": "research/artifacts/alexandria.engram",
+      "name": "Alexandria",
+      "role": "Frozen research artifact used by Manifold",
+      "sha256": "408850caea5dcaa475b1609becea835af85adac33127b2895757e547ec26f3f2",
+      "bytes": 3750381,
+      "format": "Engram ZIP",
+      "format_version": 4,
+      "dim": 300,
+      "wells": 225,
+      "recorded_absorptions": 5518095,
+      "source": "Original Alexandria ZIP; all four payloads match the committed Manifold ENDB v2 export after decoding its layout.",
+      "manifold_export": {
+        "path": "apps/desktop-flutter/assets/engram/alexandria.endb",
+        "sha256": "c79ea1c4f92e300577e971bda06e48fb54e5bc13d3f6d0cb1aa7a85e88048322"
+      },
+      "verification": [
+        "ZIP CRC integrity passed",
+        "Manifest, wells, dream buffer and annotations matched the Manifold export",
+        "Current Python EngramFile reader loaded 300 dimensions and 225 wells"
+      ],
+      "license": "LicenseRef-WLCSL-1.0 (same Alexandria content distributed as Manifold research component)"
+    }
+  ],
+  "unification": {
+    "baseline_commit": "07d20c4",
+    "reference_version": "0.2.0",
+    "functional_reference": "engram_codec.py with reference modules",
+    "native_contract": "shared trajectory/signature/V4 replay plus native ENBR memory profile",
+    "source_kernel_receipts": "tests/fixtures/source-kernels.json",
+    "legacy_packet_fixtures_from_commit": "07d20c4",
+    "source_decisions": {
+      "python_copies": "Portfolio, Seance and Rhema baseline ASTs matched outside wire functions.",
+      "wdym": "Explicit short-observation AR(1), Java kernel receipts and ZIP import cases.",
+      "manifold": "K/G signatures, spectral diagnostics, ENDB memory and GLV input adapter; host graph policy not imported.",
+      "neuron": "Native kernels, streaming and memory hardening; upstream Engram directory unchanged at 0c07f6d450e555a36e042e4613f61d39103bb4a8.",
+      "wick": "Distinct corpus-IDF sparse embedding, not substituted for AR(2).",
+      "witness_iterations": "Earlier incompatible constructions retained as history."
+    },
+    "inspected_python_sources": [
+      {
+        "source": "worflor.github.io/rag_tests/engram_codec.py",
+        "sha256": "44b24af1b5b733440aef0a0356a7b1751cb980a4e141277507adc7b14c3ff6e3"
+      },
+      {
+        "source": "seance/engram_codec.py",
+        "sha256": "44b24af1b5b733440aef0a0356a7b1751cb980a4e141277507adc7b14c3ff6e3"
+      },
+      {
+        "source": "_artifacts/research/rhema/ramblr/engram_codec.py",
+        "sha256": "44b24af1b5b733440aef0a0356a7b1751cb980a4e141277507adc7b14c3ff6e3"
+      }
+    ]
+  },
+  "retired_files": [
+    {
+      "path": "research/portfolio/engram/alexandria.py",
+      "source": "portfolio/rag_tests/engram/alexandria.py (local, ignored)",
+      "sha256": "9488dbc3187dfa476cd0fea1076c5d374b5940c017db37aa7932ae6aae6710bc",
+      "reason": "The frozen research artifact and reusable training mechanisms are retained without the original Alexandria run process. The portfolio is the source lineage for these retired procedures.",
+      "replacements": [
+        "engram_training.py",
+        "engram_corpus.py",
+        "tools/train_memory.py",
+        "examples/train_bytes.py"
+      ]
+    },
+    {
+      "path": "research/portfolio/engram/genesis.py",
+      "source": "portfolio/rag_tests/engram/genesis.py (local, ignored)",
+      "sha256": "95a992ca3cc64bcd833527b5fa48e89454072071b2d441cfbd40cfaa9b60ba9e",
+      "reason": "The frozen research artifact and reusable training mechanisms are retained without the original Alexandria run process. The portfolio is the source lineage for these retired procedures.",
+      "replacements": [
+        "engram_training.py",
+        "engram_corpus.py",
+        "tools/train_memory.py",
+        "examples/train_bytes.py"
+      ]
+    },
+    {
+      "path": "research/portfolio/engram/genesis_chain.py",
+      "source": "portfolio/rag_tests/engram/genesis_chain.py (local, ignored)",
+      "sha256": "9624f5a3669a23ee9408018056511e149a688425f866803233db5e0bc2db300e",
+      "reason": "The frozen research artifact and reusable training mechanisms are retained without the original Alexandria run process. The portfolio is the source lineage for these retired procedures.",
+      "replacements": [
+        "engram_training.py",
+        "engram_corpus.py",
+        "tools/train_memory.py",
+        "examples/train_bytes.py"
+      ]
+    }
+  ],
+  "npc": {
+    "runtime": "engram_npc.py",
+    "minecraft": "1.21.1",
+    "api": "docs/reference/NPC.md",
+    "receipts": "research/npc/minecraft.json",
+    "consumer_policy": "Reference mods were inspected read-only; no production worlds or consumers migrated.",
+    "seed_policy": "Environment-tailored experience restores behavior; a general dynamics prior requires its own matching representation and does not invent action knowledge."
+  }
+}

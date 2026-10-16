@@ -1,0 +1,970 @@
+{
+  "schema": "engram.npc-evidence/v1",
+  "scope": "Finite controlled task in two fresh real JVM/world runs; no framebuffer, production world or general-game claim.",
+  "first": {
+    "schema": "engram.minecraft-npc-study/v1",
+    "seed": 7,
+    "host": "native Minecraft 1.21.1 villager movement, collisions and block observations",
+    "baseline": {
+      "episodes": 40,
+      "success_rate": 0.45,
+      "mean_steps": 18.075,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "north",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "north",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, -1.0]
+        },
+        {
+          "action": "south",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -1.0,
+          "position": [2.0, 0.0]
+        }
+      ]
+    },
+    "initial_checkpoint_sha256": null,
+    "training_episodes": 120,
+    "learned": {
+      "episodes": 40,
+      "success_rate": 1.0,
+      "mean_steps": 7.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_15",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": "experience_16",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_34",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_35",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_36",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_197",
+          "reward": 1.0,
+          "position": [3.0, 2.0]
+        }
+      ]
+    },
+    "restored_translated_world": {
+      "episodes": 40,
+      "success_rate": 1.0,
+      "mean_steps": 7.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_15",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": "experience_16",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_34",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_35",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_36",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_197",
+          "reward": 1.0,
+          "position": [3.0, 2.0]
+        }
+      ]
+    },
+    "without_fitted_history": {
+      "episodes": 40,
+      "success_rate": 0.5,
+      "mean_steps": 5.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_6",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_2",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_4",
+          "reward": 1.0,
+          "position": [3.0, 2.0]
+        }
+      ]
+    },
+    "before_environment_change": {
+      "episodes": 40,
+      "success_rate": 0.0,
+      "mean_steps": 7.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_15",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": "experience_16",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_34",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_35",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_36",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_197",
+          "reward": -1.0,
+          "position": [3.0, 2.0]
+        }
+      ]
+    },
+    "after_environment_change": {
+      "episodes": 40,
+      "success_rate": 1.0,
+      "mean_steps": 8.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_15",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_16",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_17",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "north",
+          "well": "experience_78",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "north",
+          "well": "experience_79",
+          "reward": -0.02,
+          "position": [3.0, -1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_80",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "north",
+          "well": "experience_79",
+          "reward": -0.02,
+          "position": [3.0, -1.0]
+        },
+        {
+          "action": "north",
+          "well": "experience_267",
+          "reward": 1.0,
+          "position": [3.0, -2.0]
+        }
+      ]
+    },
+    "wells": 252,
+    "real_feedback_updates": 1402,
+    "planning_updates": 7010,
+    "native_requests": 8488,
+    "native_moves": 6408,
+    "semantic_trace_sha256": "9aca699c768afe1ae3384983ec653dc5d840f50736d7568e8d7f064a6cf726bc",
+    "checkpoint_sha256": "b89efce43ddc1aba6a9b31ee8b6ddb4eb5f8f0247696088feef7cd6455d5d9cd",
+    "junit_cases": 1,
+    "world_seed": 0,
+    "sources": {
+      "engram_analysis.py": "933cd19dcdd4d7b38d903704356259ecb02c981c9d008de2c00c2f7aa346bf3d",
+      "engram_codec.py": "80ab009f4ab6628ac2b19bb54854b0d1b91e2a46bcf45a5dbd59da7e38adaa87",
+      "engram_history.py": "8bd5a2361a1eaff6a9b5c90d8b32e0669c5770ff192c3c1812ec043b910b13ca",
+      "engram_npc.py": "99f64b68c82931249d1e07139d498c016fb4c84bde0b2a85d8530bf9916c390b",
+      "examples/npc_experience.py": "a9ae6aa584598633186c35b7bbf4ac281621e36ad1011d7349210acf3aa73ce7",
+      "integrations/minecraft/build.gradle": "32f9a8dcc2c8a0b0b0ea1da2e8bf009950d76f424eb9bf8de9650d4a9d7099de",
+      "integrations/minecraft/gradle/wrapper/gradle-wrapper.jar": "7a9ce74cff467ca1bf60a4fcd9f05185acceda4d0f382434d393e17864262c5d",
+      "integrations/minecraft/gradle/wrapper/gradle-wrapper.properties": "78d0d4a2d0d35132ce8f7d86849af45477f6095860d311ec5cc6f617202b61b4",
+      "integrations/minecraft/gradle.properties": "98352f8f82247dc6bcf3d26795421f592c5d8a39f2ec8561d00a8ade8d3b33c3",
+      "integrations/minecraft/settings.gradle": "ac42e11f6088e080117d82337b655fc0049351042afce0f45720b26373591cb7",
+      "integrations/minecraft/src/main/java/dev/woflo/engram/lab/ExperienceLab.java": "54b56e07dd81b70c3cbcc80de4f2fa31ab1bd5eb9b4d5115ad9533bc4b49450b",
+      "integrations/minecraft/src/main/resources/data/engram_npc/structure/empty.nbt": "3652f4e27a37ba06fcec45467ae280c65de82676ca43eeb3885376d9a2e96194",
+      "integrations/minecraft/src/main/resources/fabric.mod.json": "99dcf58a6f2dcac72249704c6c261da51d6371d66b1cbd8f69c2968652e1a3e8",
+      "tools/npc_lane.py": "c0dfca20a72bb8e28ad745360440b0bd0965ae99a06230dae6353463f4a7d1e4"
+    },
+    "completed_at_utc": "2026-10-16T04:29:35.761477+00:00"
+  },
+  "seeded_fresh_world": {
+    "schema": "engram.minecraft-npc-study/v1",
+    "seed": 7,
+    "host": "native Minecraft 1.21.1 villager movement, collisions and block observations",
+    "baseline": {
+      "episodes": 40,
+      "success_rate": 0.45,
+      "mean_steps": 18.075,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [0.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "north",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "north",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, -1.0]
+        },
+        {
+          "action": "south",
+          "well": null,
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": null,
+          "reward": -1.0,
+          "position": [2.0, 0.0]
+        }
+      ]
+    },
+    "initial_checkpoint_sha256": "b89efce43ddc1aba6a9b31ee8b6ddb4eb5f8f0247696088feef7cd6455d5d9cd",
+    "training_episodes": 0,
+    "learned": {
+      "episodes": 40,
+      "success_rate": 1.0,
+      "mean_steps": 7.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_15",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": "experience_16",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_34",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_35",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_36",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_197",
+          "reward": 1.0,
+          "position": [3.0, 2.0]
+        }
+      ]
+    },
+    "restored_translated_world": {
+      "episodes": 40,
+      "success_rate": 1.0,
+      "mean_steps": 7.0,
+      "example_trace": [
+        {
+          "action": "east",
+          "well": "experience_15",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_1",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "west",
+          "well": "experience_16",
+          "reward": -0.02,
+          "position": [1.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_34",
+          "reward": -0.02,
+          "position": [2.0, 0.0]
+        },
+        {
+          "action": "east",
+          "well": "experience_35",
+          "reward": -0.02,
+          "position": [3.0, 0.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_36",
+          "reward": -0.02,
+          "position": [3.0, 1.0]
+        },
+        {
+          "action": "south",
+          "well": "experience_197",
+          "reward": 1.0,
+          "position": [3.0, 2.0]
+        }
+      ]
+    },
+    "wells": 252,
+    "real_feedback_updates": 1402,
+    "planning_updates": 7010,
+    "native_requests": 1763,
+    "native_moves": 1283,
+    "semantic_trace_sha256": "338c6f554fca3d1ccc6fdfbcfa81c91fba722ee3a5d4d526865231c08f5585c2",
+    "checkpoint_sha256": "eb1a73aab2eb8be34b28ae2968445e47bcd807ab0d086a0c95d81862462e6356",
+    "junit_cases": 1,
+    "world_seed": 0,
+    "sources": {
+      "engram_analysis.py": "933cd19dcdd4d7b38d903704356259ecb02c981c9d008de2c00c2f7aa346bf3d",
+      "engram_codec.py": "80ab009f4ab6628ac2b19bb54854b0d1b91e2a46bcf45a5dbd59da7e38adaa87",
+      "engram_history.py": "8bd5a2361a1eaff6a9b5c90d8b32e0669c5770ff192c3c1812ec043b910b13ca",
+      "engram_npc.py": "99f64b68c82931249d1e07139d498c016fb4c84bde0b2a85d8530bf9916c390b",
+      "examples/npc_experience.py": "a9ae6aa584598633186c35b7bbf4ac281621e36ad1011d7349210acf3aa73ce7",
+      "integrations/minecraft/build.gradle": "32f9a8dcc2c8a0b0b0ea1da2e8bf009950d76f424eb9bf8de9650d4a9d7099de",
+      "integrations/minecraft/gradle/wrapper/gradle-wrapper.jar": "7a9ce74cff467ca1bf60a4fcd9f05185acceda4d0f382434d393e17864262c5d",
+      "integrations/minecraft/gradle/wrapper/gradle-wrapper.properties": "78d0d4a2d0d35132ce8f7d86849af45477f6095860d311ec5cc6f617202b61b4",
+      "integrations/minecraft/gradle.properties": "98352f8f82247dc6bcf3d26795421f592c5d8a39f2ec8561d00a8ade8d3b33c3",
+      "integrations/minecraft/settings.gradle": "ac42e11f6088e080117d82337b655fc0049351042afce0f45720b26373591cb7",
+      "integrations/minecraft/src/main/java/dev/woflo/engram/lab/ExperienceLab.java": "54b56e07dd81b70c3cbcc80de4f2fa31ab1bd5eb9b4d5115ad9533bc4b49450b",
+      "integrations/minecraft/src/main/resources/data/engram_npc/structure/empty.nbt": "3652f4e27a37ba06fcec45467ae280c65de82676ca43eeb3885376d9a2e96194",
+      "integrations/minecraft/src/main/resources/fabric.mod.json": "99dcf58a6f2dcac72249704c6c261da51d6371d66b1cbd8f69c2968652e1a3e8",
+      "tools/npc_lane.py": "c0dfca20a72bb8e28ad745360440b0bd0965ae99a06230dae6353463f4a7d1e4"
+    },
+    "completed_at_utc": "2026-10-16T04:31:18.208697+00:00"
+  },
+  "junit": {
+    "first": {
+      "testcases": 1,
+      "sha256": "2f279c0a4b6580878cb7f4ab9e63c4d4c82a7104173d430a67be81770d54758a"
+    },
+    "second": {
+      "testcases": 1,
+      "sha256": "0bc1f73e79608342ac474147fb0cd161af91d5f3fe49b9363c5649b678aeaf30"
+    }
+  },
+  "identical_current_witness_control": {
+    "pairs": [
+      {
+        "earlier_cue": -1,
+        "native_observations": [
+          [0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0],
+          [0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0],
+          [0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0],
+          [0.3333333333333333, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0],
+          [0.6666666666666666, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0],
+          [1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0]
+        ],
+        "junction_witness": [1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+        "K": [
+          [0.8246388055517002, -0.2668217266851555],
+          [-0.24998750062516398, 0.0],
+          [0.4665876708147559, -0.26667653633476684],
+          [-0.2499875006248127, 0.0]
+        ],
+        "G": [
+          [0.37993592774310764, 0.02430943238104422],
+          [0.24998750062516398, 0.0],
+          [0.26659507899000173, 0.5332864257510894],
+          [0.2499875006248127, 0.0]
+        ]
+      },
+      {
+        "earlier_cue": 1,
+        "native_observations": [
+          [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0],
+          [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0],
+          [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0],
+          [0.3333333333333333, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0],
+          [0.6666666666666666, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0],
+          [1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0]
+        ],
+        "junction_witness": [1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 1.0],
+        "K": [
+          [0.8246388055517002, 0.2668217266851555],
+          [-0.24998750062516398, 0.0],
+          [0.4665876708147559, -0.26667653633476684],
+          [-0.2499875006248127, 0.0]
+        ],
+        "G": [
+          [0.37993592774310764, -0.02430943238104422],
+          [0.24998750062516398, 0.0],
+          [0.26659507899000173, 0.5332864257510894],
+          [0.2499875006248127, 0.0]
+        ]
+      }
+    ],
+    "native_stream_sha256": "115928f69f2470bfec8928e6eaf8dacfe50ca48f185e12c8f41a5124fc0ca616"
+  }
+}

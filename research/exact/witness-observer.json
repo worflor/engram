@@ -1,0 +1,3725 @@
+{
+  "scope": "Declared 64-state six-sample sliding-window observer only; not an unbounded NPC certificate",
+  "studies": [
+    {
+      "case": "cumulative",
+      "request": {
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-4\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-21\",\"observation-25\",\"observation-26\",\"observation-16\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-4\",\"observation-31\",\"observation-32\",\"observation-10\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-10\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-4\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-21\",\"observation-45\",\"observation-46\",\"observation-16\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-16\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\"],\"horizon\":\"all\"}}"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "atlas",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "source-bound atlas construction",
+              "independent certificate replay"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "operator",
+              "by": "the atlas constructor dispatch",
+              "says": "observer",
+              "value": "observer"
+            },
+            {
+              "asks": "scope",
+              "by": "independent replay with source, domain, horizon and hypothesis bindings",
+              "says": "proved",
+              "value": {
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "status": "proved",
+                "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                "witnessKind": "atlas-finite-observer-v1"
+              }
+            },
+            {
+              "asks": "result",
+              "by": "the independently replayed witness",
+              "says": "source-bound mathematical object",
+              "value": {
+                "candidate": [
+                  "observation-0",
+                  "observation-1",
+                  "observation-2",
+                  "observation-3",
+                  "observation-4",
+                  "observation-5",
+                  "observation-6",
+                  "observation-7",
+                  "observation-4",
+                  "observation-8",
+                  "observation-9",
+                  "observation-10",
+                  "observation-11",
+                  "observation-12",
+                  "observation-13",
+                  "observation-14",
+                  "observation-15",
+                  "observation-16",
+                  "observation-17",
+                  "observation-18",
+                  "observation-19",
+                  "observation-20",
+                  "observation-21",
+                  "observation-22",
+                  "observation-23",
+                  "observation-24",
+                  "observation-21",
+                  "observation-25",
+                  "observation-26",
+                  "observation-16",
+                  "observation-27",
+                  "observation-28",
+                  "observation-29",
+                  "observation-30",
+                  "observation-4",
+                  "observation-31",
+                  "observation-32",
+                  "observation-10",
+                  "observation-33",
+                  "observation-34",
+                  "observation-35",
+                  "observation-10",
+                  "observation-36",
+                  "observation-37",
+                  "observation-38",
+                  "observation-39",
+                  "observation-4",
+                  "observation-40",
+                  "observation-41",
+                  "observation-42",
+                  "observation-43",
+                  "observation-44",
+                  "observation-21",
+                  "observation-45",
+                  "observation-46",
+                  "observation-16",
+                  "observation-47",
+                  "observation-48",
+                  "observation-49",
+                  "observation-16",
+                  "observation-50",
+                  "observation-51",
+                  "observation-52",
+                  "observation-53"
+                ],
+                "contract": {
+                  "horizon": "all",
+                  "permittedActions": [
+                    "append-0",
+                    "append-1"
+                  ]
+                },
+                "kind": "atlas-finite-observer-v1",
+                "result": {
+                  "partition": [
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3
+                  ],
+                  "separator": {
+                    "actionWord": [],
+                    "left": 4,
+                    "leftGoal": [
+                      "1"
+                    ],
+                    "right": 8,
+                    "rightGoal": [
+                      "0"
+                    ]
+                  },
+                  "sufficient": false
+                },
+                "source": {
+                  "actions": [
+                    {
+                      "name": "append-0",
+                      "next": [
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20,
+                        22,
+                        24,
+                        26,
+                        28,
+                        30,
+                        32,
+                        34,
+                        36,
+                        38,
+                        40,
+                        42,
+                        44,
+                        46,
+                        48,
+                        50,
+                        52,
+                        54,
+                        56,
+                        58,
+                        60,
+                        62,
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20,
+                        22,
+                        24,
+                        26,
+                        28,
+                        30,
+                        32,
+                        34,
+                        36,
+                        38,
+                        40,
+                        42,
+                        44,
+                        46,
+                        48,
+                        50,
+                        52,
+                        54,
+                        56,
+                        58,
+                        60,
+                        62
+                      ]
+                    },
+                    {
+                      "name": "append-1",
+                      "next": [
+                        1,
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13,
+                        15,
+                        17,
+                        19,
+                        21,
+                        23,
+                        25,
+                        27,
+                        29,
+                        31,
+                        33,
+                        35,
+                        37,
+                        39,
+                        41,
+                        43,
+                        45,
+                        47,
+                        49,
+                        51,
+                        53,
+                        55,
+                        57,
+                        59,
+                        61,
+                        63,
+                        1,
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13,
+                        15,
+                        17,
+                        19,
+                        21,
+                        23,
+                        25,
+                        27,
+                        29,
+                        31,
+                        33,
+                        35,
+                        37,
+                        39,
+                        41,
+                        43,
+                        45,
+                        47,
+                        49,
+                        51,
+                        53,
+                        55,
+                        57,
+                        59,
+                        61,
+                        63
+                      ]
+                    }
+                  ],
+                  "goals": [
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "kind": "finite-table",
+                  "states": [
+                    "000000",
+                    "000001",
+                    "000010",
+                    "000011",
+                    "000100",
+                    "000101",
+                    "000110",
+                    "000111",
+                    "001000",
+                    "001001",
+                    "001010",
+                    "001011",
+                    "001100",
+                    "001101",
+                    "001110",
+                    "001111",
+                    "010000",
+                    "010001",
+                    "010010",
+                    "010011",
+                    "010100",
+                    "010101",
+                    "010110",
+                    "010111",
+                    "011000",
+                    "011001",
+                    "011010",
+                    "011011",
+                    "011100",
+                    "011101",
+                    "011110",
+                    "011111",
+                    "100000",
+                    "100001",
+                    "100010",
+                    "100011",
+                    "100100",
+                    "100101",
+                    "100110",
+                    "100111",
+                    "101000",
+                    "101001",
+                    "101010",
+                    "101011",
+                    "101100",
+                    "101101",
+                    "101110",
+                    "101111",
+                    "110000",
+                    "110001",
+                    "110010",
+                    "110011",
+                    "110100",
+                    "110101",
+                    "110110",
+                    "110111",
+                    "111000",
+                    "111001",
+                    "111010",
+                    "111011",
+                    "111100",
+                    "111101",
+                    "111110",
+                    "111111"
+                  ]
+                }
+              }
+            },
+            {
+              "asks": "atlas certificate",
+              "by": "independent replay; open/partial receipts retain their stated obligations",
+              "says": "proved",
+              "value": {
+                "kind": "state-atlas-v1",
+                "operator": "observer",
+                "result": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "source": {
+                  "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "witness": {
+                  "candidate": [
+                    "observation-0",
+                    "observation-1",
+                    "observation-2",
+                    "observation-3",
+                    "observation-4",
+                    "observation-5",
+                    "observation-6",
+                    "observation-7",
+                    "observation-4",
+                    "observation-8",
+                    "observation-9",
+                    "observation-10",
+                    "observation-11",
+                    "observation-12",
+                    "observation-13",
+                    "observation-14",
+                    "observation-15",
+                    "observation-16",
+                    "observation-17",
+                    "observation-18",
+                    "observation-19",
+                    "observation-20",
+                    "observation-21",
+                    "observation-22",
+                    "observation-23",
+                    "observation-24",
+                    "observation-21",
+                    "observation-25",
+                    "observation-26",
+                    "observation-16",
+                    "observation-27",
+                    "observation-28",
+                    "observation-29",
+                    "observation-30",
+                    "observation-4",
+                    "observation-31",
+                    "observation-32",
+                    "observation-10",
+                    "observation-33",
+                    "observation-34",
+                    "observation-35",
+                    "observation-10",
+                    "observation-36",
+                    "observation-37",
+                    "observation-38",
+                    "observation-39",
+                    "observation-4",
+                    "observation-40",
+                    "observation-41",
+                    "observation-42",
+                    "observation-43",
+                    "observation-44",
+                    "observation-21",
+                    "observation-45",
+                    "observation-46",
+                    "observation-16",
+                    "observation-47",
+                    "observation-48",
+                    "observation-49",
+                    "observation-16",
+                    "observation-50",
+                    "observation-51",
+                    "observation-52",
+                    "observation-53"
+                  ],
+                  "contract": {
+                    "horizon": "all",
+                    "permittedActions": [
+                      "append-0",
+                      "append-1"
+                    ]
+                  },
+                  "kind": "atlas-finite-observer-v1",
+                  "result": {
+                    "partition": [
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3
+                    ],
+                    "separator": {
+                      "actionWord": [],
+                      "left": 4,
+                      "leftGoal": [
+                        "1"
+                      ],
+                      "right": 8,
+                      "rightGoal": [
+                        "0"
+                      ]
+                    },
+                    "sufficient": false
+                  },
+                  "source": {
+                    "actions": [
+                      {
+                        "name": "append-0",
+                        "next": [
+                          0,
+                          2,
+                          4,
+                          6,
+                          8,
+                          10,
+                          12,
+                          14,
+                          16,
+                          18,
+                          20,
+                          22,
+                          24,
+                          26,
+                          28,
+                          30,
+                          32,
+                          34,
+                          36,
+                          38,
+                          40,
+                          42,
+                          44,
+                          46,
+                          48,
+                          50,
+                          52,
+                          54,
+                          56,
+                          58,
+                          60,
+                          62,
+                          0,
+                          2,
+                          4,
+                          6,
+                          8,
+                          10,
+                          12,
+                          14,
+                          16,
+                          18,
+                          20,
+                          22,
+                          24,
+                          26,
+                          28,
+                          30,
+                          32,
+                          34,
+                          36,
+                          38,
+                          40,
+                          42,
+                          44,
+                          46,
+                          48,
+                          50,
+                          52,
+                          54,
+                          56,
+                          58,
+                          60,
+                          62
+                        ]
+                      },
+                      {
+                        "name": "append-1",
+                        "next": [
+                          1,
+                          3,
+                          5,
+                          7,
+                          9,
+                          11,
+                          13,
+                          15,
+                          17,
+                          19,
+                          21,
+                          23,
+                          25,
+                          27,
+                          29,
+                          31,
+                          33,
+                          35,
+                          37,
+                          39,
+                          41,
+                          43,
+                          45,
+                          47,
+                          49,
+                          51,
+                          53,
+                          55,
+                          57,
+                          59,
+                          61,
+                          63,
+                          1,
+                          3,
+                          5,
+                          7,
+                          9,
+                          11,
+                          13,
+                          15,
+                          17,
+                          19,
+                          21,
+                          23,
+                          25,
+                          27,
+                          29,
+                          31,
+                          33,
+                          35,
+                          37,
+                          39,
+                          41,
+                          43,
+                          45,
+                          47,
+                          49,
+                          51,
+                          53,
+                          55,
+                          57,
+                          59,
+                          61,
+                          63
+                        ]
+                      }
+                    ],
+                    "goals": [
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ]
+                    ],
+                    "kind": "finite-table",
+                    "states": [
+                      "000000",
+                      "000001",
+                      "000010",
+                      "000011",
+                      "000100",
+                      "000101",
+                      "000110",
+                      "000111",
+                      "001000",
+                      "001001",
+                      "001010",
+                      "001011",
+                      "001100",
+                      "001101",
+                      "001110",
+                      "001111",
+                      "010000",
+                      "010001",
+                      "010010",
+                      "010011",
+                      "010100",
+                      "010101",
+                      "010110",
+                      "010111",
+                      "011000",
+                      "011001",
+                      "011010",
+                      "011011",
+                      "011100",
+                      "011101",
+                      "011110",
+                      "011111",
+                      "100000",
+                      "100001",
+                      "100010",
+                      "100011",
+                      "100100",
+                      "100101",
+                      "100110",
+                      "100111",
+                      "101000",
+                      "101001",
+                      "101010",
+                      "101011",
+                      "101100",
+                      "101101",
+                      "101110",
+                      "101111",
+                      "110000",
+                      "110001",
+                      "110010",
+                      "110011",
+                      "110100",
+                      "110101",
+                      "110110",
+                      "110111",
+                      "111000",
+                      "111001",
+                      "111010",
+                      "111011",
+                      "111100",
+                      "111101",
+                      "111110",
+                      "111111"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "asks": "proof DAG",
+              "by": "registered state-atlas-v1 verifier",
+              "says": "replayable",
+              "value": {
+                "abi": "scryer-proof-dag/v1",
+                "nodes": [
+                  {
+                    "claim": {
+                      "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                      "status": "proved",
+                      "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                      "witnessKind": "atlas-finite-observer-v1"
+                    },
+                    "deps": [],
+                    "id": "ef3d5c821ee1d50bb0a1e0503950500b4c75c3ad1a661b10beb75d5542b67b08",
+                    "kind": "state-atlas-v1",
+                    "payload": {
+                      "kind": "state-atlas-v1",
+                      "operator": "observer",
+                      "result": {
+                        "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                        "status": "proved",
+                        "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "source": {
+                        "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "witness": {
+                        "candidate": [
+                          "observation-0",
+                          "observation-1",
+                          "observation-2",
+                          "observation-3",
+                          "observation-4",
+                          "observation-5",
+                          "observation-6",
+                          "observation-7",
+                          "observation-4",
+                          "observation-8",
+                          "observation-9",
+                          "observation-10",
+                          "observation-11",
+                          "observation-12",
+                          "observation-13",
+                          "observation-14",
+                          "observation-15",
+                          "observation-16",
+                          "observation-17",
+                          "observation-18",
+                          "observation-19",
+                          "observation-20",
+                          "observation-21",
+                          "observation-22",
+                          "observation-23",
+                          "observation-24",
+                          "observation-21",
+                          "observation-25",
+                          "observation-26",
+                          "observation-16",
+                          "observation-27",
+                          "observation-28",
+                          "observation-29",
+                          "observation-30",
+                          "observation-4",
+                          "observation-31",
+                          "observation-32",
+                          "observation-10",
+                          "observation-33",
+                          "observation-34",
+                          "observation-35",
+                          "observation-10",
+                          "observation-36",
+                          "observation-37",
+                          "observation-38",
+                          "observation-39",
+                          "observation-4",
+                          "observation-40",
+                          "observation-41",
+                          "observation-42",
+                          "observation-43",
+                          "observation-44",
+                          "observation-21",
+                          "observation-45",
+                          "observation-46",
+                          "observation-16",
+                          "observation-47",
+                          "observation-48",
+                          "observation-49",
+                          "observation-16",
+                          "observation-50",
+                          "observation-51",
+                          "observation-52",
+                          "observation-53"
+                        ],
+                        "contract": {
+                          "horizon": "all",
+                          "permittedActions": [
+                            "append-0",
+                            "append-1"
+                          ]
+                        },
+                        "kind": "atlas-finite-observer-v1",
+                        "result": {
+                          "partition": [
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3
+                          ],
+                          "separator": {
+                            "actionWord": [],
+                            "left": 4,
+                            "leftGoal": [
+                              "1"
+                            ],
+                            "right": 8,
+                            "rightGoal": [
+                              "0"
+                            ]
+                          },
+                          "sufficient": false
+                        },
+                        "source": {
+                          "actions": [
+                            {
+                              "name": "append-0",
+                              "next": [
+                                0,
+                                2,
+                                4,
+                                6,
+                                8,
+                                10,
+                                12,
+                                14,
+                                16,
+                                18,
+                                20,
+                                22,
+                                24,
+                                26,
+                                28,
+                                30,
+                                32,
+                                34,
+                                36,
+                                38,
+                                40,
+                                42,
+                                44,
+                                46,
+                                48,
+                                50,
+                                52,
+                                54,
+                                56,
+                                58,
+                                60,
+                                62,
+                                0,
+                                2,
+                                4,
+                                6,
+                                8,
+                                10,
+                                12,
+                                14,
+                                16,
+                                18,
+                                20,
+                                22,
+                                24,
+                                26,
+                                28,
+                                30,
+                                32,
+                                34,
+                                36,
+                                38,
+                                40,
+                                42,
+                                44,
+                                46,
+                                48,
+                                50,
+                                52,
+                                54,
+                                56,
+                                58,
+                                60,
+                                62
+                              ]
+                            },
+                            {
+                              "name": "append-1",
+                              "next": [
+                                1,
+                                3,
+                                5,
+                                7,
+                                9,
+                                11,
+                                13,
+                                15,
+                                17,
+                                19,
+                                21,
+                                23,
+                                25,
+                                27,
+                                29,
+                                31,
+                                33,
+                                35,
+                                37,
+                                39,
+                                41,
+                                43,
+                                45,
+                                47,
+                                49,
+                                51,
+                                53,
+                                55,
+                                57,
+                                59,
+                                61,
+                                63,
+                                1,
+                                3,
+                                5,
+                                7,
+                                9,
+                                11,
+                                13,
+                                15,
+                                17,
+                                19,
+                                21,
+                                23,
+                                25,
+                                27,
+                                29,
+                                31,
+                                33,
+                                35,
+                                37,
+                                39,
+                                41,
+                                43,
+                                45,
+                                47,
+                                49,
+                                51,
+                                53,
+                                55,
+                                57,
+                                59,
+                                61,
+                                63
+                              ]
+                            }
+                          ],
+                          "goals": [
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ]
+                          ],
+                          "kind": "finite-table",
+                          "states": [
+                            "000000",
+                            "000001",
+                            "000010",
+                            "000011",
+                            "000100",
+                            "000101",
+                            "000110",
+                            "000111",
+                            "001000",
+                            "001001",
+                            "001010",
+                            "001011",
+                            "001100",
+                            "001101",
+                            "001110",
+                            "001111",
+                            "010000",
+                            "010001",
+                            "010010",
+                            "010011",
+                            "010100",
+                            "010101",
+                            "010110",
+                            "010111",
+                            "011000",
+                            "011001",
+                            "011010",
+                            "011011",
+                            "011100",
+                            "011101",
+                            "011110",
+                            "011111",
+                            "100000",
+                            "100001",
+                            "100010",
+                            "100011",
+                            "100100",
+                            "100101",
+                            "100110",
+                            "100111",
+                            "101000",
+                            "101001",
+                            "101010",
+                            "101011",
+                            "101100",
+                            "101101",
+                            "101110",
+                            "101111",
+                            "110000",
+                            "110001",
+                            "110010",
+                            "110011",
+                            "110100",
+                            "110101",
+                            "110110",
+                            "110111",
+                            "111000",
+                            "111001",
+                            "111010",
+                            "111011",
+                            "111100",
+                            "111101",
+                            "111110",
+                            "111111"
+                          ]
+                        }
+                      }
+                    },
+                    "result": {
+                      "status": "proved"
+                    },
+                    "route": "atlas",
+                    "source": {
+                      "canonical": {
+                        "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "digest": "1f3183721281b3c4bd4c070fb54f1e5946b052066442dff9c37fcf5160520f91"
+                    }
+                  }
+                ],
+                "roots": [
+                  "ef3d5c821ee1d50bb0a1e0503950500b4c75c3ad1a661b10beb75d5542b67b08"
+                ]
+              }
+            },
+            {
+              "asks": "work",
+              "by": "caller operation/cell/coefficient-bit budgets",
+              "says": "bounded exact replay",
+              "value": {
+                "verificationCells": 670,
+                "verificationOperations": 27944
+              }
+            }
+          ],
+          "subject": "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-4\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-21\",\"observation-25\",\"observation-26\",\"observation-16\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-4\",\"observation-31\",\"observation-32\",\"observation-10\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-10\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-4\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-21\",\"observation-45\",\"observation-46\",\"observation-16\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-16\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\"],\"horizon\":\"all\"}}"
+        },
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-4\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-21\",\"observation-25\",\"observation-26\",\"observation-16\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-4\",\"observation-31\",\"observation-32\",\"observation-10\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-10\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-4\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-21\",\"observation-45\",\"observation-46\",\"observation-16\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-16\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\"],\"horizon\":\"all\"}}",
+        "text": [
+          "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-4\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-21\",\"observation-25\",\"observation-26\",\"observation-16\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-4\",\"observation-31\",\"observation-32\",\"observation-10\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-10\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-4\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-21\",\"observation-45\",\"observation-46\",\"observation-16\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-16\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\"],\"horizon\":\"all\"}}",
+          "",
+          "  operator: observer",
+          "      the atlas constructor dispatch",
+          "  scope: proved",
+          "      independent replay with source, domain, horizon and hypothesis bindings",
+          "  result: source-bound mathematical object",
+          "      the independently replayed witness",
+          "  atlas certificate: proved",
+          "      independent replay; open/partial receipts retain their stated obligations",
+          "  proof DAG: replayable",
+          "      registered state-atlas-v1 verifier",
+          "  work: bounded exact replay",
+          "      caller operation/cell/coefficient-bit budgets"
+        ]
+      },
+      "invocation": {
+        "invocationId": "527b976c-9881-4fa7-b0dd-356e2626c680",
+        "outputBytes": 21029,
+        "peakMemoryBytes": 13893632,
+        "timing": {
+          "execution_us": 725025,
+          "queued_us": 111,
+          "startup_us": 1
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      },
+      "verify": {
+        "answer": {
+          "kind": "valid",
+          "perNode": [
+            {
+              "id": "ef3d5c821ee1d50bb0a1e0503950500b4c75c3ad1a661b10beb75d5542b67b08",
+              "kind": "state-atlas-v1",
+              "receipt": {
+                "cells": 670,
+                "claim": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "k": "verified",
+                "operations": 27944,
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "source": {
+                  "witnessDigest": "e38e787e0610fa20ba95c3db2bc2211c470babf528dd2443c8bc5570de8b32e4",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "status": "proved"
+              }
+            }
+          ],
+          "roots": [
+            "ef3d5c821ee1d50bb0a1e0503950500b4c75c3ad1a661b10beb75d5542b67b08"
+          ],
+          "topologicalOrder": [
+            "ef3d5c821ee1d50bb0a1e0503950500b4c75c3ad1a661b10beb75d5542b67b08"
+          ]
+        },
+        "invocation": {
+          "invocationId": "ee7f6f2c-f056-46d5-8ec7-6dfe851cdd53",
+          "outputBytes": 838,
+          "peakMemoryBytes": 7274496,
+          "timing": {
+            "execution_us": 220547,
+            "queued_us": 214,
+            "startup_us": 2
+          },
+          "tool": "wolf.scryer.verify",
+          "version": "1.0.28"
+        }
+      }
+    },
+    {
+      "case": "two_scales",
+      "request": {
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-25\",\"observation-26\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-31\",\"observation-32\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-45\",\"observation-46\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\",\"observation-54\",\"observation-55\",\"observation-56\",\"observation-57\",\"observation-58\",\"observation-59\",\"observation-60\",\"observation-61\",\"observation-62\",\"observation-63\"],\"horizon\":\"all\"}}"
+      },
+      "answer": {
+        "kind": "study",
+        "route": "atlas",
+        "study": {
+          "declined": [],
+          "estimate": {
+            "attempts": [
+              "source-bound atlas construction",
+              "independent certificate replay"
+            ],
+            "degree": 0,
+            "skips": []
+          },
+          "findings": [
+            {
+              "asks": "operator",
+              "by": "the atlas constructor dispatch",
+              "says": "observer",
+              "value": "observer"
+            },
+            {
+              "asks": "scope",
+              "by": "independent replay with source, domain, horizon and hypothesis bindings",
+              "says": "proved",
+              "value": {
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "status": "proved",
+                "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                "witnessKind": "atlas-finite-observer-v1"
+              }
+            },
+            {
+              "asks": "result",
+              "by": "the independently replayed witness",
+              "says": "source-bound mathematical object",
+              "value": {
+                "candidate": [
+                  "observation-0",
+                  "observation-1",
+                  "observation-2",
+                  "observation-3",
+                  "observation-4",
+                  "observation-5",
+                  "observation-6",
+                  "observation-7",
+                  "observation-8",
+                  "observation-9",
+                  "observation-10",
+                  "observation-11",
+                  "observation-12",
+                  "observation-13",
+                  "observation-14",
+                  "observation-15",
+                  "observation-16",
+                  "observation-17",
+                  "observation-18",
+                  "observation-19",
+                  "observation-20",
+                  "observation-21",
+                  "observation-22",
+                  "observation-23",
+                  "observation-24",
+                  "observation-25",
+                  "observation-26",
+                  "observation-27",
+                  "observation-28",
+                  "observation-29",
+                  "observation-30",
+                  "observation-31",
+                  "observation-32",
+                  "observation-33",
+                  "observation-34",
+                  "observation-35",
+                  "observation-36",
+                  "observation-37",
+                  "observation-38",
+                  "observation-39",
+                  "observation-40",
+                  "observation-41",
+                  "observation-42",
+                  "observation-43",
+                  "observation-44",
+                  "observation-45",
+                  "observation-46",
+                  "observation-47",
+                  "observation-48",
+                  "observation-49",
+                  "observation-50",
+                  "observation-51",
+                  "observation-52",
+                  "observation-53",
+                  "observation-54",
+                  "observation-55",
+                  "observation-56",
+                  "observation-57",
+                  "observation-58",
+                  "observation-59",
+                  "observation-60",
+                  "observation-61",
+                  "observation-62",
+                  "observation-63"
+                ],
+                "contract": {
+                  "horizon": "all",
+                  "permittedActions": [
+                    "append-0",
+                    "append-1"
+                  ]
+                },
+                "kind": "atlas-finite-observer-v1",
+                "result": {
+                  "partition": [
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    0,
+                    3,
+                    2,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3
+                  ],
+                  "separator": null,
+                  "sufficient": true
+                },
+                "source": {
+                  "actions": [
+                    {
+                      "name": "append-0",
+                      "next": [
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20,
+                        22,
+                        24,
+                        26,
+                        28,
+                        30,
+                        32,
+                        34,
+                        36,
+                        38,
+                        40,
+                        42,
+                        44,
+                        46,
+                        48,
+                        50,
+                        52,
+                        54,
+                        56,
+                        58,
+                        60,
+                        62,
+                        0,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20,
+                        22,
+                        24,
+                        26,
+                        28,
+                        30,
+                        32,
+                        34,
+                        36,
+                        38,
+                        40,
+                        42,
+                        44,
+                        46,
+                        48,
+                        50,
+                        52,
+                        54,
+                        56,
+                        58,
+                        60,
+                        62
+                      ]
+                    },
+                    {
+                      "name": "append-1",
+                      "next": [
+                        1,
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13,
+                        15,
+                        17,
+                        19,
+                        21,
+                        23,
+                        25,
+                        27,
+                        29,
+                        31,
+                        33,
+                        35,
+                        37,
+                        39,
+                        41,
+                        43,
+                        45,
+                        47,
+                        49,
+                        51,
+                        53,
+                        55,
+                        57,
+                        59,
+                        61,
+                        63,
+                        1,
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13,
+                        15,
+                        17,
+                        19,
+                        21,
+                        23,
+                        25,
+                        27,
+                        29,
+                        31,
+                        33,
+                        35,
+                        37,
+                        39,
+                        41,
+                        43,
+                        45,
+                        47,
+                        49,
+                        51,
+                        53,
+                        55,
+                        57,
+                        59,
+                        61,
+                        63
+                      ]
+                    }
+                  ],
+                  "goals": [
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "0"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "kind": "finite-table",
+                  "states": [
+                    "000000",
+                    "000001",
+                    "000010",
+                    "000011",
+                    "000100",
+                    "000101",
+                    "000110",
+                    "000111",
+                    "001000",
+                    "001001",
+                    "001010",
+                    "001011",
+                    "001100",
+                    "001101",
+                    "001110",
+                    "001111",
+                    "010000",
+                    "010001",
+                    "010010",
+                    "010011",
+                    "010100",
+                    "010101",
+                    "010110",
+                    "010111",
+                    "011000",
+                    "011001",
+                    "011010",
+                    "011011",
+                    "011100",
+                    "011101",
+                    "011110",
+                    "011111",
+                    "100000",
+                    "100001",
+                    "100010",
+                    "100011",
+                    "100100",
+                    "100101",
+                    "100110",
+                    "100111",
+                    "101000",
+                    "101001",
+                    "101010",
+                    "101011",
+                    "101100",
+                    "101101",
+                    "101110",
+                    "101111",
+                    "110000",
+                    "110001",
+                    "110010",
+                    "110011",
+                    "110100",
+                    "110101",
+                    "110110",
+                    "110111",
+                    "111000",
+                    "111001",
+                    "111010",
+                    "111011",
+                    "111100",
+                    "111101",
+                    "111110",
+                    "111111"
+                  ]
+                }
+              }
+            },
+            {
+              "asks": "atlas certificate",
+              "by": "independent replay; open/partial receipts retain their stated obligations",
+              "says": "proved",
+              "value": {
+                "kind": "state-atlas-v1",
+                "operator": "observer",
+                "result": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "source": {
+                  "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "witness": {
+                  "candidate": [
+                    "observation-0",
+                    "observation-1",
+                    "observation-2",
+                    "observation-3",
+                    "observation-4",
+                    "observation-5",
+                    "observation-6",
+                    "observation-7",
+                    "observation-8",
+                    "observation-9",
+                    "observation-10",
+                    "observation-11",
+                    "observation-12",
+                    "observation-13",
+                    "observation-14",
+                    "observation-15",
+                    "observation-16",
+                    "observation-17",
+                    "observation-18",
+                    "observation-19",
+                    "observation-20",
+                    "observation-21",
+                    "observation-22",
+                    "observation-23",
+                    "observation-24",
+                    "observation-25",
+                    "observation-26",
+                    "observation-27",
+                    "observation-28",
+                    "observation-29",
+                    "observation-30",
+                    "observation-31",
+                    "observation-32",
+                    "observation-33",
+                    "observation-34",
+                    "observation-35",
+                    "observation-36",
+                    "observation-37",
+                    "observation-38",
+                    "observation-39",
+                    "observation-40",
+                    "observation-41",
+                    "observation-42",
+                    "observation-43",
+                    "observation-44",
+                    "observation-45",
+                    "observation-46",
+                    "observation-47",
+                    "observation-48",
+                    "observation-49",
+                    "observation-50",
+                    "observation-51",
+                    "observation-52",
+                    "observation-53",
+                    "observation-54",
+                    "observation-55",
+                    "observation-56",
+                    "observation-57",
+                    "observation-58",
+                    "observation-59",
+                    "observation-60",
+                    "observation-61",
+                    "observation-62",
+                    "observation-63"
+                  ],
+                  "contract": {
+                    "horizon": "all",
+                    "permittedActions": [
+                      "append-0",
+                      "append-1"
+                    ]
+                  },
+                  "kind": "atlas-finite-observer-v1",
+                  "result": {
+                    "partition": [
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3,
+                      0,
+                      3,
+                      2,
+                      3,
+                      1,
+                      3,
+                      2,
+                      3
+                    ],
+                    "separator": null,
+                    "sufficient": true
+                  },
+                  "source": {
+                    "actions": [
+                      {
+                        "name": "append-0",
+                        "next": [
+                          0,
+                          2,
+                          4,
+                          6,
+                          8,
+                          10,
+                          12,
+                          14,
+                          16,
+                          18,
+                          20,
+                          22,
+                          24,
+                          26,
+                          28,
+                          30,
+                          32,
+                          34,
+                          36,
+                          38,
+                          40,
+                          42,
+                          44,
+                          46,
+                          48,
+                          50,
+                          52,
+                          54,
+                          56,
+                          58,
+                          60,
+                          62,
+                          0,
+                          2,
+                          4,
+                          6,
+                          8,
+                          10,
+                          12,
+                          14,
+                          16,
+                          18,
+                          20,
+                          22,
+                          24,
+                          26,
+                          28,
+                          30,
+                          32,
+                          34,
+                          36,
+                          38,
+                          40,
+                          42,
+                          44,
+                          46,
+                          48,
+                          50,
+                          52,
+                          54,
+                          56,
+                          58,
+                          60,
+                          62
+                        ]
+                      },
+                      {
+                        "name": "append-1",
+                        "next": [
+                          1,
+                          3,
+                          5,
+                          7,
+                          9,
+                          11,
+                          13,
+                          15,
+                          17,
+                          19,
+                          21,
+                          23,
+                          25,
+                          27,
+                          29,
+                          31,
+                          33,
+                          35,
+                          37,
+                          39,
+                          41,
+                          43,
+                          45,
+                          47,
+                          49,
+                          51,
+                          53,
+                          55,
+                          57,
+                          59,
+                          61,
+                          63,
+                          1,
+                          3,
+                          5,
+                          7,
+                          9,
+                          11,
+                          13,
+                          15,
+                          17,
+                          19,
+                          21,
+                          23,
+                          25,
+                          27,
+                          29,
+                          31,
+                          33,
+                          35,
+                          37,
+                          39,
+                          41,
+                          43,
+                          45,
+                          47,
+                          49,
+                          51,
+                          53,
+                          55,
+                          57,
+                          59,
+                          61,
+                          63
+                        ]
+                      }
+                    ],
+                    "goals": [
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "0"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ],
+                      [
+                        "1"
+                      ]
+                    ],
+                    "kind": "finite-table",
+                    "states": [
+                      "000000",
+                      "000001",
+                      "000010",
+                      "000011",
+                      "000100",
+                      "000101",
+                      "000110",
+                      "000111",
+                      "001000",
+                      "001001",
+                      "001010",
+                      "001011",
+                      "001100",
+                      "001101",
+                      "001110",
+                      "001111",
+                      "010000",
+                      "010001",
+                      "010010",
+                      "010011",
+                      "010100",
+                      "010101",
+                      "010110",
+                      "010111",
+                      "011000",
+                      "011001",
+                      "011010",
+                      "011011",
+                      "011100",
+                      "011101",
+                      "011110",
+                      "011111",
+                      "100000",
+                      "100001",
+                      "100010",
+                      "100011",
+                      "100100",
+                      "100101",
+                      "100110",
+                      "100111",
+                      "101000",
+                      "101001",
+                      "101010",
+                      "101011",
+                      "101100",
+                      "101101",
+                      "101110",
+                      "101111",
+                      "110000",
+                      "110001",
+                      "110010",
+                      "110011",
+                      "110100",
+                      "110101",
+                      "110110",
+                      "110111",
+                      "111000",
+                      "111001",
+                      "111010",
+                      "111011",
+                      "111100",
+                      "111101",
+                      "111110",
+                      "111111"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "asks": "proof DAG",
+              "by": "registered state-atlas-v1 verifier",
+              "says": "replayable",
+              "value": {
+                "abi": "scryer-proof-dag/v1",
+                "nodes": [
+                  {
+                    "claim": {
+                      "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                      "status": "proved",
+                      "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                      "witnessKind": "atlas-finite-observer-v1"
+                    },
+                    "deps": [],
+                    "id": "f4b7e6fbdab3effc7ccd2670c9232d16bcc466f68532c86c52379ef3fec753e4",
+                    "kind": "state-atlas-v1",
+                    "payload": {
+                      "kind": "state-atlas-v1",
+                      "operator": "observer",
+                      "result": {
+                        "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                        "status": "proved",
+                        "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "source": {
+                        "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "witness": {
+                        "candidate": [
+                          "observation-0",
+                          "observation-1",
+                          "observation-2",
+                          "observation-3",
+                          "observation-4",
+                          "observation-5",
+                          "observation-6",
+                          "observation-7",
+                          "observation-8",
+                          "observation-9",
+                          "observation-10",
+                          "observation-11",
+                          "observation-12",
+                          "observation-13",
+                          "observation-14",
+                          "observation-15",
+                          "observation-16",
+                          "observation-17",
+                          "observation-18",
+                          "observation-19",
+                          "observation-20",
+                          "observation-21",
+                          "observation-22",
+                          "observation-23",
+                          "observation-24",
+                          "observation-25",
+                          "observation-26",
+                          "observation-27",
+                          "observation-28",
+                          "observation-29",
+                          "observation-30",
+                          "observation-31",
+                          "observation-32",
+                          "observation-33",
+                          "observation-34",
+                          "observation-35",
+                          "observation-36",
+                          "observation-37",
+                          "observation-38",
+                          "observation-39",
+                          "observation-40",
+                          "observation-41",
+                          "observation-42",
+                          "observation-43",
+                          "observation-44",
+                          "observation-45",
+                          "observation-46",
+                          "observation-47",
+                          "observation-48",
+                          "observation-49",
+                          "observation-50",
+                          "observation-51",
+                          "observation-52",
+                          "observation-53",
+                          "observation-54",
+                          "observation-55",
+                          "observation-56",
+                          "observation-57",
+                          "observation-58",
+                          "observation-59",
+                          "observation-60",
+                          "observation-61",
+                          "observation-62",
+                          "observation-63"
+                        ],
+                        "contract": {
+                          "horizon": "all",
+                          "permittedActions": [
+                            "append-0",
+                            "append-1"
+                          ]
+                        },
+                        "kind": "atlas-finite-observer-v1",
+                        "result": {
+                          "partition": [
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3,
+                            0,
+                            3,
+                            2,
+                            3,
+                            1,
+                            3,
+                            2,
+                            3
+                          ],
+                          "separator": null,
+                          "sufficient": true
+                        },
+                        "source": {
+                          "actions": [
+                            {
+                              "name": "append-0",
+                              "next": [
+                                0,
+                                2,
+                                4,
+                                6,
+                                8,
+                                10,
+                                12,
+                                14,
+                                16,
+                                18,
+                                20,
+                                22,
+                                24,
+                                26,
+                                28,
+                                30,
+                                32,
+                                34,
+                                36,
+                                38,
+                                40,
+                                42,
+                                44,
+                                46,
+                                48,
+                                50,
+                                52,
+                                54,
+                                56,
+                                58,
+                                60,
+                                62,
+                                0,
+                                2,
+                                4,
+                                6,
+                                8,
+                                10,
+                                12,
+                                14,
+                                16,
+                                18,
+                                20,
+                                22,
+                                24,
+                                26,
+                                28,
+                                30,
+                                32,
+                                34,
+                                36,
+                                38,
+                                40,
+                                42,
+                                44,
+                                46,
+                                48,
+                                50,
+                                52,
+                                54,
+                                56,
+                                58,
+                                60,
+                                62
+                              ]
+                            },
+                            {
+                              "name": "append-1",
+                              "next": [
+                                1,
+                                3,
+                                5,
+                                7,
+                                9,
+                                11,
+                                13,
+                                15,
+                                17,
+                                19,
+                                21,
+                                23,
+                                25,
+                                27,
+                                29,
+                                31,
+                                33,
+                                35,
+                                37,
+                                39,
+                                41,
+                                43,
+                                45,
+                                47,
+                                49,
+                                51,
+                                53,
+                                55,
+                                57,
+                                59,
+                                61,
+                                63,
+                                1,
+                                3,
+                                5,
+                                7,
+                                9,
+                                11,
+                                13,
+                                15,
+                                17,
+                                19,
+                                21,
+                                23,
+                                25,
+                                27,
+                                29,
+                                31,
+                                33,
+                                35,
+                                37,
+                                39,
+                                41,
+                                43,
+                                45,
+                                47,
+                                49,
+                                51,
+                                53,
+                                55,
+                                57,
+                                59,
+                                61,
+                                63
+                              ]
+                            }
+                          ],
+                          "goals": [
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "0"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ],
+                            [
+                              "1"
+                            ]
+                          ],
+                          "kind": "finite-table",
+                          "states": [
+                            "000000",
+                            "000001",
+                            "000010",
+                            "000011",
+                            "000100",
+                            "000101",
+                            "000110",
+                            "000111",
+                            "001000",
+                            "001001",
+                            "001010",
+                            "001011",
+                            "001100",
+                            "001101",
+                            "001110",
+                            "001111",
+                            "010000",
+                            "010001",
+                            "010010",
+                            "010011",
+                            "010100",
+                            "010101",
+                            "010110",
+                            "010111",
+                            "011000",
+                            "011001",
+                            "011010",
+                            "011011",
+                            "011100",
+                            "011101",
+                            "011110",
+                            "011111",
+                            "100000",
+                            "100001",
+                            "100010",
+                            "100011",
+                            "100100",
+                            "100101",
+                            "100110",
+                            "100111",
+                            "101000",
+                            "101001",
+                            "101010",
+                            "101011",
+                            "101100",
+                            "101101",
+                            "101110",
+                            "101111",
+                            "110000",
+                            "110001",
+                            "110010",
+                            "110011",
+                            "110100",
+                            "110101",
+                            "110110",
+                            "110111",
+                            "111000",
+                            "111001",
+                            "111010",
+                            "111011",
+                            "111100",
+                            "111101",
+                            "111110",
+                            "111111"
+                          ]
+                        }
+                      }
+                    },
+                    "result": {
+                      "status": "proved"
+                    },
+                    "route": "atlas",
+                    "source": {
+                      "canonical": {
+                        "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                        "witnessKind": "atlas-finite-observer-v1"
+                      },
+                      "digest": "c7ea176b3b604e17ea79f62b1c66b134473d8b3ac0aa261a0f2f87415f489eeb"
+                    }
+                  }
+                ],
+                "roots": [
+                  "f4b7e6fbdab3effc7ccd2670c9232d16bcc466f68532c86c52379ef3fec753e4"
+                ]
+              }
+            },
+            {
+              "asks": "work",
+              "by": "caller operation/cell/coefficient-bit budgets",
+              "says": "bounded exact replay",
+              "value": {
+                "verificationCells": 663,
+                "verificationOperations": 27927
+              }
+            }
+          ],
+          "subject": "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-25\",\"observation-26\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-31\",\"observation-32\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-45\",\"observation-46\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\",\"observation-54\",\"observation-55\",\"observation-56\",\"observation-57\",\"observation-58\",\"observation-59\",\"observation-60\",\"observation-61\",\"observation-62\",\"observation-63\"],\"horizon\":\"all\"}}"
+        },
+        "subject": "atlas {\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-25\",\"observation-26\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-31\",\"observation-32\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-45\",\"observation-46\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\",\"observation-54\",\"observation-55\",\"observation-56\",\"observation-57\",\"observation-58\",\"observation-59\",\"observation-60\",\"observation-61\",\"observation-62\",\"observation-63\"],\"horizon\":\"all\"}}",
+        "text": [
+          "{\"op\":\"observer\",\"request\":{\"source\":{\"kind\":\"finite-table\",\"states\":[\"000000\",\"000001\",\"000010\",\"000011\",\"000100\",\"000101\",\"000110\",\"000111\",\"001000\",\"001001\",\"001010\",\"001011\",\"001100\",\"001101\",\"001110\",\"001111\",\"010000\",\"010001\",\"010010\",\"010011\",\"010100\",\"010101\",\"010110\",\"010111\",\"011000\",\"011001\",\"011010\",\"011011\",\"011100\",\"011101\",\"011110\",\"011111\",\"100000\",\"100001\",\"100010\",\"100011\",\"100100\",\"100101\",\"100110\",\"100111\",\"101000\",\"101001\",\"101010\",\"101011\",\"101100\",\"101101\",\"101110\",\"101111\",\"110000\",\"110001\",\"110010\",\"110011\",\"110100\",\"110101\",\"110110\",\"110111\",\"111000\",\"111001\",\"111010\",\"111011\",\"111100\",\"111101\",\"111110\",\"111111\"],\"actions\":[{\"name\":\"append-0\",\"next\":[0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62]},{\"name\":\"append-1\",\"next\":[1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63]}],\"goals\":[[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"0\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"],[\"1\"]]},\"candidate\":[\"observation-0\",\"observation-1\",\"observation-2\",\"observation-3\",\"observation-4\",\"observation-5\",\"observation-6\",\"observation-7\",\"observation-8\",\"observation-9\",\"observation-10\",\"observation-11\",\"observation-12\",\"observation-13\",\"observation-14\",\"observation-15\",\"observation-16\",\"observation-17\",\"observation-18\",\"observation-19\",\"observation-20\",\"observation-21\",\"observation-22\",\"observation-23\",\"observation-24\",\"observation-25\",\"observation-26\",\"observation-27\",\"observation-28\",\"observation-29\",\"observation-30\",\"observation-31\",\"observation-32\",\"observation-33\",\"observation-34\",\"observation-35\",\"observation-36\",\"observation-37\",\"observation-38\",\"observation-39\",\"observation-40\",\"observation-41\",\"observation-42\",\"observation-43\",\"observation-44\",\"observation-45\",\"observation-46\",\"observation-47\",\"observation-48\",\"observation-49\",\"observation-50\",\"observation-51\",\"observation-52\",\"observation-53\",\"observation-54\",\"observation-55\",\"observation-56\",\"observation-57\",\"observation-58\",\"observation-59\",\"observation-60\",\"observation-61\",\"observation-62\",\"observation-63\"],\"horizon\":\"all\"}}",
+          "",
+          "  operator: observer",
+          "      the atlas constructor dispatch",
+          "  scope: proved",
+          "      independent replay with source, domain, horizon and hypothesis bindings",
+          "  result: source-bound mathematical object",
+          "      the independently replayed witness",
+          "  atlas certificate: proved",
+          "      independent replay; open/partial receipts retain their stated obligations",
+          "  proof DAG: replayable",
+          "      registered state-atlas-v1 verifier",
+          "  work: bounded exact replay",
+          "      caller operation/cell/coefficient-bit budgets"
+        ]
+      },
+      "invocation": {
+        "invocationId": "ec1598e9-0492-4731-8225-0b0d790d7a9e",
+        "outputBytes": 20843,
+        "peakMemoryBytes": 13893632,
+        "timing": {
+          "execution_us": 724776,
+          "queued_us": 213,
+          "startup_us": 2
+        },
+        "tool": "wolf.scryer.ask",
+        "version": "1.0.28"
+      },
+      "verify": {
+        "answer": {
+          "kind": "valid",
+          "perNode": [
+            {
+              "id": "f4b7e6fbdab3effc7ccd2670c9232d16bcc466f68532c86c52379ef3fec753e4",
+              "kind": "state-atlas-v1",
+              "receipt": {
+                "cells": 663,
+                "claim": {
+                  "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                  "status": "proved",
+                  "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "k": "verified",
+                "operations": 27927,
+                "scope": "requested goals, permitted actions, horizon, original domain and source witnesses",
+                "source": {
+                  "witnessDigest": "b38ed13fb8e574d84e0d94e33c166742394c18d6d2a784d2d168efc617718332",
+                  "witnessKind": "atlas-finite-observer-v1"
+                },
+                "status": "proved"
+              }
+            }
+          ],
+          "roots": [
+            "f4b7e6fbdab3effc7ccd2670c9232d16bcc466f68532c86c52379ef3fec753e4"
+          ],
+          "topologicalOrder": [
+            "f4b7e6fbdab3effc7ccd2670c9232d16bcc466f68532c86c52379ef3fec753e4"
+          ]
+        },
+        "invocation": {
+          "invocationId": "a38886f8-ce88-4a9f-b23a-f102bc69af71",
+          "outputBytes": 838,
+          "peakMemoryBytes": 7274496,
+          "timing": {
+            "execution_us": 218719,
+            "queued_us": 164,
+            "startup_us": 1
+          },
+          "tool": "wolf.scryer.verify",
+          "version": "1.0.28"
+        }
+      }
+    }
+  ]
+}
