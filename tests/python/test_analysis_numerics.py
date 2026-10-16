@@ -1,6 +1,7 @@
 """Scaled cosine and real-trajectory boundary regressions."""
 
 import warnings
+from decimal import Decimal, localcontext
 
 import numpy as np
 import pytest
@@ -32,8 +33,21 @@ def test_cosine_preserves_zero_vector_and_ordinary_reference_values():
     for _ in range(20):
         a = rng.normal(size=7) + 1j * rng.normal(size=7)
         b = rng.normal(size=7) + 1j * rng.normal(size=7)
-        expected = np.vdot(a, b).real / (np.linalg.norm(a) * np.linalg.norm(b))
-        assert cosine(a, b) == pytest.approx(expected, abs=2e-16)
+        # An independent reference avoids inheriting platform-specific BLAS
+        # reduction order; the scaled float64 path still needs rounding room.
+        with localcontext() as context:
+            context.prec = 80
+            ar, ai, br, bi = (
+                [Decimal(float(value)) for value in part]
+                for part in (a.real, a.imag, b.real, b.imag)
+            )
+            inner = sum(x * y + u * v for x, u, y, v in zip(ar, ai, br, bi))
+            energy_a = sum(x * x + y * y for x, y in zip(ar, ai))
+            energy_b = sum(x * x + y * y for x, y in zip(br, bi))
+            expected = float(inner / (energy_a * energy_b).sqrt())
+        assert cosine(a, b) == pytest.approx(
+            expected, rel=0, abs=8 * np.finfo(np.float64).eps
+        )
 
 
 @pytest.mark.parametrize(
