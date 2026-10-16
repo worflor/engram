@@ -120,7 +120,7 @@ fn diagnostics_and_streams_follow_the_reference_contract() {
             .collect();
         let mut encoder = StreamEncoder::new(4);
         let mut decoder = StreamDecoder::new(4);
-        for row in x.chunks_exact(4) {
+        for row in x.as_chunks::<4>().0 {
             if let Some(b) = encoder.push(row) {
                 decoder.push(&b).unwrap();
             }
